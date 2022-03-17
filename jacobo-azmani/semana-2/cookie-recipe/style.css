@@ -52,3 +52,8 @@ ol li {
 a {
     color: #900;
 }
+
+footer {
+    align-items: center;
+    margin-top: 15px;
+}
