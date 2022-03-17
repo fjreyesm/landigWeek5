@@ -12,5 +12,10 @@ p{
 }
 h1 ,h2 ,ol ,ul{
   margin-left: 10px;
+} 
+.mydiv {
+  font-weight: bolder;
+  color: grey;
+  
 }
 
