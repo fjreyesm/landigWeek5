@@ -4,9 +4,17 @@ body
   background-color: #ffd;
   color:#887;
   font-family: "serif";
+}  
+#galletas
+ {
+  border: 1px solid BLACK;
+  border-radius: 25px;
+  margin:auto;
+  display:block;
+  width: 100%;
+ }  
   
-  
-}
+
 #contenido
 {
   max-width: 800px;
