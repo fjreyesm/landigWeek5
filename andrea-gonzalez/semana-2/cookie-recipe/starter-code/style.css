@@ -1,0 +1,28 @@
+body {
+  background-color: #ffe;
+  font-family: sans-serif;
+  max-width: 800px;
+  border-color: black;
+  border: solid;
+  margin: auto;
+  padding: 20px;
+}
+
+img {
+  border: solid;
+  border-color: black;
+  max-width: 90%;
+}
+
+h1 {
+  font-family: serif;
+}
+
+h3 {
+  color: #887;
+  font-style: italic;
+}
+
+a {
+  color: #900;
+}
