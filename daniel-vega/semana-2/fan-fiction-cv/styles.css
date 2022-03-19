@@ -10,11 +10,10 @@ header {
 }
 #hd-left {
   flex: 1;
-  
 }
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size:xx-large;
+  font-size: xx-large;
   font-weight: bolder;
   text-transform: uppercase;
   position: relative;
@@ -53,8 +52,6 @@ img {
 #skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
-  grid;
 }
 footer {
   display: flex;
