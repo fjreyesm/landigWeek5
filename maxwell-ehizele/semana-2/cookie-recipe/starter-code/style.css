@@ -1,0 +1,33 @@
+body{
+    background-color: #ffe;
+    border-style: solid;
+}
+img {
+    border: 2px solid black;
+    margin-left: 40px;
+  }
+
+h1 {
+    font-family: serif;
+    
+}
+h2,h3{
+      font-family: sans-serif;
+      
+}
+a:link {
+    color: #900;
+    text-decoration: none;
+    text-decoration: underline;
+  }
+  
+
+  a:hover {
+    color: greenyellow;
+    background-color: transparent;
+    
+  }
+.border{
+    margin-left: 35px;
+}
+  
