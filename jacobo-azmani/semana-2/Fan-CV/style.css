@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    font: 50px Helvetica;
+    background-image: url(https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+}
+
+
+/* Estilo para el header */
+
+#header,
+header {
+    background-color: hsl(212, 45%, 89%);
+    padding: -50px;
+    margin: 45px;
+    text-align: center;
+    font-size: 35px;
+    color: hsl(212, 52%, 25%);
+    border-radius: 7pt;
+}
+
+img {
+    width: 300px;
+    max-width: 100%;
+    border: 3px solid white;
+    border-radius: 100em;
+}
+
+#main>article {
+    margin: 15px;
+    border: 1px solid white;
+    border-radius: 7pt;
+    background: #f1f1f1;
+    -webkit-flex: 3 1 60%;
+    flex: 3 1 60%;
+    -webkit-order: 2;
+    order: 2;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 10%;
+}
+
+
+/* Final Header */
+
+
+/* Estilos para nav-ul-li */
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+}
+
+
+/* Estilos para main */
+
+h2 {
+    font-size: 25px;
+    align-items: center;
+}
+
+p {
+    font-size: 20px;
+    margin-top: -10px;
+    color: hsl(219, 9%, 37%);
+}
+
+#explicacion {
+    align-items: center;
+    font-size: small;
+}
+
+span {
+    color: black;
+}
+
+
+/* Estilo para el footer */
+
+.footer {
+    align-items: center;
+    background-color: hsl(212, 45%, 89%);
+    font-size: 11px;
+    text-align: center;
+    color: hsl(212, 52%, 25%);
+    display: block;
+    border-radius: 5em;
+}
+
+footer a {
+    color: hsl(212, 52%, 25%);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
