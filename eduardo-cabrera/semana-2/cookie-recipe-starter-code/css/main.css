@@ -1,0 +1,39 @@
+/* color de fondo de la página */
+body 
+{
+  background-color: #ffd;
+  color:#887;
+  font-family: "serif";
+}  
+#galletas
+ {
+  border: 1px solid BLACK;
+  border-radius: 25px;
+  margin:auto;
+  display:block;
+  width: 100%;
+ }  
+  
+
+#contenido
+{
+  max-width: 800px;
+  border: 3px solid BLACK;
+  border-radius: 25px;
+  margin-left: AUTO;
+  margin-right: AUTO;
+  padding-left: 60PX;
+  padding-right: 60PX;
+  
+}
+
+
+#link
+{
+  color:#900;
+}
+
+h1
+{
+  font-family:"sans-serif";
+}
