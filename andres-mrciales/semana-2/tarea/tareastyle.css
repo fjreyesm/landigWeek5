@@ -1,0 +1,47 @@
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.ko {
+  text-align: center;
+  font-weight: bold;
+}
+h3 {
+  border-bottom: 3px solid;
+}
+body {
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  border: 9px double;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 40px;
+  max-width: 800px;
+  max-height: 800px;
+}
+#foot1 {
+  float: left;
+  width: 45%;
+}
+
+#foot2 {
+  float: left;
+  width: 50%;
+}
+#foot3 {
+  float: right;
+  width: 5%;
+}
+#dune {
+  font-weight: bold;
+}
+#ul1 {
+  float: left;
+  width: 45%;
+}
+#ul2 {
+  float: left;
+  width: 45%;
+}
