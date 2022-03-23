@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Fonts
+- `Open Sans`: (Google Font: https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans)
+- weights: `Light`, `Light Italic`, `Semibold`, `Extrabold` 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.get {
+    text-align: center;
+    background-image: url(../images/header-bg.jpg);
+}
+
+.get h1 {
+    color: #f0efef;
+    text-align: left;
+    font-weight: 800;
+    margin-left: 10%;
+}
+
+.get p {
+    color: #f0efef;
+    font-size: 24px;
+}
+
+.get a {
+    color: #033048;
+    text-decoration: none;
+    text-align: center;
+    border: #f9e42e solid;
+    background-color: #f9e42e;
+    border-radius: 4px;
+    padding: 10px 40px;
+}
+
+.benefits {
+    background-color: #f0efef;
+    color: #606161;
+}
+
+.cita {
+    text-align: center;
+    color: #f0efef;
+    background-image: url(../images/testimonial-bg.jpg);
+}
+
+.sign {
+    text-align: center;
+    background-color: #f9e42e;
+}
+
+.sign a {
+    text-decoration: none;
+    color: #f0efef;
+    position: relative;
+    text-align: center;
+    border: #033048 solid;
+    background-color: #033048;
+    border-radius: 4px;
+    padding: 10px 40px;
+}
+
+footer {
+    text-align: center;
+    background-color: #606161;
+    color: #f0efef;
+    font-size: 9px;
+}
+
+footer h2 {
+    color: #f9e42e;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.social {
+    list-style: none;
+}
