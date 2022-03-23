@@ -9,6 +9,14 @@
 - weights: `Light`, `Light Italic`, `Semibold`, `Extrabold` 
 */
 
+
+/* Colours
+- benefits background color: `#f0efef`
+- yellow: `#f9e42e`
+- dark blue: `#033048`
+- light grey: `#606161`
+- almost black: `#121212` */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body {
     margin: 0px;
@@ -25,11 +33,13 @@ body {
     color: #f0efef;
     text-align: left;
     font-weight: 800;
+    font-size: 24px;
     margin-left: 10%;
 }
 
 .get p {
     color: #f0efef;
+    font-weight: 400;
     font-size: 24px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -42,18 +52,16 @@ body {
     text-align: center;
     border: #f9e42e solid;
     background-color: #f9e42e;
-    border-radius: 4px;
+    border-radius: 5px;
     padding: 10px 40px;
 }
 
 .benefits {
+    font-weight: 200;
+    font-size: 13px;
     background-color: #f0efef;
     color: #606161;
     height: 300px;
-}
-
-.benefits h2 p ul li {
-    max-width: 600px;
 }
 
 .cita {
@@ -73,6 +81,7 @@ body {
 
 #cita {
     color: #f0efef;
+    padding-top: 1%;
 }
 
 .sign {
@@ -89,7 +98,7 @@ body {
     text-align: center;
     border: #033048 solid;
     background-color: #033048;
-    border-radius: 4px;
+    border-radius: 5px;
     padding: 10px 40px;
 }
 
@@ -99,6 +108,7 @@ footer {
     background-color: #606161;
     color: #f0efef;
     font-size: 9px;
+    padding: 2%;
 }
 
 footer h2 {
