@@ -1,12 +1,12 @@
 function abrirFormulario() {
   if (document.getElementById('signup-popup').style.display == 'block') {
     document.getElementById('signup-popup').style.display = 'none';
-    document.getElementById('signup').textContent = 'Sign Up Now';
+    document.getElementById('signup').textContent = 'Sign Up Now!';
     document.getElementById('signup').style.backgroundColor = '#033048';
     alert('Cerrando formulario');
   } else {
     document.getElementById('signup-popup').style.display = 'block';
-    document.getElementById('signup').textContent = 'ClOSE FORM';
+    document.getElementById('signup').textContent = 'ClOSE';
     document.getElementById('signup').style.backgroundColor = 'red';
     alert('Abriendo formulario');
   }
