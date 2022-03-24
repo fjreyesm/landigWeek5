@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+section.header {
+  background-image: url("../images/header-bg.jpg");
+  height: 500px;
+  color: rgb(241, 240, 240);
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.header h1 {
+  padding-top: 30px;
+}
+.header p {
+  text-align: center;
+  color: rgb(236, 233, 233);
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.header p button {
+  background-color: #ffd900c7;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(77, 72, 72);
+  font-weight: bold;
+}
+.container {
+  margin-left: 20%;
+  max-width: 250px;
+}
+.container pre {
+  font-family: sans-serif;
+}
+.container2 {
+  background-image: url("../images/testimonial-bg.jpg");
+  height: 285px;
+  color: rgb(212, 206, 206);
+  text-align: center;
+  padding-top: 25px;
+  margin: 0;
+}
+.container2 #signup {
+  background-color: #ffd900c7;
+  height: 100px;
+  position: relative;
+}
+.container2 button {
+  padding: 8px 26px 8px 26px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  position: absolute;
+  top: 35px;
+  background-color: rgba(51, 48, 48, 0.877);
+  color: beige;
+}
+.footer {
+  background-color: rgba(51, 48, 48, 0.877);
+  margin-top: 0;
+}
+.footer h1 {
+  color: #ffd900c7;
+  margin: 0;
+}
