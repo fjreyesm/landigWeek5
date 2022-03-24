@@ -1,0 +1,87 @@
+html {
+  max-width: auto;
+  padding: auto;
+  border: black 5px solid;
+  border-style: double;
+  background-color: #ffe;
+  margin: 30px;
+}
+h1,
+h4 {
+  text-align: center;
+}
+
+img.derecha {
+  float: right;
+  margin-left: 40px;
+  border: 5px solid black;
+  width: 250px;
+}
+
+div {
+  display: inline-block;
+  width: 33%;
+}
+
+#lista1 li {
+  display: inline;
+  padding-left: 150px;
+  padding-right: 190px;
+  font-weight: bold;
+}
+
+#lista2 li {
+  display: inline;
+  padding-left: 150px;
+  padding-right: 190px;
+  font-weight: bold;
+}
+
+#lista3 li {
+  display: inline;
+  padding-left: 150px;
+  padding-right: 190px;
+  font-weight: bold;
+}
+
+#lista4 li {
+  display: inline;
+  padding-left: 150px;
+  padding-right: 190px;
+  font-weight: bold;
+}
+
+section {
+  font-family: Cambria, Gramond, Arial;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: Cambria, Gramond, Arial;
+  font-size: 28px;
+}
+
+h2 {
+  font-family: Cambria, Gramond, Arial;
+  font-size: 18px;
+}
+
+.interlinea {
+  line-height: 5px;
+}
+
+.profile {
+  line-height: 0px;
+}
+
+.objetive {
+  line-height: 0px;
+}
+
+.key-skills {
+  line-height: 0px;
+}
+
+.employment {
+  line-height: 0px;
+}
