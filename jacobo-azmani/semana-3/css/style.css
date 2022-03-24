@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -17,10 +18,11 @@
 - light grey: `#606161`
 - almost black: `#121212` */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body {
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -29,11 +31,14 @@ body {
 .get {
     text-align: center;
     background-image: url(../images/header-bg.jpg);
-    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
     /*     display: flex; */
 }
 
 .get h1 {
+    font-family: sans-serif;
     color: #f0efef;
     text-align: left;
     font-weight: 800;
@@ -59,6 +64,7 @@ body {
     background-color: #f9e42e;
     border-radius: 5px;
     padding: 10px 40px;
+    font-family: sans-serif;
 }
 
 
@@ -71,7 +77,7 @@ body {
     font-weight: 200;
     font-size: 13px;
     background-color: #f0efef;
-    color: #919191;
+    color: #777777;
     height: 300px;
     display: flex;
 }
@@ -142,6 +148,7 @@ body {
     background-color: #033048;
     border-radius: 5px;
     padding: 10px 40px;
+    font-family: sans-serif;
 }
 
 
@@ -163,6 +170,7 @@ footer h2 {
     color: #f9e42e;
     font-size: 24px;
     font-weight: 800;
+    font-family: sans-serif;
 }
 
 .social {
