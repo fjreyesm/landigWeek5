@@ -23,10 +23,14 @@ body {
     padding: 0px;
 }
 
+
+/* Sección Relaxr y Get it now */
+
 .get {
     text-align: center;
     background-image: url(../images/header-bg.jpg);
     height: 600px;
+    /*     display: flex; */
 }
 
 .get h1 {
@@ -47,7 +51,8 @@ body {
 
 .get a {
     color: #033048;
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 14px;
     text-decoration: none;
     text-align: center;
     border: #f9e42e solid;
@@ -56,13 +61,37 @@ body {
     padding: 10px 40px;
 }
 
+
+/* Fin de sección */
+
+
+/* Sección benefits */
+
 .benefits {
     font-weight: 200;
     font-size: 13px;
     background-color: #f0efef;
     color: #606161;
     height: 300px;
+    display: flex;
 }
+
+.list {
+    text-align: left;
+    align-items: center;
+    width: 50%;
+    max-width: 100%;
+    margin-left: 10%;
+    padding: 5%;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+
+/* Fin de sección */
+
+
+/* Sección  de cita y sign up */
 
 .cita {
     text-align: center;
@@ -72,16 +101,20 @@ body {
 }
 
 .cita p {
-    color: #b1b4b4;
+    color: #d4d4d4;
     text-align: center;
     max-width: 400px;
     margin: auto;
     padding: auto;
+    font-size: 18px;
+    font-weight: lighter italic;
 }
 
 #cita {
     color: #f0efef;
     padding-top: 1%;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .sign {
@@ -93,7 +126,8 @@ body {
 .sign a {
     text-decoration: none;
     color: #f0efef;
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 12px;
     position: relative;
     text-align: center;
     border: #033048 solid;
@@ -101,6 +135,12 @@ body {
     border-radius: 5px;
     padding: 10px 40px;
 }
+
+
+/* Fin de sección */
+
+
+/* Footer */
 
 footer {
     position: relative;
@@ -124,3 +164,6 @@ footer h2 {
     max-width: 100%;
     padding: 10px;
 }
+
+
+/* Fin de sección */
