@@ -114,6 +114,11 @@ strong {
   background-color: green;
 }
 
+.btn_segundo:hover,
+.btn_signup:hover {
+  opacity: 70%;
+}
+
 footer {
   background-color: #121212;
   text-align: center;
