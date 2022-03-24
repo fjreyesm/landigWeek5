@@ -25,6 +25,12 @@ body {
     max-width: 100%;
 }
 
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
 
 /* Sección Relaxr y Get it now */
 
@@ -33,7 +39,8 @@ body {
     background-image: url(../images/header-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30vh;
+    padding-bottom: 25vh;
+    /* height: 30vh; */
     /*     display: flex; */
 }
 
@@ -43,7 +50,8 @@ body {
     text-align: left;
     font-weight: 800;
     font-size: 24px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    margin: 0;
 }
 
 .get p {
@@ -79,8 +87,8 @@ body {
     font-size: 13px;
     background-color: #f0efef;
     color: #777777;
-    height: 300px;
-    display: flex;
+    /* height: 300px; */
+    /* display: flex; */
 }
 
 .benefits h2 {
@@ -89,12 +97,12 @@ body {
 }
 
 .list {
-    text-align: left;
-    align-items: center;
-    width: 55%;
-    max-width: 100%;
-    margin-left: 10%;
-    padding: 5%;
+    /* text-align: left; */
+    /* align-items: center; */
+    /* width: 55%; */
+    /* max-width: 100%; */
+    /* margin-left: 10%; */
+    /* padding: 5%; */
     font-weight: lighter;
     font-size: 13px;
 }
@@ -126,7 +134,7 @@ body {
     font-weight: lighter italic;
 }
 
-#cita {
+.cita-autor {
     color: #f0efef;
     padding-top: 1%;
     font-weight: 600;
@@ -144,7 +152,7 @@ body {
     color: #f0efef;
     font-weight: 800;
     font-size: 12px;
-    position: relative;
+    /* position: relative; */
     text-align: center;
     border: #033048 solid;
     background-color: #033048;
@@ -160,7 +168,7 @@ body {
 /* Footer */
 
 footer {
-    position: relative;
+    /* position: relative; */
     text-align: center;
     background-color: #424242;
     color: #f0efef;
