@@ -37,7 +37,7 @@ h1 {
 .getitnow:visited {
   font-size: 14px;
   font-weight: 800;
-  color: #121212;
+  color: #033048;
   text-decoration: none;
   background-color: #f9e42e;
   padding: 14px 25px;
@@ -51,15 +51,14 @@ h1 {
 }
 
 .parte-media {
+  width: 60%;
   background-color: #f0efef;
   text-align: left;
-  padding: 20px;
 }
 
-h2 {
-  margin-left: 50px;
-  font-size: 20px;
-  font-weight: 600;
+.contenedor-parte-media {
+  background-color: #f0efef;
+  padding: 20px;
 }
 
 .benefits-text,
@@ -72,7 +71,6 @@ ul {
 .parte-inferior {
   background-image: url(../images/testimonial-bg.jpg);
   text-align: center;
-
   padding: 20px;
 }
 
@@ -81,6 +79,7 @@ ul {
   font-weight: italic 300;
   color: white;
   padding: 50px;
+  font-style: italic;
 }
 
 strong {
@@ -117,6 +116,12 @@ strong {
 .btn_segundo:hover,
 .btn_signup:hover {
   opacity: 70%;
+}
+
+h2 {
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 footer {
