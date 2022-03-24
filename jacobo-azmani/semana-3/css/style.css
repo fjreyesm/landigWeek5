@@ -76,6 +76,10 @@ body {
     display: flex;
 }
 
+.benefits h2 {
+    color: #033048;
+}
+
 .list {
     text-align: left;
     align-items: center;
