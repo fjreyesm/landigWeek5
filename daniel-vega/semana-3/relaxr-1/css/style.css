@@ -1,26 +1,142 @@
 * {
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300&display=swap');
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  color: #121212;
 }
 #get-it {
+  background-color: #033048;
   background-image: url(/images/header-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40em;
+  height: 30em;
 }
 #get-it > div {
-  padding: 5%;
+  padding: 1em;
 }
 h1 {
+  padding-left: 5%;
   font-size: 24px;
-  font-weight: var(--extra-bold);
-  color: white;
+  font-weight: 800;
+  color: #eff0ef;
 }
 
 section#get-it p {
-  color: white;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  font-size: 24px;
+  /* font-weight: var(--semi-bold); */
+  /* Doesn't seem to work properly. */
+  font-weight: 600;
+  color: #f0efef;
+  text-align: center;
 }
 
-section#g a {
-  border-radius: 50%;
+.button {
+  display: block;
+  color: #121212;
+  padding: 0.7em;
+  height: 2.5em;
+  width: 10em;
+  margin: auto;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+}
+#get-it div a.button {
+  background-color: #f9e42e;
+}
+section#benefits {
+  display: block;
+  background-color: #f0efef;
+  height: 18em;
+  padding: 1.5em 3em;
+}
+#benefits div h2 {
+  color: #033048;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+#benefits div p {
+  width: 27em;
+  font-size: 13px;
+  font-weight: 300;
+}
+#benefits div ul {
+  width: 25em;
+  padding-left: 6em;
+  font-size: 13px;
+  font-weight: 300;
+}
+#benefits div ul li {
+  padding-bottom: 0.5em;
+  /* text-align: left; */
+  list-style-position: inside;
+}
+div#quote {
+  display: block;
+  background-color: #033048;
+  background-image: url(/images/testimonial-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 14em;
+  padding: 1.5em;
+}
+#quote p {
+  color: #f0efef;
+  /* padding: 0em 16em; */
+  width: 20em;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+}
+#quote figcaption {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+#quote figcaption span {
+  color: #f0efef;
+}
+div#sign-up {
+  display: block;
+  padding: 1.5em;
+  background-color: #f9e42e;
+}
+#sign-up a.button {
+  color: #f0efef;
+  background-color: #033048;
+}
+footer {
+  padding: 2em;
+  display: block;
+  background-color: #606161;
+}
+footer h2 {
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+footer ul {
+  display: block;
+  padding: 1em;
+  text-align: center;
+}
+footer li {
+  list-style-type: none;
+  padding: 0.5em;
+  display: inline;
+}
+footer p {
+  color: #f0efef;
+  font-size: 9px;
+  font-weight: 600;
+  text-align: center;
 }
