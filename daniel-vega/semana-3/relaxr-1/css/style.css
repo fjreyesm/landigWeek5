@@ -1,3 +1,26 @@
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+#get-it {
+  background-image: url(/images/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40em;
+}
+#get-it > div {
+  padding: 5%;
+}
+h1 {
+  font-size: 24px;
+  font-weight: var(--extra-bold);
+  color: white;
+}
+
+section#get-it p {
+  color: white;
+}
+
+section#g a {
+  border-radius: 50%;
 }
