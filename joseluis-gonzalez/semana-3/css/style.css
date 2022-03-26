@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: transparent;
+  margin: 0 auto;
+  max-width: 800px;
+}
+h1 {
+  padding-left: 1em;
+  font-family: 'Extra bold', sans-serif;
+  font: 24px;
+}
+.Registro {
+  box-sizing: content-box;
+  height: 24em;
+  color: white;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-bottom: 1em;
+  background-image: url('/images/header-bg.jpg');
+  background-size: 100%, 100%;
+}
+.Registro p {
+  text-align: center;
+  padding-top: 2em;
+  font-family: 'Semibold', sans-serif;
+  font-size: 24px;
+}
+.Registro a {
+  position: relative;
+  left: 40%;
+  right: auto;
+  top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f9e42e;
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  border-radius: 5px;
+  font-family: 'Extra bold', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+.Beneficios {
+  background-color: #f0efef;
+  padding-top: 1em;
+  padding-left: 3em;
+  padding-bottom: 1em;
+}
+.Beneficios h2 {
+  font-family: 'Semibold', sans-serif;
+  font-size: 20px;
+}
+.Beneficios p,
+ul {
+  font-family: 'Ligth', sans-serif;
+  font-size: 13px;
+}
+.Cita {
+  padding: 2em;
+  /* box-sizing: content-box; */
+  background-image: url('/images/testimonial-bg.jpg');
+  background-color: transparent;
+  position: relative;
+  color: white;
+  text-align: center;
+  background-size: 100%, 100%;
+}
+.textocita {
+  font-family: 'Ligth Italic', sans-serif;
+  font-style: italic;
+  font-size: 18px;
+}
+.escritora {
+  font-family: 'Semibold', sans-serif;
+  font-size: 18px;
+}
+#SignUp {
+  background-color: #f9e42e;
+  box-sizing: content-box;
+  height: 4em;
+}
+#SignUp a {
+  box-sizing: content-box;
+  font-family: 'Extra bold', sans-serif;
+  font-size: 12px;
+  color: white;
+  position: relative;
+  left: 40%;
+  right: auto;
+  top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #033048;
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+footer {
+  box-sizing: content-box;
+  position: relative;
+  text-align: center;
+  background-color: #606161;
+  padding: 2em;
+}
+footer h2 {
+  color: #f9e42e;
+  font-family: 'Extra bold', sans-serif;
+  font-size: 24px;
+}
+footer p {
+  font-family: 'Semibold', sans-serif;
+  font-size: 9px;
+  color: white;
+}
+footer a {
+  padding-right: 1em;
+}
