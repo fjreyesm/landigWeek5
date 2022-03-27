@@ -9,6 +9,10 @@
   font-family: semi;
   src: url("./font/Heebo-SemiBold.ttf");
 }
+@font-face {
+  font-family: light;
+  src: url("./font/Heebo-Light.ttf");
+}
 
 body {
   margin: 0;
@@ -37,7 +41,7 @@ section.header {
   color: #f0efef;
   font-size: 24px;
   font-family: verdana;
-  font-weight: 600;
+  font-weight: semi;
 }
 .header p button {
   background-color: #f9e42e;
@@ -45,9 +49,14 @@ section.header {
   padding: 10px;
   font-size: 14px;
   color: #121212;
-  font-weight: 800;
+  font-family: myfont;
   border-radius: 5px;
   cursor: pointer;
+}
+.header button:hover {
+  border-right: 2px solid #121212;
+  border-bottom: 2px solid #121212;
+  font-size: 18px;
 }
 
 .container {
@@ -61,13 +70,15 @@ section.header {
 .container h2 {
   font-size: 24px;
   font-family: semi;
+  line-height: 8px;
 }
 .container p {
-  font-family: serif;
+  font-family: light;
   font-size: 13px;
 }
 .container ul {
   font-size: 13px;
+  font-family: light;
 }
 
 .container li {
@@ -78,7 +89,7 @@ section.header {
   background-image: url("../images/testimonial-bg.jpg");
   background-size: cover;
   height: 285px;
-  color: rgb(189, 185, 185);
+  color: #f0efef;
   text-align: center;
   padding-top: 25px;
   margin: 0;
@@ -88,7 +99,10 @@ section.header {
 
 .container2 p {
   font-size: 18px;
-  font-weight: 600;
+  font-family: light;
+}
+.container2 p #font {
+  font-family: semi;
 }
 
 .container2 #signup {
@@ -108,14 +122,15 @@ section.header {
   border-radius: 5px;
   border: none;
   margin-left: 40px;
-  font-weight: 700;
+  font-family: myfont;
   cursor: pointer;
   background-color: #033048;
   color: beige;
 }
 .container2 button:hover {
-  border-top: 1px solid black;
   border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 16px;
 }
 
 .footer {
@@ -140,4 +155,5 @@ section.header {
 .footer p {
   color: #121212;
   font-size: 9px;
+  font-family: semi;
 }
