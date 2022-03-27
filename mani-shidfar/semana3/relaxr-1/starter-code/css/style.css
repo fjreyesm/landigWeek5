@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  box-sizing: ;
 }
 @font-face {
   font-family: myfont;
@@ -43,6 +43,7 @@ section.header {
   color: #121212;
   font-weight: 800;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .container {
@@ -104,9 +105,13 @@ section.header {
   border: none;
   margin-left: 40px;
   font-weight: 700;
-
+  cursor: pointer;
   background-color: #033048;
   color: beige;
+}
+.container2 button:hover {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .footer {
