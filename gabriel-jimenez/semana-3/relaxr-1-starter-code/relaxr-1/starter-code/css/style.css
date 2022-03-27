@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 600px;
+  height: 1087px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-image: url(../images/header-bg.jpg);
+  filter: opacity(90%);
+  background-size: 100%;
+  height: 350px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  padding-left: 60px;
+  padding-top: 19px;
+}
+
+#slogan {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  padding-top: 25px;
+}
+
+#get-it-now-link {
+  font-size: 14px;
+  font-weight: 800;
+  color: #033048;
+  border-radius: 5px;
+  padding: 9px 29px 9.5px 29.5px;
+  background-color: #f9e42e;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 40px 230px 0px 230px;
+}
+
+#benefits-section {
+  background-color: #f0efef;
+  height: 306px;
+}
+
+h2 {
+  color: #033048;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 58px;
+  padding-top: 40px;
+}
+
+#benefits-p,
+#benefits-ul {
+  color: #606161;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+#benefits-p {
+  width: 310px;
+  line-height: 1.5;
+  margin-left: 58px;
+}
+
+#benefits-ul {
+  width: 250px;
+  line-height: 1.75;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+#testimonial-section {
+  background-image: url(../images/testimonial-bg.jpg);
+  background-size: 100%;
+  filter: opacity(80%);
+  height: 197px;
+}
+
+blockquote {
+  text-align: center;
+  word-wrap: break-word;
+  width: 300px;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0px;
+}
+
+#quote {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#author {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 12px;
+  font-weight: 800;
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #033048;
+  padding: 10px 40px;
+}
+
+#button-div {
+  background: #f9e42e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 59.5px;
+}
+
+footer {
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  height: 174.5px;
+  filter: opacity(80%);
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #f9e42e;
+  padding-top: 34.5px;
+}
+
+#twitter-icon {
+  padding-top: 33.5px;
+  width: 21.5px;
+  height: auto;
+  margin-right: 20px;
+}
+
+#facebook-icon {
+  padding-top: 31.5px;
+  width: 8.5px;
+  height: auto;
+  margin-left: 10px;
+}
+
+#copyright {
+  font-size: 9px;
+  font-weight: 600;
+  padding-top: 30px;
+}
