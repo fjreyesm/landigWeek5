@@ -15,8 +15,8 @@ Your job is to build out the CSS - using the information below - for the page!
 - almost black: `#121212`
 
 ## Fonts
-
-- `Open Sans`: (Google Font: https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans)
+https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans
+- `Open Sans`: (Google Font: )
   - weights: `Light`, `Light Italic`, `Semibold`, `Extrabold`
 
 ## Content

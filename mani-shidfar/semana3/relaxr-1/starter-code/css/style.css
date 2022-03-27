@@ -1,54 +1,68 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: myfont;
+  src: url("/font/heebo-ExtreaBold.ttf");
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #f0efef;
 }
 
 section.header {
   background-image: url("../images/header-bg.jpg");
   background-size: cover;
   height: 500px;
-  color: rgb(241, 240, 240);
+  color: #f0efef;
   padding-left: 25%;
   padding-right: 25%;
 }
 
 .header h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 30px;
   margin: 0;
+  font-family: myfont;
+  font-size: 24px;
 }
 
 .header p {
   text-align: center;
-  color: rgb(236, 233, 233);
-  font-size: 28px;
+  color: #f0efef;
+  font-size: 24px;
   font-family: verdana;
+  font-weight: 600;
 }
 .header p button {
-  background-color: #ffd900c7;
+  background-color: #f9e42e;
   border: none;
-  border-radius: 3px;
   padding: 10px;
-  font-size: 20px;
-  color: rgb(77, 72, 72);
-  font-weight: bold;
+  font-size: 14px;
+  color: #121212;
+  font-weight: 800;
+  border-radius: 5px;
 }
 
 .container {
   margin-left: 20%;
-  max-width: 250px;
-  color: rgb(66, 64, 64);
+
+  color: #121212;
   padding: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f0efef;
 }
-.container pre {
+.container h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.container p {
   font-family: serif;
+  font-size: 13px;
 }
 .container ul {
-  width: 300px;
+  font-size: 13px;
 }
 
 .container li {
@@ -67,8 +81,13 @@ section.header {
   position: relative;
 }
 
+.container2 p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .container2 #signup {
-  background-color: #ffd900c7;
+  background-color: #f9e42e;
   height: 100px;
   padding: 20px 20px;
   max-width: 100%;
@@ -80,17 +99,18 @@ section.header {
 
 .container2 button {
   padding: 8px 26px 8px 26px;
-  font-size: 20px;
-  border-radius: 4px;
+  font-size: 12px;
+  border-radius: 5px;
   border: none;
   margin-left: 40px;
+  font-weight: 700;
 
-  background-color: rgba(51, 48, 48, 0.877);
+  background-color: #033048;
   color: beige;
 }
 
 .footer {
-  background-color: rgba(51, 48, 48, 0.877);
+  background-color: #606161;
   max-height: 300px;
   margin-top: 0;
   text-align: center;
@@ -98,7 +118,9 @@ section.header {
 }
 
 .footer h2 {
-  color: #ffd900c7;
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -107,5 +129,6 @@ section.header {
 }
 
 .footer p {
-  color: rgb(29, 28, 28);
+  color: #121212;
+  font-size: 9px;
 }
