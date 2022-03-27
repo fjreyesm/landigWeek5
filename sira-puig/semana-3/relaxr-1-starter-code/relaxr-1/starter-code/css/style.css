@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: auto;
+}
+
+#get-it {
+  background-image: url(/relaxr-1-starter-code/relaxr-1/starter-code/images/header-bg.jpg);
+  background-size: 100%;
+  height: 30em;
+  text-align: center;
+  margin: auto;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+p {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  padding: 30px;
+}
+
+button {
+  background-color: #f9e42e;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: 5px;
+  color: #606161;
+  width: 150px;
+  height: 35px;
+}
+#benefits {
+  /* bloque benefits */
+  height: 20em;
+  background-color: #f0efef;
+  margin: auto;
+  text-align: left;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #606161;
+}
+
+#parrafo2 {
+  font-size: 13px;
+  font-weight: 300;
+  color: #606161;
+}
+ul {
+  padding-left: 100px;
+}
+li {
+  font-size: 13px;
+  font-weight: 300;
+  color: #606161;
+}
+#quote {
+  background-image: url(/relaxr-1-starter-code/relaxr-1/starter-code/images/testimonial-bg.jpg);
+  height: 20em;
+  text-align: center;
+  margin: auto;
+}
+blockquote {
+  width: 400px;
+  margin: auto;
+  padding: auto;
+}
+#parrafo3 {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+}
+figcaption {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+#sign-up {
+  background-color: #f9e42e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 55px;
+  margin: auto;
+  text-align: center;
+}
+footer {
+  background-color: #606161;
+  text-align: center;
+  margin: auto;
+}
+#button2 {
+  background-color: #033048;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: 5px;
+  color: white;
+  width: 150px;
+  height: 35px;
+}
+#icons {
+  display: inline;
+}
+#parrafo4 {
+  font-size: 9px;
+  font-weight: 600;
+}
+.color-yellow {
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 800;
+}
