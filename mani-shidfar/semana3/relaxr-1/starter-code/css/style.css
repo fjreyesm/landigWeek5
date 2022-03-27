@@ -3,7 +3,11 @@
 }
 @font-face {
   font-family: myfont;
-  src: url("/font/heebo-ExtreaBold.ttf");
+  src: url("./font/heebo-ExtraBold.ttf");
+}
+@font-face {
+  font-family: semi;
+  src: url("./font/Heebo-SemiBold.ttf");
 }
 
 body {
@@ -55,8 +59,8 @@ section.header {
   background-color: #f0efef;
 }
 .container h2 {
-  font-weight: 600;
-  font-size: 20px;
+  font-size: 24px;
+  font-family: semi;
 }
 .container p {
   font-family: serif;
@@ -125,7 +129,7 @@ section.header {
 .footer h2 {
   color: #f9e42e;
   font-size: 24px;
-  font-weight: 700;
+  font-family: semi;
   margin: 0;
 }
 
