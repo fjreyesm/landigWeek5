@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
-}
-/*HEADER*/
-header {
 }
 /* BODY */
 body {
@@ -16,7 +12,7 @@ body {
 /* BANNER */
 #banner {
   padding: 0 50px;
-  background-image: url(./images/header-bg.jpg);
+  background-image: url(/images/header-bg.jpg);
   height: 50vh;
   background-size: cover;
   background-position: center;
@@ -90,7 +86,7 @@ body {
 }
 /* BLOCKQUOTE */
 #testimonial {
-  background-image: url(./images/testimonial-bg.jpg);
+  background-image: url(/images/testimonial-bg.jpg);
   background-repeat: no-repeat;
   height: 45vh;
   background-size: cover;
@@ -204,5 +200,14 @@ footer {
   #benefits div ul {
     width: 90%;
     padding-top: 5%;
+  }
+  .content-banner h2 {
+    text-align: center;
+  }
+  #banner {
+    height: 70vh;
+  }
+  #yellow {
+    height: 10vh;
   }
 }
