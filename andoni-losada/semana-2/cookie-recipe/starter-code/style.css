@@ -1,0 +1,25 @@
+html {
+  max-width: auto;
+  padding: auto;
+  border: black 5px solid;
+  background-color: #ffe;
+}
+
+section {
+  font-family: sans-serif;
+}
+h1 {
+  font-family: serif;
+}
+
+footer a {
+  color: #900;
+}
+
+.italyc {
+  color: #887;
+  font-style: italic;
+}
+img {
+  border: 5px solid black;
+}
