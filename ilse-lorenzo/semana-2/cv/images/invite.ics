@@ -1,0 +1,112 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20220322T160000Z
+DTEND:20220322T163000Z
+DTSTAMP:20220316T232245Z
+ORGANIZER;CN=andoni.losada@gmail.com:mailto:andoni.losada@gmail.com
+UID:6DCA9ED6-17C3-4600-9EAF-CB9000B02696
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=acomenge@iesfuentesanluis.org;X-NUM-GUESTS=0:mailto:acomenge@iesfue
+ ntesanluis.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=andoni.losada@gmail.com;X-NUM-GUESTS=0:mailto:andoni.losada@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=azmanijacobo@gmail.com;X-NUM-GUESTS=0:mailto:azmanijacobo@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=claudia.munozgarcia@gmail.com;X-NUM-GUESTS=0:mailto:claudia.munozga
+ rcia@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=cotilion@hotmail.com;X-NUM-GUESTS=0:mailto:cotilion@hotmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=d.vega.egea@gmail.com;X-NUM-GUESTS=0:mailto:d.vega.egea@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=diegomeijide1968@gmail.com;X-NUM-GUESTS=0:mailto:diegomeijide1968@g
+ mail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=ecabrerablazquez@gmail.com;X-NUM-GUESTS=0:mailto:ecabrerablazquez@g
+ mail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=ehizeleinegbenoise@gmail.com;X-NUM-GUESTS=0:mailto:ehizeleinegbenoi
+ se@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=franklin.reyes.2003@gmail.com;X-NUM-GUESTS=0:mailto:franklin.reyes.
+ 2003@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=gabrieljq459@gmail.com;X-NUM-GUESTS=0:mailto:gabrieljq459@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=ggarciaandrea@gmail.com;X-NUM-GUESTS=0:mailto:ggarciaandrea@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=ilse.lorenzo@gmail.com;X-NUM-GUESTS=0:mailto:ilse.lorenzo@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=isabel_perez4@hotmail.com;X-NUM-GUESTS=0:mailto:isabel_perez4@hotma
+ il.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jarut85@hotmail.com;X-NUM-GUESTS=0:mailto:jarut85@hotmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jmonvil12@gmail.com;X-NUM-GUESTS=0:mailto:jmonvil12@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=mani82.sh82@gmail.com;X-NUM-GUESTS=0:mailto:mani82.sh82@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=pablopiovoso@gmail.com;X-NUM-GUESTS=0:mailto:pablopiovoso@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=picigui@hotmail.com;X-NUM-GUESTS=0:mailto:picigui@hotmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=sergiosancho@gmail.com;X-NUM-GUESTS=0:mailto:sergiosancho@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=sirapuiglopez@gmail.com;X-NUM-GUESTS=0:mailto:sirapuiglopez@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=uriel_tierra@hotmail.com;X-NUM-GUESTS=0:mailto:uriel_tierra@hotmail
+ .com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=juanjoparla@hotmail.com;X-NUM-GUESTS=0:mailto:juanjoparla@hotmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=MARIA DEL PILAR LOPEZ DE BENITO;X-NUM-GUESTS=0:mailto:mpilar.lopezd
+ @adecco.com
+X-MICROSOFT-CDO-OWNERAPPTID:498314877
+CREATED:20220316T232241Z
+DESCRIPTION:Buenos días chic@s\,\n\nOs escribimos para convocaros a una min
+ ireunión para hacer seguimiento de las primeras semanas del curso\, y resol
+ ver dudas que tengáis de cara a la finalización del curso y expectativas 😊
+ \n\nOs esperamos a todos\,\n\nMil gracias y feliz semana!\n\n______________
+ __________________________________________________________________\nReunión
+  de Microsoft Teams\nÚnase a través de su PC o aplicación móvil\nHaga clic 
+ aquí para unirse a la reunión<https://teams.microsoft.com/l/meetup-join/19%
+ 3ameeting_ZjVjM2E3NWQtMTllNy00YWE4LTk2MjMtZmJiNTUwNmU0ZjNh%40thread.v2/0?co
+ ntext=%7b%22Tid%22%3a%22f30ac191-b8b4-45f2-9a9b-e5466cb90c2f%22%2c%22Oid%22
+ %3a%22c952d5d2-4501-4557-8363-b957cb4e786d%22%7d>\nUnirse con un dispositiv
+ o de videoconferencia\nadeccogroup@m.webex.com<mailto:adeccogroup@m.webex.c
+ om>\nId. de conferencia VTC: 124 672 470 0\nInstrucciones alternativas de V
+ TC<https://www.webex.com/msteams?confid=1246724700&tenantkey=adeccogroup&do
+ main=m.webex.com>\nO llame (solo audio)\n+34 910 47 90 29\,\,180839771#<tel
+ :+34910479029\,\,180839771#>   Spain\, Madrid\nId. de conferencia de teléfo
+ no: 180 839 771#\nBuscar un número local<https://dialin.teams.microsoft.com
+ /13988d10-0952-440d-840b-baff0800ddb1?id=180839771> | Restablecer PIN<https
+ ://mysettings.lync.com/pstnconferencing>\nInfórmese<https://aka.ms/JoinTeam
+ sMeeting> | Opciones de reunión<https://teams.microsoft.com/meetingOptions/
+ ?organizerId=c952d5d2-4501-4557-8363-b957cb4e786d&tenantId=f30ac191-b8b4-45
+ f2-9a9b-e5466cb90c2f&threadId=19_meeting_ZjVjM2E3NWQtMTllNy00YWE4LTk2MjMtZm
+ JiNTUwNmU0ZjNh@thread.v2&messageId=0&language=es-ES>\n_____________________
+ ___________________________________________________________\n\n\n\n-::~:~::
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:
+ ~::-\nNo edites esta sección de la descripción.\n\nVisualice el evento en l
+ a URL https://calendar.google.com/calendar/event?action=VIEW&eid=XzZwMjQ2Zz
+ lwOGwyM2NiOWg2dDFqNmI5azZvbzMwYjlwOGwwa2NiYTM4OHNqMGMxZzg4bzM0ZGhwNm8gaWxzZ
+ S5sb3JlbnpvQG0&tok=MjMjYW5kb25pLmxvc2FkYUBnbWFpbC5jb201YTQyNjY5YTQ1MDI2OGE1
+ ZGQzOTFiYzA3NGJmOTljZTFiMTliODMw&ctz=Europe%2FMadrid&hl=es&es=1.\n-::~:~::~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~
+ ::-
+LAST-MODIFIED:20220316T232242Z
+LOCATION:Reunión de Microsoft Teams
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:SEGUIMIENTO Y FEEDBACK CURSO DESARROLLO WEB 
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
