@@ -85,6 +85,9 @@ h1 {
 
 /* Fin de header */
 
+
+/* Contenido */
+
 h2 {
     font-family: sans-serif;
 }
@@ -110,6 +113,8 @@ main img {
 
 main p {
     color: #424242;
+    /*     padding-bottom: 1%;
+    border-bottom: 1px #033048 solid; */
 }
 
 section p::first-letter {
@@ -119,6 +124,17 @@ section p::first-letter {
     color: #033048;
     padding: 10px 10px;
 }
+
+.readmore {
+    font-weight: 800px;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: right;
+    border-bottom: 1px #033048 solid;
+}
+
+
+/* Fin Contenido */
 
 .sign {
     text-align: center;
