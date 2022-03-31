@@ -10,6 +10,7 @@
     <!-- external CSS link -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="scripts/javascript.js"></script>
   </head>
   <body>
     <header>
@@ -26,9 +27,17 @@
     </header>
     <main>
       <section class="get-it">
-        <p>Get piece of mind with a single tap</p>
-        <button class="get-it-btn" name="get-it">Get It now</button>
-        <!-- <a class="button" href="get-it.html">Get It now</a> -->
+        <div>
+          <p>Get piece of mind with a single tap</p>
+          <button
+            class="get-it-btn"
+            name="get-it"
+            onClick="window.open('get-it.html', target='_self');"
+          >
+            Get It now
+          </button>
+          <!-- <a class="button" href="get-it.html">Get It now</a> -->
+        </div>
       </section>
       <section id="benefits">
         <div>

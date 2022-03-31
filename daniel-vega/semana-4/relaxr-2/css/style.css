@@ -10,6 +10,16 @@
   --relaxr-dark-blue: #033048;
   --relaxr-light-grey: #606161;
   --relaxr-almost-black: #121212;
+  --thin: 100;
+  --extra-light: 200;
+  --light: 300;
+  --normal: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+  --black: 900;
+  --ultra-black: 950;
 }
 header {
   display: flex;
@@ -22,7 +32,7 @@ h1 {
 }
 h1 a {
   font-size: 40px;
-  font-weight: 800;
+  font-weight: var(--extra-bold);
   color: var(--relaxr-white);
   text-decoration: none;
 }
@@ -43,45 +53,50 @@ nav ul {
 nav ul li {
   list-style-type: none;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: var(--semi-bold);
 }
 nav ul li a {
   color: var(--relaxr-yellow);
   text-decoration: none;
 }
 .get-it {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: center;
   background-color: var(--relaxr-dark-blue);
   background-image: url(/images/header-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 30em;
+  height: 50em;
 }
-.get-it > div {
-  padding: 1em;
+.get-it div {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: center;
+  width: 80%;
+  padding: 10% 10% 0 10%;
 }
-section.get-it p {
+section.get-it div p {
   padding-top: 2em;
   padding-bottom: 1.5em;
-  font-size: 24px;
-  /* font-weight: var(--semi-bold); */
-  /* Doesn't seem to work properly. */
-  font-weight: 600;
+  font-size: 38px;
+  font-weight: var(--semi-bold);
   color: var(--relaxr-white);
   text-align: center;
 }
-
 .get-it-btn {
-  display: block;
-  color: var(--relaxr-almost-black);
-  padding: 0.7em;
-  height: 2.5em;
-  width: 10em;
-  margin: auto;
+  height: 2.7em;
+  width: 12em;
   border-radius: 5px;
+  border: 0;
+  font-size: 20px;
+  font-weight: var(--extra-bold);
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 800;
-  text-align: center;
+  color: var(--relaxr-dark-blue);
+  background-color: var(--relaxr-yellow);
+  padding: 0.7em;
 }
 #get-it div a.button {
   background-color: var(--relaxr-yellow);
@@ -157,7 +172,7 @@ div#quote {
   border-radius: 5px;
   border: 0;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: var(--extra-bold);
   color: var(--relaxr-white);
   background-color: var(--relaxr-dark-blue);
 }
