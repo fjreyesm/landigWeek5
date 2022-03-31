@@ -29,3 +29,19 @@ function mostrartexto2() {
     moreText.style.display = 'inline';
   }
 }
+
+function mostrartexto3() {
+  var dots = document.getElementById('dots3');
+  var moreText = document.getElementById('moretext3');
+  var btnText = document.getElementById('myBtn3');
+
+  if (dots.style.display === 'none') {
+    dots.style.display = 'inline';
+    btnText.innerHTML = 'Learn more';
+    moreText.style.display = 'none';
+  } else {
+    dots.style.display = 'none';
+    btnText.innerHTML = 'Learn less';
+    moreText.style.display = 'inline';
+  }
+}

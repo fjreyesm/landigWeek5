@@ -127,6 +127,11 @@ section p::first-letter {
   border-bottom: 1px #033048 solid;
 }
 
+button {
+  background-color: #f0efef;
+  border: none;
+}
+
 #moretext {
   display: none;
 }
