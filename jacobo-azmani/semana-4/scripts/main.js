@@ -14,7 +14,7 @@ function mostrarTexto() {
   }
 }
 
-function mostrartexto2() {
+function mostrarTexto2() {
   var dots = document.getElementById('dots2');
   var moreText = document.getElementById('moretext2');
   var btnText = document.getElementById('myBtn2');
@@ -30,7 +30,7 @@ function mostrartexto2() {
   }
 }
 
-function mostrartexto3() {
+function mostrarTexto3() {
   var dots = document.getElementById('dots3');
   var moreText = document.getElementById('moretext3');
   var btnText = document.getElementById('myBtn3');
