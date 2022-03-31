@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: extra;
+  src: url("./font/Heebo-ExtraBold.ttf");
+}
+@font-face {
+  font-family: semi;
+  src: url("./font/Heebo-SemiBold.ttf");
+}
+@font-face {
+  font-family: light;
+  src: url("./font/Heebo-Light.ttf");
+}
+body {
+  background-color: #f0efef;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #033048;
+}
+header h1 {
+  color: #f0efef;
+  font-size: 40px;
+  font-family: extra;
+}
+header #navtop {
+  list-style-type: none;
+}
+#navtop li {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+#navtop li a:link,
+ul li a:visited {
+  color: #f9e42e;
+  background-color: transparent;
+  text-decoration: none;
+  padding-left: 5px;
+}
+#navtop li a:hover {
+  font-size: 20px;
+}
+.content-flex {
+  display: flex;
+  margin-left: 200px;
+}
+.main {
+  width: 700px;
+}
+footer {
+  background-color: #f9e42e;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer button {
+  background-color: #033048;
+  padding: 12px 25px;
+  color: #f0efef;
+  order: 5;
+}
+.note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 300px;
+  background-color: #606161;
+}
+.navbar {
+  margin-left: 30px;
+}
+.navbar h2 {
+  font-family: semi;
+  font-size: 22px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  width: 200px;
+}
+
+.navbar li {
+  margin-bottom: 8px;
+}
+.navbar li a:link,
+.navbar li a:visited {
+  text-decoration: none;
+  color: black;
+}
+.about-relax {
+  margin-left: 30px;
+}
+
+.add-unit {
+  height: 300px;
+  background-color: #fff;
+}
