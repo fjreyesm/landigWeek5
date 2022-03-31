@@ -45,3 +45,7 @@ function mostrartexto3() {
     moreText.style.display = 'inline';
   }
 }
+
+function mensajeAlerta() {
+  alert('We’re Not Ready For Sign-Ups…Yet.');
+}
