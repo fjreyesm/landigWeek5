@@ -117,6 +117,8 @@ section p::first-letter {
   padding: 10px 10px;
 }
 
+/* Más texto */
+
 .readmore {
   font-weight: 800px;
   font-size: 22px;
@@ -124,6 +126,11 @@ section p::first-letter {
   text-align: right;
   border-bottom: 1px #033048 solid;
 }
+
+#moretext {
+  display: none;
+}
+/* Fin texto oculto */
 
 /* Fin Contenido */
 
