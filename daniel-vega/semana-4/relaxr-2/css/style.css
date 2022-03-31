@@ -1,0 +1,192 @@
+* {
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300&display=swap');
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: #121212;
+}
+:root {
+  --relaxr-white: #f0efef;
+  --relaxr-yellow: #f9e42e;
+  --relaxr-dark-blue: #033048;
+  --relaxr-light-grey: #606161;
+  --relaxr-almost-black: #121212;
+}
+header {
+  display: flex;
+  background-color: var(--relaxr-dark-blue);
+  height: 6em;
+  padding: 0 10%;
+}
+h1 {
+  width: 30%;
+}
+h1 a {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--relaxr-white);
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 70%;
+  /* border: 3px solid black; */
+}
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 3px solid white; */
+}
+nav ul li {
+  list-style-type: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+nav ul li a {
+  color: var(--relaxr-yellow);
+  text-decoration: none;
+}
+.get-it {
+  background-color: var(--relaxr-dark-blue);
+  background-image: url(/images/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30em;
+}
+.get-it > div {
+  padding: 1em;
+}
+section.get-it p {
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  font-size: 24px;
+  /* font-weight: var(--semi-bold); */
+  /* Doesn't seem to work properly. */
+  font-weight: 600;
+  color: var(--relaxr-white);
+  text-align: center;
+}
+
+.get-it-btn {
+  display: block;
+  color: var(--relaxr-almost-black);
+  padding: 0.7em;
+  height: 2.5em;
+  width: 10em;
+  margin: auto;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+}
+#get-it div a.button {
+  background-color: var(--relaxr-yellow);
+}
+section#benefits {
+  display: block;
+  background-color: var(--relaxr-white);
+  height: 18em;
+  padding: 1.5em 3em;
+}
+#benefits div h2 {
+  color: var(--relaxr-dark-blue);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+#benefits div p {
+  width: 27em;
+  font-size: 13px;
+  font-weight: 300;
+}
+#benefits div ul {
+  width: 25em;
+  padding-left: 6em;
+  font-size: 13px;
+  font-weight: 300;
+}
+#benefits div ul li {
+  padding-bottom: 0.5em;
+  /* text-align: left; */
+  list-style-position: inside;
+}
+div#quote {
+  display: block;
+  background-color: var(--relaxr-dark-blue);
+  background-image: url(/images/testimonial-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 14em;
+  padding: 1.5em;
+}
+#quote p {
+  color: var(--relaxr-white);
+  /* padding: 0em 16em; */
+  width: 20em;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+}
+#quote figcaption {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+#quote figcaption span {
+  color: var(--relaxr-white);
+}
+/* Sign Up */
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  height: 20vh;
+  background-color: var(--relaxr-yellow);
+}
+.sign-up-btn {
+  height: 2.7em;
+  width: 12em;
+  border-radius: 5px;
+  border: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--relaxr-white);
+  background-color: var(--relaxr-dark-blue);
+}
+/* Footer */
+footer {
+  padding: 2em;
+  display: block;
+  /* cambiar display a flex. */
+  background-color: var(--relaxr-light-grey);
+}
+footer h2 {
+  color: var(--relaxr-yellow);
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+footer ul {
+  display: block;
+  padding: 1em;
+  text-align: center;
+}
+footer li {
+  list-style-type: none;
+  padding: 0.5em;
+  display: inline;
+}
+footer p {
+  color: var(--relaxr-white);
+  font-size: 9px;
+  font-weight: 600;
+  text-align: center;
+}
