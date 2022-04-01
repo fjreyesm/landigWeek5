@@ -21,34 +21,37 @@
   --black: 900;
   --ultra-black: 950;
 }
+/* [ HEADER ] */
 header {
   display: flex;
   background-color: var(--relaxr-dark-blue);
-  height: 6em;
-  padding: 0 10%;
+  height: 8em;
+  padding: 0.9em 10% 0 10%;
 }
 h1 {
-  width: 30%;
+  width: 45%;
 }
 h1 a {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: var(--extra-bold);
   color: var(--relaxr-white);
   text-decoration: none;
+}
+h1 a:hover {
+  color: var(--relaxr-yellow);
 }
 nav {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
   width: 70%;
-  /* border: 3px solid black; */
+  margin-top: -1em;
 }
 nav ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  /* border: 3px solid white; */
 }
 nav ul li {
   list-style-type: none;
@@ -59,6 +62,10 @@ nav ul li a {
   color: var(--relaxr-yellow);
   text-decoration: none;
 }
+nav ul li a:hover {
+  color: var(--relaxr-white);
+}
+/* [ GET IT ] */
 .get-it {
   display: flex;
   flex-flow: row wrap;
@@ -98,108 +105,122 @@ section.get-it > div > p {
   background-color: var(--relaxr-yellow);
   padding: 0.7em;
 }
-section#benefits {
+.get-it-btn:hover {
+  color: var(--relaxr-yellow);
+  background-color: var(--relaxr-dark-blue);
+}
+/* [ BENEFITS ] */
+.benefits {
   display: block;
   background-color: var(--relaxr-white);
-  height: 18em;
-  padding: 1.5em 3em;
+  height: 41em;
+  padding: 1em 7.5em;
 }
-#benefits div h2 {
+.benefits div h2 {
   color: var(--relaxr-dark-blue);
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: var(--semi-bold);
   margin-top: 2em;
-  margin-bottom: 1em;
 }
-#benefits div p {
+.benefits div p {
   width: 27em;
-  font-size: 13px;
-  font-weight: 300;
-}
-#benefits div ul {
-  width: 25em;
-  padding-left: 6em;
-  font-size: 13px;
+  color: var(--relaxr-light-grey);
+  font-size: 26px;
   font-weight: var(--light);
 }
-#benefits div ul li {
+.benefits div ul {
+  margin-top: 2.3em;
+  width: 23em;
+  padding-left: 3em;
+  color: var(--relaxr-light-grey);
+  font-size: 28px;
+  font-weight: var(--light);
+}
+.benefits div ul li {
   padding-bottom: 0.5em;
-  /* text-align: left; */
   list-style-position: inside;
 }
-div#quote {
+/* [ QUOTE ] */
+.quote {
   display: block;
   background-color: var(--relaxr-dark-blue);
   background-image: url(/images/testimonial-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 14em;
-  padding: 1.5em;
+  height: 26em;
+  padding: 4em;
 }
-#quote p {
+.quote p {
   color: var(--relaxr-white);
   /* padding: 0em 16em; */
   width: 20em;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 36px;
+  font-weight: var(--extra-light);
   font-style: italic;
   text-align: center;
   margin: 0 auto;
 }
-#quote figcaption {
-  font-size: 18px;
+.quote figcaption {
+  font-size: 36px;
   font-weight: 600;
   text-align: center;
 }
-#quote figcaption span {
+.quote figcaption span {
   color: var(--relaxr-white);
 }
-/* Sign Up */
+/* [ SIGN UP ] */
 .sign-up {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 10%;
-  height: 20vh;
+  height: 18vh;
   background-color: var(--relaxr-yellow);
 }
 .sign-up-btn {
-  height: 2.7em;
-  width: 12em;
+  height: 2.5em;
+  width: 12.5em;
   border-radius: 5px;
   border: 0;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: var(--extra-bold);
   color: var(--relaxr-white);
   background-color: var(--relaxr-dark-blue);
 }
-/* Footer */
+.sign-up-btn:hover {
+  color: var(--relaxr-dark-blue);
+  background-color: var(--relaxr-white);
+}
+/* [ FOOTER ] */
 footer {
   padding: 2em;
-  display: block;
-  /* cambiar display a flex. */
+  display: flex;
+  flex-flow: column nowrap;
   background-color: var(--relaxr-light-grey);
 }
 footer h2 {
   color: var(--relaxr-yellow);
-  font-size: 24px;
+  font-size: 45px;
   font-weight: 800;
   text-align: center;
 }
 footer ul {
-  display: block;
-  padding: 1em;
-  text-align: center;
+  padding-top: 0.5em;
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: center;
+}
+footer li:first-of-type {
+  margin-left: -0.8em;
 }
 footer li {
   list-style-type: none;
-  padding: 0.5em;
-  display: inline;
+  padding-right: 3.5em;
 }
 footer p {
   color: var(--relaxr-white);
-  font-size: 9px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: var(--medium);
   text-align: center;
 }
 /* Modal */

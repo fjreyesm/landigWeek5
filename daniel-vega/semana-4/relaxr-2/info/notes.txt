@@ -5,3 +5,6 @@ Margen izquierdo y derecho:
 120px 10%
 
 header>h1+nav+div>h2+boton+div>boton+footer>span+ul>li*2
+
+cambiar faq por FAQ en los archivos restantes que no sean index y about
+
