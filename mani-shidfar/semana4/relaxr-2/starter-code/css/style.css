@@ -1,17 +1,18 @@
 * {
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: extra;
-  src: url("./font/Heebo-ExtraBold.ttf");
+  src: url("../font/Heebo-ExtraBold.ttf");
 }
 @font-face {
   font-family: semi;
-  src: url("./font/Heebo-SemiBold.ttf");
+  src: url("../font/Heebo-SemiBold.ttf");
 }
 @font-face {
   font-family: light;
-  src: url("./font/Heebo-Light.ttf");
+  src: url("../font/Heebo-Light.ttf");
 }
 body {
   background-color: #f0efef;
@@ -40,6 +41,8 @@ ul li a:visited {
   background-color: transparent;
   text-decoration: none;
   padding-left: 5px;
+  font-family: semi;
+  font-size: 24px;
 }
 #navtop li a:hover {
   font-weight: bold;
@@ -50,6 +53,14 @@ ul li a:visited {
 }
 .main {
   width: 700px;
+}
+.main p {
+  font-family: light;
+  font-size: 24px;
+}
+.main p::first-letter {
+  font-size: 200%;
+  font-family: extra;
 }
 .content-flex .sec1 {
   border-bottom: 2px solid black;
@@ -76,12 +87,15 @@ footer button {
   background-color: #606161;
   text-align: center;
 }
-.navbar {
-  margin-left: 30px;
+.note h2 {
+  color: #f9e42e;
+  font-family: extra;
+  font-size: 32px;
 }
+
 .navbar h2 {
-  font-family: semi;
-  font-size: 22px;
+  font-family: extra;
+  font-size: 32px;
 }
 
 .navbar ul {
@@ -96,17 +110,29 @@ footer button {
 .navbar li a:visited {
   text-decoration: none;
   color: black;
+  font-family: light;
+  font-size: 24px;
 }
 .navbar li a:hover {
   font-weight: bold;
 }
 .about-relax {
   margin-left: 30px;
+  font-family: light;
+  font-size: 22px;
 }
 
 .add-unit {
+  margin-left: 10px;
+}
+.add-unit textarea {
   height: 300px;
-  background-color: #fff;
+  font-size: 32;
+  font-family: semi;
+}
+.add-unit h2 {
+  text-align: center;
+  padding: 5px;
 }
 #face {
   margin-left: 20px;
@@ -114,8 +140,10 @@ footer button {
 
 .rmore {
   direction: rtl;
+  font-size: 22px;
 }
 .rmore a {
   text-decoration: none;
   color: #606161;
+  font-size: 22px;
 }
