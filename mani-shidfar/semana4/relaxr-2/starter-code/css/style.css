@@ -82,6 +82,7 @@ footer button {
   padding: 12px 25px;
   color: #f0efef;
   order: 5;
+  border-radius: 8px;
 }
 .note {
   display: flex;
