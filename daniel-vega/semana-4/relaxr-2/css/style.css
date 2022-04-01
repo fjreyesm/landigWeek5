@@ -78,7 +78,7 @@ nav ul li a {
   width: 80%;
   padding: 10% 10% 0 10%;
 }
-section.get-it div p {
+section.get-it > div > p {
   padding-top: 2em;
   padding-bottom: 1.5em;
   font-size: 38px;
@@ -97,9 +97,6 @@ section.get-it div p {
   color: var(--relaxr-dark-blue);
   background-color: var(--relaxr-yellow);
   padding: 0.7em;
-}
-#get-it div a.button {
-  background-color: var(--relaxr-yellow);
 }
 section#benefits {
   display: block;
@@ -123,7 +120,7 @@ section#benefits {
   width: 25em;
   padding-left: 6em;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: var(--light);
 }
 #benefits div ul li {
   padding-bottom: 0.5em;
@@ -204,4 +201,79 @@ footer p {
   font-size: 9px;
   font-weight: 600;
   text-align: center;
+}
+/* Modal */
+.modal-container {
+  position: fixed;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25em;
+  height: 8em;
+  background: var(--relaxr-white);
+  overflow: hidden;
+  border-radius: 5px;
+  /* Opcional */
+  transition: transform 0.3s;
+  transform: translateY(0%);
+}
+.modal p {
+  color: var(--relaxr-almost-black);
+  font-size: 16px;
+  font-weight: var(--light);
+}
+.modal button {
+  margin-top: 0.5%;
+  height: 2.5em;
+  width: 5em;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: var(--extra-bold);
+  color: var(--relaxr-white);
+  background-color: var(--relaxr-dark-blue);
+}
+.modal-close {
+  transform: translateY(-1000%);
+}
+/* Placeholder Section */
+.get-it-placeholder {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  background-color: var(--relaxr-dark-blue);
+  background-image: url(/images/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50em;
+}
+.in-progress {
+  margin-top: -10em;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--relaxr-white);
+  border-radius: 10px;
+  width: 40em;
+}
+.in-progress p {
+  color: var(--relaxr-almost-black);
+  font-size: 26px;
+  font-weight: var(--light);
 }
