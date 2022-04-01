@@ -53,10 +53,17 @@
         </p>
         <br>
         <br>
-        <h6 class="rmore"><a href="#"><< Read more </a></h6>
+        <h6 class="rmore"><button type="button" onclick="myFunction()" ><< Read more </button></h6>
         <br>
         <br>
+        <p id="hide" style="display: none;">sed diam nonummy nibh euismod tincidunt ut laoreetod tincidunt ut laoreet dolore magna aerat volutpat.Lorem ipsum
+          dolor sit amet, consecteadipiscing elit, sed diam nonummy nibhe
+          uismod ti idunt ut laoreet dolore magna aliquam erat volutpat.
+          How I implemented Relaxr in 2 weeks and changed my life.
+  I traveled across the globe thanks to Relaxr’s Excel automation </p>
       </section>
+      
+
       <section>
         <h2>I traveled across the globe thanks to Relaxr Excel aumation</h2>
       
@@ -82,11 +89,17 @@
         </p>
         <br>
         <br>
-        <h6 class="rmore"><a href="#"> << Read more </a></h6>
+        <h6 class="rmore"> <button onclick="myFunction2()" ><< Read more </button></h6>
         <br>
         <br>
         <br>
+         <p id="hidden" style="display: none;">sed diam nonummy nibh euismod tincidunt ut laoreetod tincidunt ut laoreet dolore magna aerat volutpat.Lorem ipsum
+          dolor sit amet, consecteadipiscing elit, sed diam nonummy nibhe
+          uismod ti idunt ut laoreet dolore magna aliquam erat volutpat.
+          How I implemented Relaxr in 2 weeks and changed my life.
+  I traveled across the globe thanks to Relaxr’s Excel automation </p>
       </section>
+    
       
       </div>
       
@@ -146,6 +159,15 @@
          <p>copyright 2015, Relaxr</p>
        </div>
     </section>
+    <script>
+      function myFunction() {
+        document.querySelector("#hide").style.display="block";
+      }
+      function myFunction2(){
+        document.querySelector("#hidden").style.display="block";
+      }
+      
+    </script>
 
   </body>
 </html>
