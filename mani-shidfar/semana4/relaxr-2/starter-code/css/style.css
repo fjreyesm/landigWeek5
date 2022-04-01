@@ -42,7 +42,7 @@ ul li a:visited {
   padding-left: 5px;
 }
 #navtop li a:hover {
-  font-size: 20px;
+  font-weight: bold;
 }
 .content-flex {
   display: flex;
@@ -50,6 +50,9 @@ ul li a:visited {
 }
 .main {
   width: 700px;
+}
+.content-flex .sec1 {
+  border-bottom: 2px solid black;
 }
 footer {
   background-color: #f9e42e;
@@ -71,6 +74,7 @@ footer button {
 
   height: 300px;
   background-color: #606161;
+  text-align: center;
 }
 .navbar {
   margin-left: 30px;
@@ -93,6 +97,9 @@ footer button {
   text-decoration: none;
   color: black;
 }
+.navbar li a:hover {
+  font-weight: bold;
+}
 .about-relax {
   margin-left: 30px;
 }
@@ -100,4 +107,15 @@ footer button {
 .add-unit {
   height: 300px;
   background-color: #fff;
+}
+#face {
+  margin-left: 20px;
+}
+
+.rmore {
+  direction: rtl;
+}
+.rmore a {
+  text-decoration: none;
+  color: #606161;
 }
