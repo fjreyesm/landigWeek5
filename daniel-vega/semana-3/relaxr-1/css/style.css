@@ -6,7 +6,7 @@
 }
 #get-it {
   background-color: #033048;
-  background-image: url(/images/header-bg.jpg);
+  background-image: url(../images/header-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 30em;
@@ -80,7 +80,7 @@ section#benefits {
 div#quote {
   display: block;
   background-color: #033048;
-  background-image: url(/images/testimonial-bg.jpg);
+  background-image: url(../images/testimonial-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 14em;
