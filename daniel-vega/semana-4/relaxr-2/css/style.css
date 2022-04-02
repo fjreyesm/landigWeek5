@@ -184,7 +184,7 @@ footer p {
   align-content: center;
   justify-content: center;
   background-color: var(--relaxr-dark-blue);
-  background-image: url(/images/header-bg.jpg);
+  background-image: url(../images/header-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 50em;
@@ -213,7 +213,7 @@ footer p {
   align-content: flex-start;
   justify-content: center;
   background-color: var(--relaxr-dark-blue);
-  background-image: url(/images/header-bg.jpg);
+  background-image: url(../images/header-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 50em;
@@ -285,7 +285,7 @@ footer p {
 .quote {
   display: block;
   background-color: var(--relaxr-dark-blue);
-  background-image: url(/images/testimonial-bg.jpg);
+  background-image: url(../images/testimonial-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 26em;
