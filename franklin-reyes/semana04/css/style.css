@@ -3,14 +3,28 @@
 }
 
 body {
-  font-family: "Open+Sans";
+  font-family: "Open+Sans", sans-serif;
   width: 960px;
   margin: 0 auto;
+  font-size: 100%;
+}
+
+:root {
+  /* colours */
+  --almost-black: #121212;
+  --dark-blue: #033048;
+  --light-gray: #606161;
+  --white: #f0efef;
+  --yellow: #f9e42e;
+  /* font weights */
+  --extra-bold: 800;
+  --semi-bold: 600;
+  --light: 300;
 }
 
 main {
   width: 960px;
-  background-color: ##f0efef;
+  background-color: #f0efef;
 }
 
 .row {
@@ -35,7 +49,7 @@ main {
 }
 
 .columnhead:nth-of-type(2) {
-  flex-grow: 7;
+  flex-grow: 1;
 }
 
 .columnhead {
@@ -44,6 +58,7 @@ main {
   max-width: 80%;
   flex-basis: 15%;
 }
+
 .cabeza {
   background-color: #033048;
   color: white;
@@ -54,6 +69,12 @@ main {
   padding-left: 20px;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  color: orange;
+}
+
 nav a {
   text-decoration: none;
   color: inherit;
@@ -61,13 +82,13 @@ nav a {
 nav li {
   display: inline-block;
   width: 10%;
-  padding: 5px 10px;
+
+  margin-right: 20px;
   color: #f9e42e;
   font-size: 24px;
 }
 nav li:hover {
-  background-color: #fff;
-  color: #000;
+  color: white;
 }
 
 .signup {
@@ -119,13 +140,30 @@ nav li:hover {
   text-align: right;
 }
 
+.aboutaside > p:nth-child(2) {
+  text-align: left;
+}
+
+/* 1ra letra flotante */
+article::first-letter {
+  font-size: 50px;
+  float: left;
+  margin: 10px;
+}
+
 .lateral ul {
   list-style: none;
 
   padding: 10px;
   width: 180px;
+  margin: 20px;
 }
 
 .lateral {
   margin: 20px;
+}
+
+aside picture {
+  margin-top: 30px;
+  width: 30px;
 }
