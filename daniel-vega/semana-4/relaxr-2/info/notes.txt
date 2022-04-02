@@ -6,5 +6,8 @@ Margen izquierdo y derecho:
 
 header>h1+nav+div>h2+boton+div>boton+footer>span+ul>li*2
 
-cambiar faq por FAQ en los archivos restantes que no sean index y about
+blog body 960
+artible 700 73%
+separation 2%
+aside 240 25%
 
