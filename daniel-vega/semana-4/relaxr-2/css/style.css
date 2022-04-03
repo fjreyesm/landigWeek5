@@ -173,6 +173,10 @@ footer p {
   color: var(--relaxr-white);
   background-color: var(--relaxr-dark-blue);
 }
+.modal button:hover {
+  background-color: var(--relaxr-yellow);
+  color: var(--relaxr-dark-blue);
+}
 .modal-close {
   transform: translateY(-1000%);
 }
