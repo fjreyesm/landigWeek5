@@ -6,6 +6,8 @@
 body{
   height: 300vh ;
   font-family: 'Open Sans',sans-serif;
+  
+
 }
 .main{
   display: block;
@@ -119,11 +121,7 @@ a{
   margin: 0 auto;
 }
 
-img{
-  display: inline-block;
-  margin: 1em 0.5em;
-  padding-left: 1em;
-}
+
 
 footer{
  
@@ -132,6 +130,12 @@ footer{
   background-color:#606161;
   border-radius: 5px;
   text-align: center;
+ 
+}
+footer img{
+  display: inline-block;
+  margin: 1em 0.5em;
+  padding-left: 1em;
 }
 
 .tituloPie{
