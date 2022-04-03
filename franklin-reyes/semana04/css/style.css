@@ -146,8 +146,9 @@ nav li:hover {
   font-weight: var(--semi-bold);
 }
 
-.aboutaside > p:nth-child(2) {
+.aboutaside p:nth-child(2) {
   text-align: left;
+  font-weight: var(--light);
 }
 
 /* 1ra letra flotante */
@@ -193,7 +194,10 @@ aside h2 {
 }
 
 /* no funciona el font weight */
-aside p {
+.aboutaside > p {
   font-size: 22px;
-  font-weight: var(--light);
+}
+.aboutaside p:nth-child(3) {
+  font-weight: var(--semi-bold);
+  text-align: left;
 }

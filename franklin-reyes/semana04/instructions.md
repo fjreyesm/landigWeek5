@@ -6,7 +6,7 @@
 
 ## Colours
 
-- background color: `#f0efef`
+- background color: `f0efef#`
 - yellow: `#f9e42e`
 - dark blue: `#033048`
 - light grey: `#606161`
