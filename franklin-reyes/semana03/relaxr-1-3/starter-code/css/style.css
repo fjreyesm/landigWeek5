@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+#tope {
+  background-image: url("/images/header-bg.jpg");
+  height: 450px;
+}
+
+#textomain {
+  text-align: center;
+  color: white;
+  position: relative;
+  font-size: 24px;
+  font-weight: lighter;
+  align-self: auto;
+  top: 155px;
+}
+
+#benefits {
+  height: 300px;
+  background-color: #f0efef;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+body {
+  background-color: #f0efef;
+  font-family: "Open+Sans";
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#blockq {
+  background-image: url("/images/testimonial-bg.jpg");
+  font-size: 18px;
+  height: 350px;
+  font-family: italic;
+  color: #f0efef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+blockquote {
+  width: 330px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 50;
+  position: absolute;
+}
+#signup {
+  height: 50px;
+  background-color: #f9e42e;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  position: relative;
+  align-self: auto;
+  text-align: center;
+}
+
+#btn1 {
+  background-color: yellow;
+}
+
+#btn2 {
+  background-color: #033048;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+p {
+  width: 350px;
+}
+
+footer {
+  color: yellow;
+  background-color: #606161;
+
+  height: 200px;
+
+  text-align: center;
+  padding-top: 30px;
+}
+
+#piepag {
+  font-size: 9px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+}
+
+#pdpcopy {
+  font-size: 9px;
+  font-weight: 300;
+}
+
+#socialn {
+  position: relative;
+  text-align: center;
+}
