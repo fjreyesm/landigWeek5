@@ -12,62 +12,64 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <h1><a href="index.html">Relaxr</a></h1>
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="get-it">
+    <div class="container">
+      <header>
+        <h1><a href="index.html">Relaxr</a></h1>
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="get-it">
+          <div>
+            <p>Get piece of mind with a single tap</p>
+            <button
+              class="get-it-btn"
+              name="get-it"
+              onClick="window.open('get-it.html', target='_self');"
+            >
+              Get It now
+            </button>
+          </div>
+        </section>
+      </main>
+      <div class="sign-up">
         <div>
-          <p>Get piece of mind with a single tap</p>
-          <button
-            class="get-it-btn"
-            name="get-it"
-            onClick="window.open('get-it.html', target='_self');"
-          >
-            Get It now
-          </button>
+          <button class="sign-up-btn" name="sign-up">Sign Up Now</button>
         </div>
-      </section>
-    </main>
-    <div class="sign-up">
-      <div>
-        <button class="sign-up-btn" name="sign-up">Sign Up Now</button>
       </div>
-    </div>
-    <footer>
-      <h2>Relaxr</h2>
-      <ul>
-        <li>
-          <a href="https://twitter.com/relaxr"
-            ><img src="images/twitter.png" alt="Ir a nuestro Twitter."
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/Relaxr/"
-            ><img src="images//facebook.png" alt="Ir a nuestro Facebook"
-          /></a>
-          <!-- Páginas colocadas como placeholder.
+      <footer>
+        <h2>Relaxr</h2>
+        <ul>
+          <li>
+            <a href="https://twitter.com/relaxr"
+              ><img src="images/twitter.png" alt="Ir a nuestro Twitter."
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Relaxr/"
+              ><img src="images//facebook.png" alt="Ir a nuestro Facebook"
+            /></a>
+            <!-- Páginas colocadas como placeholder.
         Enlaces pertenecen a personas anónimas. -->
-        </li>
-      </ul>
-      <p>Copyright 2022. Relaxr.</p>
-    </footer>
-    <!-- Modal -->
-    <div class="modal-container">
-      <div class="modal modal-close">
-        <p>We're Not Ready For Sign-Ups...Yet.</p>
-        <button class="close-btn" name="close">OK</button>
+          </li>
+        </ul>
+        <p>Copyright 2022. Relaxr.</p>
+      </footer>
+      <!-- Modal -->
+      <div class="modal-container">
+        <div class="modal modal-close">
+          <p>We're Not Ready For Sign-Ups...Yet.</p>
+          <button class="close-btn" name="close">OK</button>
+        </div>
       </div>
+      <script src="scripts/javascript.js"></script>
     </div>
-    <script src="scripts/javascript.js"></script>
   </body>
 </html>

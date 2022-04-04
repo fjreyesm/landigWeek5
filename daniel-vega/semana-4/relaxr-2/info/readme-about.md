@@ -4,7 +4,7 @@ Your job is to build out the CSS - using the information below - for the page!
 
 ## Design
 
-![design](./images/relaxr-landing.jpg)
+![design](../starter-code/images/relaxr-landing.jpg)
 
 ## Colours
 
