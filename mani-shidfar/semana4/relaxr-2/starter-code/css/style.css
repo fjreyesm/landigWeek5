@@ -21,6 +21,7 @@ header {
   display: flex;
   justify-content: space-around;
   background-color: #033048;
+  align-items: center;
 }
 header h1 {
   color: #f0efef;
@@ -32,7 +33,7 @@ header #navtop {
 }
 #navtop li {
   display: inline-block;
-  margin-top: 30px;
+
   margin-left: 20px;
 }
 #navtop li a:link,
@@ -143,6 +144,8 @@ footer button {
 }
 #face {
   margin-left: 20px;
+  width: 10px;
+  height: 20px;
 }
 
 .rmore {
