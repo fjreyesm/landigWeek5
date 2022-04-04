@@ -1,0 +1,54 @@
+* {
+    font-family: sans-serif;
+    background-color: #ffe;
+}
+
+h1 {
+    padding: auto;
+    margin-left: 20px;
+    display: block;
+    font-family: serif;
+}
+
+h2 {
+    padding: auto;
+    margin-left: 20px;
+}
+
+p {
+    padding: auto;
+    margin-left: 20px;
+}
+
+.all {
+    display: block;
+    position: relative;
+    border: black 2px solid;
+}
+
+img {
+    padding: auto;
+    margin-left: 20px;
+    display: block;
+    max-width: 800px;
+    border: black 2px solid;
+}
+
+ul li {
+    padding: auto;
+    margin-left: 20px;
+}
+
+ol li {
+    padding: auto;
+    margin-left: 20px;
+    padding: -7px;
+}
+
+#nutrition {
+    color: #887;
+}
+
+a {
+    color: #900;
+}

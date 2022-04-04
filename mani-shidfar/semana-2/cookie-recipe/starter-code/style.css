@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  background-color: #ffe;
+}
+#content {
+  border: 1px solid #000;
+  max-width: 800px;
+  width: auto;
+  margin: auto;
+  padding: 15%;
+}
+h1 {
+  font-family: serif;
+}
+h5 {
+  color: #887;
+}
+a {
+  color: #900;
+}
+img {
+  max-width: 300px;
+  height: 200px;
+}

@@ -1,0 +1,57 @@
+body {
+  margin-top: 20px;
+  background-color: #ffe;
+  max-width: 800px;
+  margin: 0 auto !important;
+  float: none !important;
+  border-color: black;
+  border-style: inset;
+}
+
+h1 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+h2,
+H3 {
+  color: black;
+  margin-left: 50px;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* unvisited link */
+a:link {
+  color: #900;
+}
+
+img {
+  border-style: solid;
+  width: 780px;
+
+  display: block;
+  margin: auto;
+}
+
+#identificador {
+  margin: 10px 5px;
+}
+
+div {
+  align-content: center;
+}
+
+ul.navega li {
+  display: inline;
+  padding-right: 0.5em;
+}
