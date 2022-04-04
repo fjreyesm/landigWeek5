@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(201, 240, 247);
+  border: 2px black solid;
+}
+div {
+  width: 800px; /* could be any number or unit*/
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-family: serif;
+}
+h2 {
+  font-family: sans-serif;
+}
+img {
+  border: 2px black solid;
+}

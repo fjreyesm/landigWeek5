@@ -1,0 +1,48 @@
+ {
+  background-color: #ffe;
+  /*  font-style: italic; */
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 800px;
+  position: relative;
+  align-content: center;
+}
+body {
+  border-style: solid;
+  border-color: black;
+}
+#RelatedRecipes {
+  color: #887;
+  padding-left: 0%;
+}
+h1 {
+  color: #900;
+  font-family: serif;
+}
+ul {
+  color: blue;
+}
+#Fotogalletas {
+  position: relative;
+  padding: 2%;
+  border-style: solid;
+  border-color: black;
+  color: #900;
+}
+ol {
+  position: relative;
+  align-content: initial;
+  color: blueviolet;
+}
+img {
+  position: relative;
+  padding: 5%;
+  max-width: 90%;
+}
+h2 {
+  color: black;
+}
+.nutricion {
+  color: rgb(4, 136, 48);
+}

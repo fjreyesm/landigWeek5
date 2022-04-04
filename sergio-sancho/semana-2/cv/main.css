@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    margin: auto;
+    /* Un monton de padding, no? Causa que la pagina se ve muy rara si tengo una ventana de navegador pequeno, empujando todo el contenido demasiado. */
+    padding: 400px;
+    line-height: 20px;
+    
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    padding: 10px 0px 20px 100px;
+
+    
+}
+p , ul {
+    width: 600px;
+    
+}
+.piloto {
+    height: auto;
+    
+}
+a {
+    text-decoration: dotted;
+}

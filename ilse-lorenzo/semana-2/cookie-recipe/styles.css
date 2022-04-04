@@ -1,0 +1,24 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    border: 5px solid black;
+    background-color:#FFE;
+    border-color: black;   
+}
+h3 {
+    color: #887;
+    font-style: italic;
+}
+a {
+   color: #900;
+}
+h1{
+    font-family:serif;
+}
+h2, h3, p {
+    font-family: sans-serif;
+}
+img {
+    border: 5px solid black;
+}
