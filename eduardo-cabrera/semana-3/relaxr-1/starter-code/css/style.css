@@ -1,0 +1,141 @@
+* {
+  box-sizing:border-box;
+  scrollbar-width: none; /*oculta el scrool bar pero solo funciona en Firefox*/
+ }
+
+body{
+  height: 300vh ;
+  font-family: 'Open Sans',sans-serif;
+}
+.main{
+  display: block;
+  background-color: #f0efef;
+} 
+section.cabecera {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center; 
+  height: 100vh ;
+}
+section.benefits{
+  height: 100vh;
+  font-size: 13px;
+  font-weight: 300;
+}
+div.informacion{
+  height: 100vh;
+  background-image: url(../images/testimonial-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center; 
+  text-align: center;
+}
+div.registro{
+  position: relative;
+  height: 15vh;
+  background-color: #f9e42e;
+  text-align: center;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  color: #f0efef;
+  padding-top: 2rem;
+  padding-left: 5rem;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #033048;
+  padding-top: 5rem;
+  padding-left: 1rem;
+} 
+span{
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #f0efef;
+}
+#get{
+  font-size: 24x;
+  font-weight: 600;
+  color: #f0efef;
+  padding-bottom: 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#texto1{
+  padding-top: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+ 
+}
+ul{
+  margin:4rem 1rem 50rem 1rem ;
+  
+}
+li{
+  padding: 0.3rem;
+}
+a{
+  font-size: 14x;
+  font-weight: 700;
+  padding: 10px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+
+}
+#download{
+  background-color: #f9e42e;
+}
+#Sign{
+  background-color: #033048;
+  color: #f0efef;
+}
+
+#texto2{
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  color: #f0efef;
+  padding-top:50vh;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+}
+.centrado{
+  width:70vw;
+  margin: 0 auto;
+}
+
+img{
+  display: inline-block;
+  margin: 1em 0.5em;
+  padding-left: 1em;
+}
+
+footer{
+ 
+  display: inline-block;
+  width: 100%;
+  background-color:#606161;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.tituloPie{
+  font-size: 24px;
+  font-weight: 800;
+  color: #f9e42e;
+}
