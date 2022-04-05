@@ -1,0 +1,35 @@
+:root {
+}
+body {
+  background-color: lightblue;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+header,
+section {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+}
+h2 {
+  color: black;
+  font-size: 30px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+}
+p {
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  line-height: 0.5;
+}
+section {
+  margin-bottom: 16px;
+}
