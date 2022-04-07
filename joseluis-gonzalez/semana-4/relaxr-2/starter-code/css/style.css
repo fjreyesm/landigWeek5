@@ -25,7 +25,7 @@ header {
 header h1 {
   display: inline-flex;
   width: min-content;
-  color: white;
+  color: white
   padding-left: 1em;
   font-family: 'Extra bold', sans-serif;
   font-size: 40px;
