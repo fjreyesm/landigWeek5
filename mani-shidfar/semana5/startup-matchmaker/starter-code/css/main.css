@@ -1,25 +1,34 @@
 * {
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: merri;
   src: url("./font/Merriweather-Bold.ttf");
 }
+
 body {
   margin: 0;
   font-family: sans-serif;
 }
+
 p{
   font-size: 20px;
 }
-section{padding: 20px;}
+
+section{
+  padding: 20px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
 }
+
 .grid-item {
   text-align: center;
 }
+
 .item1,
 .item2,
 .item3,
@@ -27,6 +36,7 @@ section{padding: 20px;}
   grid-column-start: 1;
   grid-column-end: 4;
 }
+
 .item1 {
   background-color: black;
   height: 80px;
@@ -34,27 +44,34 @@ section{padding: 20px;}
   justify-content: space-around;
   align-items: center;
 }
+
 .item1 h1 {
   color: yellow;
   font-family:merri;
 }
+
 .item2 {
   background-color: #c6c6c6;
 }
+
 .item1 ul {
   list-style-type: none;
   font-family: merri;
 }
+
 .item1 li .first2  {
   font-size: 18px;font-weight: bold;
 }
+
 .item1 li {
   display: inline;
   color: white;
 }
+
 .item1 li:not(:last-child) {
   margin-right: 15px;
 }
+
 .item1 li a:link,
 .item1 li a:visited {
   text-decoration: none;
@@ -63,6 +80,7 @@ section{padding: 20px;}
 .item1 li a:hover {
   color: yellow;
 }
+
 .item3 {
   width:100%;
   height: 500px;
@@ -71,6 +89,7 @@ section{padding: 20px;}
   background-size: cover;
   position: relative;
 }
+
 .absolute {
   position: absolute;
   left: 750px;
@@ -78,10 +97,13 @@ section{padding: 20px;}
   background-color: white;
   width: 300px;
 }
+
 .item2 {
   background-color: lightgray;
   border-top: 2px solid yellow;
+  height: 80px;
 }
+
 .item4 a:link,
 .item5 a:link,
 .item6 a:link {
@@ -100,6 +122,10 @@ section{padding: 20px;}
   font-size: 12px;
   height: 80px;
   padding-top: 20px;
+}
+
+.item7 p{
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 740px){
