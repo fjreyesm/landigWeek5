@@ -1,0 +1,73 @@
+@import url(./header.css);
+@import url(./footer.css);
+* {
+  box-sizing: border-box;
+}
+:root {
+  /* Color */
+  --startup-alpha-black: rgba(0, 0, 0, 0.2);
+  --startup-alpha-white: rgba(255, 255, 255, 0.8);
+  --startup-black: black;
+  --startup-darkgrey: #aaa;
+  --startup-grey: #c6c6c6;
+  --startup-red: red;
+  --startup-white: white;
+  --startup-yellow: yellow;
+  /* Font Weigh */
+  --thin: 100;
+  --extra-light: 200;
+  --light: 300;
+  --normal: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+  --black: 900;
+  --ultra-black: 950;
+}
+
+/* Main */
+body {
+  font-family: 'Source Sans Pro';
+  background-image: url(../images/startup-bg.jpg);
+  background-position: top -70em;
+  background-size: cover;
+}
+.motto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  background-color: var(--startup-grey);
+  font-size: 20px;
+  font-weight: var(--semi-bold);
+  font-style: italic;
+}
+.motto span:nth-of-type(2) {
+  text-decoration: line-through;
+  color: var(--startup-darkgrey);
+}
+.motto a {
+  color: var(--startup-yellow);
+}
+.main-container {
+  height: 30.3em;
+  display: flex;
+  align-items: flex-end;
+}
+.meet-match {
+  position: fixed;
+  top: 27vh;
+  right: 10em;
+  height: 14em;
+  width: 22em;
+  background-color: var(--startup-alpha-white);
+}
+.blocks {
+  display: flex;
+  flex-flow: column wrap;
+}
+.box {
+  background-color: var(--startup-white);
+  width: 33vw;
+}
