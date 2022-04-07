@@ -27,47 +27,109 @@
 }
 
 /* Main */
+body * {
+  max-width: 1280px;
+}
 body {
   font-family: 'Source Sans Pro';
-  background-image: url(../images/startup-bg.jpg);
-  background-position: top -70em;
-  background-size: cover;
+  background-color: var(--startup-black);
+  display: flex;
+  /* flex-flow: column wrap; */
+  justify-content: center;
 }
-.motto {
+body > div {
+  background-image: url(../images/startup-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -7.5em;
+}
+.tagline {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3em;
   background-color: var(--startup-grey);
+  font-family: 'Merriweather';
   font-size: 20px;
   font-weight: var(--semi-bold);
   font-style: italic;
 }
-.motto span:nth-of-type(2) {
+.tagline span:nth-of-type(2) {
   text-decoration: line-through;
   color: var(--startup-darkgrey);
 }
-.motto a {
+.tagline a {
   color: var(--startup-yellow);
 }
 .main-container {
   height: 30.3em;
+  width: 1280px;
   display: flex;
   align-items: flex-end;
 }
 .meet-match {
   position: fixed;
-  top: 27vh;
-  right: 10em;
-  height: 14em;
-  width: 22em;
+  top: 26.5vh;
+  right: 9em;
+  /* height: 12em; */
+  width: 5em;
   background-color: var(--startup-alpha-white);
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+.meet-match h2,
+.meet-match p {
+  margin: 0.1em 0;
+  line-height: 1.4em;
+}
+.meet-match p {
+  font-size: 16px;
 }
 .blocks {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: var(--startup-white);
+}
+.blocks > .box {
+  height: 9.8em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.blocks .box:nth-child(2) {
+  border-left: 1px solid var(--startup-grey);
+  border-right: 1px solid var(--startup-grey);
 }
 .box {
-  background-color: var(--startup-white);
-  width: 33vw;
+  /* width: 26vw; */
+  width: 21em;
+  padding: 1em;
+}
+.blocks > .box h2 {
+  font-size: 18px;
+  font-weight: var(--bold);
+  margin: 0;
+}
+.blocks > .box p {
+  margin: 0.3em 0;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+div br {
+  border: 3px solid red;
+  color: blue;
+}
+button {
+  background-color: var(--startup-yellow);
+  height: 2.7em;
+  width: 95%;
+  margin-top: 0.6em;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  border-radius: 5px;
 }
