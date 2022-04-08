@@ -1,0 +1,130 @@
+:root {
+  /* colours */
+  --almost-black: #121212;
+  --dark-blue: #033048;
+  --light-gray: #606161;
+  --white: #f0efef;
+  --yellow: #f9e42e;
+  --background-color: #f0efef;
+  /* font weights */
+  --extra-bold: 800;
+  --semi-bold: 600;
+  --light: 300;
+  --alpha-white: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  font-family: "Source Sans Pro", "Open+Sans", sans-serif;
+  width: 1280px;
+  max-width: 1280px;
+  font-size: 100%;
+  font-size: 20px;
+  font-weight: var(--light);
+}
+
+h1 {
+  color: var(--yellow);
+  max-width: fit-content;
+}
+
+header {
+  background-color: var(--almost-black);
+  font-family: Merriweather;
+  color: var(--white);
+}
+
+section > div:first-child {
+  background-image: url(/images/startup-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+section > div:first-child > div {
+  padding: 10px;
+  width: 400px;
+  margin: 20px;
+  background-color: var(--alpha-white);
+}
+
+.opciones {
+  display: flex;
+  justify-content: center;
+}
+.opciones div {
+  padding: 10px;
+  width: 400px;
+  margin: 20px;
+  background-color: var(--white);
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 100%;
+}
+
+main {
+  background-color: var(--background-color);
+  padding: 10px;
+}
+
+main > section {
+  background-color: var(--white);
+}
+
+main > div {
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 190%;
+  background-color: orange;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block;
+  font-weight: var(--semi-bold);
+}
+
+button {
+  background-color: var(--yellow);
+  padding: 10px;
+}
+
+footer {
+  background-color: var(--almost-black);
+  padding: 10px;
+}
+
+footer div {
+  color: var(--white);
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    max-width: 800px;
+  }
+
+  main > div {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+
+  .opciones {
+    display: flex;
+    flex-direction: column;
+  }
+}
