@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./footer.css);
+@import url(./mq-740px.css);
 * {
   box-sizing: border-box;
 }
@@ -63,9 +64,9 @@ body > div {
 }
 .main-container {
   height: 30.3em;
-  width: 1280px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .meet-match {
   position: fixed;
@@ -120,11 +121,7 @@ body > div {
   font-size: 16px;
   line-height: 1.4em;
 }
-div br {
-  border: 3px solid red;
-  color: blue;
-}
-button {
+main button {
   background-color: var(--startup-yellow);
   height: 2.7em;
   width: 95%;
@@ -132,4 +129,7 @@ button {
   text-transform: uppercase;
   font-family: 'Oswald';
   border-radius: 5px;
+}
+main button:hover {
+  color: var(--startup-red);
 }

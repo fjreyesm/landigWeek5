@@ -1,1 +1,5 @@
 Notas:
+(header>(div>h2+(nav>ul>li.menu+(li.sub-menu)*2+li.menu+(li.sub-menu)*2))+div>p+a+p))+div>
+
+Menú burger:
+Yo lo he hecho asi Daniel, <button type="button" class="btn-menu" id="btn-menu">☰</button> 

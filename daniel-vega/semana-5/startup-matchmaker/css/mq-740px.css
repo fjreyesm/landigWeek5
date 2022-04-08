@@ -1,0 +1,64 @@
+@media only screen and (max-width: 740px) {
+  html body * {
+    max-width: 740px;
+  }
+  html header div {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 3vw;
+    /* height: auto; */
+  }
+  html header nav {
+    padding: 0;
+  }
+  h1 {
+    margin: 1%;
+  }
+  html header nav .menu {
+    visibility: visible;
+    display: none;
+  }
+  html header nav .btn-menu {
+    visibility: visible;
+    display: flex;
+    height: 1.2em;
+  }
+  html header nav ul {
+    flex-flow: column nowrap;
+  }
+  main .tagline {
+    visibility: collapse;
+    display: none;
+  }
+  html body > div {
+    background-size: contain;
+    background-position: 0rem 0rem;
+  }
+  body .main-container {
+    height: 45vh;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  body .meet-match {
+    left: 1rem;
+    top: 4.5rem;
+    height: 22vh;
+    width: 95%;
+  }
+  body .blocks {
+    flex-direction: column;
+    padding: 0;
+  }
+  body .blocks .box {
+    height: auto;
+    width: auto;
+  }
+  body .blocks .box:nth-child(2) {
+    border: none;
+    border-top: 1px solid var(--startup-grey);
+    border-bottom: 1px solid var(--startup-grey);
+  }
+  body footer {
+    padding: 1rem 3vw;
+  }
+}
