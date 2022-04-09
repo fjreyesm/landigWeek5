@@ -3,8 +3,11 @@
   --almost-black: #121212;
   --dark-blue: #033048;
   --light-gray: #606161;
+  --grey: #c6c6c6;
+  --darkgrey: #aaa;
   --white: #f0efef;
   --yellow: #f9e42e;
+  --red: red;
   --background-color: #f0efef;
   /* font weights */
   --extra-bold: 800;
@@ -20,6 +23,18 @@ body {
   font-size: 100%;
   font-size: 20px;
   font-weight: var(--light);
+  padding: 20px;
+}
+
+h2 span {
+  color: var(--yellow);
+}
+
+button {
+  font-family: oswald;
+}
+nav {
+  font-family: oswald;
 }
 
 .maincontainer {
@@ -55,8 +70,17 @@ section > div:first-child > div {
 
 .opciones {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-left: 30px;
 }
+/** Linea separadora**/
+.linea {
+  border-bottom: 5px solid var(--yellow);
+  height: 1px;
+  padding: 0;
+  margin: 0 auto 0 auto;
+}
+
 .opciones div {
   padding: 10px;
   width: 400px;
@@ -69,11 +93,11 @@ section > div:first-child > div {
   justify-content: space-around;
   width: 100%;
   max-width: 100%;
+  padding: 10px;
 }
 
 main {
   background-color: var(--background-color);
-  padding: 10px;
 }
 
 main > section {
@@ -81,7 +105,9 @@ main > section {
 }
 
 main > div {
-  background-color: var(--background-color);
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--grey);
   text-align: center;
 }
 
@@ -96,12 +122,21 @@ nav ul {
 nav li {
   display: inline-block;
   font-weight: var(--semi-bold);
-  width: fit-content;
+  max-width: 20%;
+}
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 18px;
 }
 
 button {
   background-color: var(--yellow);
   padding: 10px;
+}
+
+main button {
+  width: 100%;
 }
 
 footer {
@@ -116,7 +151,7 @@ footer div {
 }
 
 footer span {
-  color: red;
+  color: var(--red);
 }
 
 .btn-menu {
@@ -129,7 +164,7 @@ footer span {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 740px) {
   body {
     max-width: 800px;
   }
@@ -147,6 +182,7 @@ footer span {
     width: 100%;
     align-content: center;
     max-width: 800px;
+    margin-left: 5px;
   }
 
   .opciones > div {
@@ -154,11 +190,11 @@ footer span {
     margin-right: 20px;
   }
   /*  ajuste ancho boton Opciones */
-  .opciones button {
+  main button {
     width: 90%;
   }
 
-  /*  ajuste ancho boton SignUp NO FUNCIONA */
+  /*  ajuste ancho boton */
   section > div > div > button:first-child {
     width: 90%;
   }
