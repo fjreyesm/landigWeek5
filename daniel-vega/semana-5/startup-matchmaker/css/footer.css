@@ -1,11 +1,12 @@
 footer {
-  bottom: 0;
-  width: 100vw;
-  background-color: var(--startup-black);
-  color: var(--startup-white);
   display: flex;
   align-items: center;
-  padding: 1em 12vw;
+  background-color: var(--startup-black);
+  color: var(--startup-white);
+  font-size: 0.8em;
+  font-weight: var(--medium);
+  padding: 0.8rem 7.5rem;
+  /* padding: 1em 12vw; */
 }
 footer span {
   color: var(--startup-red);
