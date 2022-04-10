@@ -6,7 +6,6 @@ footer {
   font-size: 0.8em;
   font-weight: var(--medium);
   padding: 0.8rem 7.5rem;
-  /* padding: 1em 12vw; */
 }
 footer span {
   color: var(--startup-red);

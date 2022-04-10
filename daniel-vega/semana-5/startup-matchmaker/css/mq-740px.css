@@ -26,8 +26,8 @@
   html header nav {
     width: 100%;
     padding: 0;
-    visibility: visible;
-    display: flex;
+    visibility: collapse;
+    display: none;
     flex-flow: column nowrap;
     justify-content: center;
   }
@@ -58,11 +58,9 @@
     visibility: collapse;
     display: none;
   }
-  html body > div {
+  html .background {
     background-size: contain;
     background-position: 0 2.6rem;
-    /* background-position: 0 8.6rem; */
-    /* background-position: 0 17.6rem; */
   }
   body .main-container {
     /* height: 38rem; */

@@ -25,6 +25,8 @@ header h1 {
   font-size: 1.5rem;
 }
 header nav {
+  visibility: visible;
+  display: flex;
   padding-left: 2rem;
   justify-content: left;
   align-items: center;
@@ -58,7 +60,7 @@ nav button:hover {
   color: var(--startup-yellow);
 }
 header ul {
-  margin: 0.6rem 0;
+  margin: 0;
   padding: 0;
   visibility: collapse;
   display: none;
@@ -69,17 +71,4 @@ header ul {
   align-items: center;
   font-size: 0.75rem;
   font-weight: var(--extra-bold);
-}
-/* TEMP */
-.menu {
-  visibility: collapse;
-  display: none;
-  visibility: visible;
-  display: flex;
-}
-header ul:nth-of-type(2) {
-  visibility: collapse;
-  display: none;
-  /* visibility: visible;
-  display: flex; */
 }
