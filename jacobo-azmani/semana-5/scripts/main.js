@@ -1,4 +1,5 @@
 // Element
+<<<<<<< HEAD
 const bodyDiv = document.getElementsByClassName("background")[0];
 const menuBtn = document.getElementsByClassName("btn-menu")[0];
 var menuBtnStyle = getComputedStyle(menuBtn).visibility;
@@ -102,3 +103,9 @@ function backgroundConfig() {
 function showInProgress() {
   alert("This content is still in development.");
 }
+=======
+
+// Event
+
+// Execution
+>>>>>>> f9080a410c05e07f8fc6d406dfd20f9cb393f5a8

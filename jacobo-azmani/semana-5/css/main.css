@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(./740px.css);
 
 html {
@@ -14,6 +15,12 @@ body {
   background-color: var(--startup-black);
   display: flex;
   justify-content: center;
+=======
+* {
+  box-sizing: content-box;
+  margin: 0px;
+  padding: 0px;
+>>>>>>> f9080a410c05e07f8fc6d406dfd20f9cb393f5a8
 }
 
 :root {
@@ -25,6 +32,7 @@ body {
   --red: red;
   --white: white;
   --yellow: yellow;
+<<<<<<< HEAD
   --thin: 100;
   --extra-light: 200;
   --light: 300;
@@ -35,6 +43,8 @@ body {
   --extra-bold: 800;
   --black: 900;
   --ultra-black: 950;
+=======
+>>>>>>> f9080a410c05e07f8fc6d406dfd20f9cb393f5a8
 }
 /* Requirements
 Content not wider than 1280px
@@ -42,21 +52,39 @@ Padding 20px;
 Font size 20px
 Mobile breakpoint 740px */
 
+<<<<<<< HEAD
 .content {
   margin: 0 auto;
   /*   padding: 1.25rem; */
+=======
+@media only screen and (max-width: 740px) {
+  .dev {
+    flex-direction: row;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0;
+  padding: 20px;
+>>>>>>> f9080a410c05e07f8fc6d406dfd20f9cb393f5a8
 }
 
 header {
   width: 100%;
   text-align: center;
   height: 150px;
+<<<<<<< HEAD
   line-height: 100px;
+=======
+  line-height: 150px;
+>>>>>>> f9080a410c05e07f8fc6d406dfd20f9cb393f5a8
   background-color: var(--Black);
   color: var(--white);
   border-bottom: var(--yellow) solid 2px;
 }
 
+<<<<<<< HEAD
 header {
   margin: 0;
 }
@@ -131,6 +159,29 @@ header ul {
   align-items: center;
   font-size: 0.75rem;
   font-weight: var(--extra-bold);
+=======
+header h1 {
+  width: 50%;
+  float: left;
+}
+
+nav {
+  width: 50%;
+  float: left;
+  flex-direction: row-reverse;
+}
+
+nav ul li {
+  float: right;
+  list-style: none;
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin: 20px;
+  color: var(--alpha-white);
+>>>>>>> f9080a410c05e07f8fc6d406dfd20f9cb393f5a8
 }
 
 .clearfix {
@@ -140,6 +191,7 @@ header ul {
 .subtittle {
   text-align: center;
   background-color: var(--darkgrey);
+<<<<<<< HEAD
 }
 
 .subtittle span:nth-of-type(1) {
@@ -192,6 +244,38 @@ button:hover {
   display: flex;
   width: 95%;
   margin-bottom: 1rem;
+=======
+  height: 30px;
+  line-height: 30px;
+}
+
+.subtittle span:first-of-type {
+  color: var(--grey);
+}
+
+.subtittle span:last-of-type {
+  color: var(--yellow);
+}
+
+.hero {
+  background-image: url(../images/startup-bg.jpg);
+  background-position: 5%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.box {
+  float: right;
+  width: 50%;
+  justify-content: right;
+  background-color: var(--white);
+  opacity: 0.5;
+  margin: 10px auto;
+>>>>>>> f9080a410c05e07f8fc6d406dfd20f9cb393f5a8
 }
 
 .inside {
@@ -199,6 +283,7 @@ button:hover {
 }
 
 .dev {
+<<<<<<< HEAD
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -215,6 +300,45 @@ footer {
   font-size: 0.8em;
   font-weight: var(--medium);
   padding: 0.8rem 7.5rem;
+=======
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 0px;
+  flex-direction: row-reverse;
+}
+
+button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: var(--yellow);
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: var(--Black);
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  text-align: center;
+  width: 80%;
+}
+
+footer {
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  background-color: var(--Black);
+  color: var(--white);
+  padding: 20px;
+>>>>>>> f9080a410c05e07f8fc6d406dfd20f9cb393f5a8
 }
 
 footer span {
