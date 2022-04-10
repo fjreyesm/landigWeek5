@@ -6,11 +6,11 @@
   font-family: merri;
   src: url("./font/Merriweather-Bold.ttf");
 }
-@font-face{
-  font-family:parro;
-  src: url("./font/SourceSansPro-Regular.ttf")
+@font-face {
+  font-family: parro;
+  src: url("./font/SourceSansPro-Regular.ttf");
 }
-@font-face{
+@font-face {
   font-family: ozwald;
   src: url("./font/Oswald-SemiBold.ttf");
 }
@@ -18,14 +18,14 @@
 body {
   margin: 0;
   font-family: parro;
-  background-color:rgba(255, 255, 255, 0.8) ;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-p{
+p {
   font-size: 20px;
 }
 
-section{
+section {
   padding: 20px;
 }
 
@@ -56,7 +56,7 @@ section{
 
 .item1 h1 {
   color: yellow;
-  font-family:merri;
+  font-family: merri;
 }
 
 .item2 {
@@ -68,8 +68,9 @@ section{
   font-family: merri;
 }
 
-.item1 li .first2  {
-  font-size: 18px;font-weight: bold;
+.item1 li .first2 {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .item1 li {
@@ -92,7 +93,7 @@ section{
 }
 
 .item3 {
-  width:100%;
+  width: 100%;
   height: 500px;
   background-image: url("../images/startup-bg.jpg");
   background-repeat: no-repeat;
@@ -106,7 +107,7 @@ section{
   top: 200px;
   background-color: white;
   width: 300px;
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 .item2 {
@@ -114,12 +115,12 @@ section{
   border-top: 2px solid yellow;
   height: 80px;
 }
- button {
+button {
   background-color: yellow;
-  padding:6px 12px;
+  padding: 6px 12px;
   text-decoration: none;
   color: black;
-  border:1px solid #c6c6c6;
+  border: 1px solid #c6c6c6;
   font-family: ozwald;
   width: 80%;
 }
@@ -134,15 +135,16 @@ section{
   padding-top: 20px;
 }
 
-.item7 p{
+.item7 p {
   font-size: 12px;
 }
 
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: 740px) {
   .grid-item {
-    100%;
+    width: 100%;
   }
 }
 .item4 section,
-.item5  section{box-shadow:5px 0 5px -5px rgba(0,0,0,0.75);}
-
+.item5 section {
+  box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.75);
+}
