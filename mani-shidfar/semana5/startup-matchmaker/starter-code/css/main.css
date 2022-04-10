@@ -17,8 +17,9 @@
 
 body {
   margin: 0;
-  font-family: parro;
+  font-family: parro, sans-serif;
   background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
 }
 
 p {
@@ -45,10 +46,11 @@ section {
   grid-column-start: 1;
   grid-column-end: 4;
 }
+/*header*/
 
 .item1 {
   background-color: black;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -59,18 +61,15 @@ section {
   font-family: merri;
 }
 
-.item2 {
-  background-color: #c6c6c6;
-}
-
 .item1 ul {
   list-style-type: none;
   font-family: merri;
 }
 
 .item1 li .first2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
+  padding-top: 0;
 }
 
 .item1 li {
@@ -88,9 +87,21 @@ section {
   color: white;
   font-family: ozwald;
 }
+
 .item1 li a:hover {
   color: yellow;
 }
+
+/* header is closed here*/
+
+/*gray heading for the part backgrounded by image*/
+.item2 {
+  background-color: #c6c6c6;
+  border-top: 2px solid yellow;
+  height: 80px;
+}
+
+/*gray heading done!*/
 
 .item3 {
   width: 100%;
@@ -110,11 +121,6 @@ section {
   opacity: 0.8;
 }
 
-.item2 {
-  background-color: lightgray;
-  border-top: 2px solid yellow;
-  height: 80px;
-}
 button {
   background-color: yellow;
   padding: 6px 12px;
@@ -123,6 +129,11 @@ button {
   border: 1px solid #c6c6c6;
   font-family: ozwald;
   width: 80%;
+}
+
+.item4 section,
+.item5 section {
+  box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.75);
 }
 
 .item7 {
@@ -152,8 +163,4 @@ button {
   .item1 ul li:not(:last-child) {
     border-bottom: 2px solid white;
   }
-}
-.item4 section,
-.item5 section {
-  box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.75);
 }
