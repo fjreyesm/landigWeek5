@@ -140,5 +140,5 @@ section{
   }
 }
 .item4 section,
-.item5 section {border-right: 2px solid #888888;}
+.item5  section{box-shadow:5px 0 5px -5px rgba(0,0,0,0.75);}
 
