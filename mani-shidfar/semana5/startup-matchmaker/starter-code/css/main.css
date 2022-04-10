@@ -74,7 +74,7 @@ section {
 }
 
 .item1 li {
-  display: inline;
+  float: left;
   color: white;
 }
 
@@ -142,6 +142,15 @@ button {
 @media only screen and (max-width: 740px) {
   .grid-item {
     width: 100%;
+  }
+  .item1 ul li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .item1 ul li:not(:last-child) {
+    border-bottom: 2px solid white;
   }
 }
 .item4 section,
