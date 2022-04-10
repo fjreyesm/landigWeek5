@@ -154,6 +154,19 @@ button {
   .grid-item {
     width: 100%;
   }
+  .item1 {
+    display: block;
+  }
+  .item1 {
+    height: auto;
+  }
+  .grid-container {
+    display: block;
+  }
+  .item1 ul {
+    width: 100%;
+    margin: 0;
+  }
   .item1 ul li {
     float: none;
     width: 100%;
