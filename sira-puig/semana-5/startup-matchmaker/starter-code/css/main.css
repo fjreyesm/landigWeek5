@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f0efef;
+}
+
+header {
+  background-color: black;
+  /* flexbox */
+  display: flex;
+  /* con estas dos propiedades se centran
+  y se colocan a cada lado el h1 y el nav*/
+  align-items: center;
+  justify-content: space-around;
+}
+h1 {
+  font-family: Merriweather;
+  font-size: 700;
+  color: yellow;
+}
+nav {
+  font-family: Oswald;
+  font-size: 700;  
+}
+a{
+  color:white; 
+  text-decoration: none; 
+  }
+ il:nth-child(n+3){
+font-family: Source Sans Pro;
+/* para cambiar la text-family a 3 elementos del nav */
+}
+
+
+
+main {
+  /* este Flexbox afecta a todo el layout */
+  display: flex;
+  flex-direction: column;
+}
+
+
+main section p {
+  font-family: Merriweather;
+  font-size: 700italic;
+  font-style: italic;
+  color: black;
+  text-align: center;
+}
+p span:first-child {
+  color: #aaa6;
+  text-decoration: line-through;
+}
+p span:last-child {
+  color: yellow;
+  text-decoration: underline;
+}
+.caja {
+  /* tamaño a las 4 cajas de texto con boton */
+  /* border-style: solid; */
+  width: 413px;
+  padding: 20px;
+  background-color: #c6c6c6;
+  opacity: 0.8;
+}
+.second {
+  background-image: url(../images/startup-bg.jpg);
+  background-size: cover;
+  width: 100%;
+  display: flex; /* para que se coloque la primera caja a la derecha */
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  
+}
+.oculto{
+   width: 413px;
+   visibility: hidden;
+}
+}
+h2 {
+  font-family: Source Sans Pro;
+  color: black;
+  text-align: left;
+  
+}
+.texto {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  /* font-size: 700; */
+  color: black;
+  width: 350px;
+  text-align: left;
+
+}
+button {
+  font-family: Oswald;
+  font-size: 700;
+  color: black;
+  background-color: yellow;
+  width: 300px;
+  height: 40px;
+}
+.third {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+}
+.third .caja{
+ background-color: #f0efef;
+  border-right: solid;
+  max-width:fit-content;
+  width: 413px;;
+  /* flex-basis: auto; */
+  
+}
+
+
+
+
+
+footer {
+  background-color: black;
+}
+footer p {
+  color: white;
+  padding: 20px;
+}
