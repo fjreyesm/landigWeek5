@@ -10,6 +10,10 @@
   font-family:parro;
   src: url("./font/SourceSansPro-Regular.ttf")
 }
+@font-face{
+  font-family: ozwald;
+  src: url("./font/Oswald-SemiBold.ttf");
+}
 
 body {
   margin: 0;
@@ -81,6 +85,7 @@ section{
 .item1 li a:visited {
   text-decoration: none;
   color: white;
+  font-family: ozwald;
 }
 .item1 li a:hover {
   color: yellow;
@@ -109,15 +114,14 @@ section{
   border-top: 2px solid yellow;
   height: 80px;
 }
-
-.item4 a:link,
-.item5 a:link,
-.item6 a:link {
+ button {
   background-color: yellow;
-  padding: 6px 14px;
+  padding:6px 12px;
   text-decoration: none;
   color: black;
-  box-shadow: 1px 3px #888888;
+  border:1px solid #c6c6c6;
+  font-family: ozwald;
+  width: 80%;
 }
 
 .item7 {
