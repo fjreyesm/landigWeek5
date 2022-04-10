@@ -101,6 +101,15 @@ footer{
   height: 100px;
   background-color:var(--black);
 }
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%;
+}
 
 
 
