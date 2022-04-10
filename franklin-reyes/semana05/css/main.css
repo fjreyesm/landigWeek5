@@ -26,7 +26,11 @@ body {
   padding: 20px;
 }
 
-h2 span {
+h3 {
+  font-style: italic;
+}
+
+h3 span {
   color: var(--yellow);
 }
 
@@ -55,7 +59,7 @@ section > div:first-child {
   background-image: url(/images/startup-bg.jpg);
   background-size: cover;
   background-position: center;
-  height: 40vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: right;
@@ -91,13 +95,15 @@ section > div:first-child > div {
 .cabecera {
   display: flex;
   justify-content: space-around;
+
   width: 100%;
   max-width: 100%;
   padding: 10px;
 }
 
 main {
-  background-color: var(--background-color);
+  background-color: var(--grey);
+  margin: 0 auto;
 }
 
 main > section {
@@ -120,7 +126,7 @@ nav ul {
 }
 
 nav li {
-  display: inline-block;
+  display: inline;
   font-weight: var(--semi-bold);
   max-width: 20%;
 }
@@ -135,7 +141,7 @@ button {
   padding: 10px;
 }
 
-main button {
+.opciones button {
   width: 100%;
 }
 
