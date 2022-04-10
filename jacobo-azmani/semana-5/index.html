@@ -15,55 +15,83 @@
 <body>
   <div class="content">
     <header>
-      <h1>Startup Matchmaker</h1>
-      <nav>
-        <ul>
-          <li>Find Developers</li>
-          <li>Find Designers</li>
-          <li>How it works</li>
-          <li>Our team</li>
-          <li>Blog</li>
-        </ul>
-      </nav>
+      <div>
+        <div class="title">
+          <h1>Startup Matchmaker</h2>
+            <button class="btn-menu">☰</button>
+        </div>
+        <nav>
+          <button class="btn-dev menu">Find Developers</button>
+          <ul class="dev-sub-menu">
+            <li><button class="sub-menu">How it works</button></li>
+            <li><button class="sub-menu">Our Team</button></li>
+            <li><button class="sub-menu">Blogs</button></li>
+            <li><button class="sub-menu indev">How it works</button></li>
+            <li><button class="sub-menu indev">Our Team</button></li>
+            <li><button class="sub-menu indev">Blogs</button></li>
+          </ul>
+          <button class="btn-des menu">Find Designers</button>
+          <ul class="des-sub-menu">
+            <li><button class="sub-menu">How it works</button></li>
+            <li><button class="sub-menu">Our Team</button></li>
+            <li><button class="sub-menu">Blogs</button></li>
+            <li><button class="sub-menu indev">How it works</button></li>
+            <li><button class="sub-menu indev">Our Team</button></li>
+            <li><button class="sub-menu indev">Blogs</button></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!--         <button type="button" class="btn-menu" id="btn-menu">☰</button>
- -->
     <div class="subtittle">
-      <p>Because two brains <span class="taste">taste</span> <span class="are">are</span> better one</p>
+      <p>Because two brains <span class="taste">taste</span> <span class="are"><a href="#">are</a></span> better one</p>
     </div>
     <div class="hero">
-      <div class="box">
+      <div class="meet-match box">
+        <div class="box2">
         <h2>Meet your match!</h2>
         <p>
           Have a great idea for a product, but need help making it a reality?
           We’re here to help. Startup Matchmaker is the best place for
           designers and developers to find each other.
         </p>
-        <button>Create a Profile</button>
+        <button class="indev">Create a profile</button>
+        </div>
       </div>
     </div>
     <div class="dev">
-      <h3>Create a Profile</h3>
-      <p>
-        Looking for a fantastic developer to work with on the next big
-        thing? Look no further.
-      </p>
-      <h3>Find a Developer</h3>
-      <p>
-        Looking for a fantastic developer to work with on the next big
-        thing? Look no further.
-      </p>
-      <h3>Find a Developer</h3>
-      <p>
-        Need someone who can make a product intuitive and appealing? Get
-        ready
-      </p>
+      <div class="meet-match box">
+        
+          <h3>Create a Profile</h3>
+          <p>
+            Looking for a fantastic developer to work with on the next big
+            thing? Look no further.
+          </p>
+          <button class="indev">Sign up now</button>
+      </div>
+      <div class="meet-match box">
+        <h3>Find a Developer</h3>
+        <p>
+          Looking for a fantastic developer to work with on the next big
+          thing? Look no further.
+        </p>
+        <button class="indev">Start your search</button>
+      </div>
+      <div class="meet-match box">
+        <h3>Find a Developer</h3>
+        <p>
+          Need someone who can make a product intuitive and appealing? Get
+          ready
+        </p>
+        <button class="indev">Start your search</button>
+      </div>
     </div>
     <footer>
-      <p>&copf; 2021 Startup Matchmaker. Made with &#x2764 in London</p>
+      <p>&copf; 2021 Startup Matchmaker. Made with <span>&#x2764</span> in London</p>
     </footer>
     </header>
   </div>
+  <!-- ----- Script ----- -->
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>

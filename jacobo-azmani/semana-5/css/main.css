@@ -1,7 +1,19 @@
-* {
+@import url(./740px.css);
+
+html {
+  font-size: 20px;
+}
+
+body * {
+  max-width: 1280px;
   box-sizing: content-box;
-  Padding: 20px;
- Font size: 20px;
+}
+
+body {
+  font-family: "Source Sans Pro";
+  background-color: var(--startup-black);
+  display: flex;
+  justify-content: center;
 }
 
 :root {
@@ -13,6 +25,16 @@
   --red: red;
   --white: white;
   --yellow: yellow;
+  --thin: 100;
+  --extra-light: 200;
+  --light: 300;
+  --normal: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+  --black: 900;
+  --ultra-black: 950;
 }
 /* Requirements
 Content not wider than 1280px
@@ -35,25 +57,80 @@ header {
   border-bottom: var(--yellow) solid 2px;
 }
 
+header {
+  margin: 0;
+}
+header > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1.44rem;
+  background-color: var(--startup-black);
+  border-bottom: 3px solid var(--startup-yellow);
+}
+header .title,
+header nav {
+  display: flex;
+  width: 50%;
+  text-align: center;
+}
+header .title {
+  justify-content: center;
+}
 header h1 {
-  width: 50%;
-  float: left;
+  margin: 0;
+  color: var(--white);
+  font-family: "Merriweather";
+  font-size: 1.5rem;
 }
-
-nav {
-  width: 50%;
-  float: left;
+header nav {
+  visibility: visible;
+  display: flex;
+  padding-left: 2rem;
+  justify-content: left;
+  align-items: center;
+  color: var(--white);
 }
-
-nav ul li {
-  float: right;
+.btn-menu {
+  visibility: collapse;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--black);
+  color: var(--startup-white);
+  border-style: none;
+  height: 2.5rem;
+  font-size: 2rem;
+}
+.menu {
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: var(--extra-bold);
+}
+nav button {
+  background-color: var(--startup-black);
+  color: var(--white);
+  border-style: none;
+  margin-right: 0.5rem;
+}
+.btn-menu:hover,
+nav button:hover {
+  color: var(--yellow);
+}
+header ul {
+  margin: 0.6rem 0;
+  margin: 0;
+  padding: 0;
+  visibility: collapse;
+  display: none;
+  flex-flow: row nowrap;
   list-style: none;
-  display: inline;
-}
-
-nav ul li a {
-  text-decoration: none;
-  margin: 10px;
+  list-style-position: inside;
+  justify-content: left;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: var(--extra-bold);
 }
 
 .clearfix {
@@ -65,31 +142,56 @@ nav ul li a {
   background-color: var(--darkgrey);
 }
 
-.taste {
+.subtittle span:nth-of-type(1) {
+  text-decoration: line-through;
   color: var(--grey);
 }
 
-.are {
+.subtittle span a {
   color: var(--yellow);
+}
+
+/* Botones */
+button {
+  background-color: var(--yellow);
+  height: 2.1rem;
+  width: 100%;
+  margin-top: 0.6rem;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+button:hover {
+  color: var(--red);
 }
 
 .hero {
   background-image: url(../images/startup-bg.jpg);
-  height: 300px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -5.9rem;
 }
 
 .box {
-  float: right;
-  width: 50%;
-  justify-content: right;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.box2 {
   background-color: var(--white);
   opacity: 0.5;
-  margin: 10px auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.meet-match {
+  position: static;
+  display: flex;
+  width: 95%;
+  margin-bottom: 1rem;
 }
 
 .inside {
@@ -97,17 +199,24 @@ nav ul li a {
 }
 
 .dev {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 1px;
-  grid-row-gap: 1px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--startup-white);
 }
 
 footer {
-  height: 50px;
-  line-height: 50px;
-  text-align: left;
+  display: flex;
+  align-items: center;
   background-color: var(--Black);
   color: var(--white);
+  font-size: 0.8em;
+  font-weight: var(--medium);
+  padding: 0.8rem 7.5rem;
+}
+
+footer span {
+  color: var(--red);
 }
