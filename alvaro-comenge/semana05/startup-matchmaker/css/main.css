@@ -92,15 +92,17 @@ section {
 
 .enlaces {
   background-color: #f9f9f9;
+  
 }
 
 .enlaces .wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 600px;
+  margin-top: 700px;
   width: 100%;
+  padding: 20px;
   /* max-height: 600px; */
-  align-items: center;
+ 
 }
 
 footer {
@@ -108,11 +110,8 @@ footer {
   max-height: fit-content;
   background-color: var(--black);
 }
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
+
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -135,7 +134,23 @@ html {
   font-family: 'Source Sans Pro';
   /* max-width: 100%; */
   background-color: #f9f9f9;
-  border-left: #bbbbbb 2px solid;
+  
+}
+.primerocentral {
+  flex-basis: 100%;
+  max-width: 33.33%;
+  border-right: #c0c1c3 3px solid;
+  border-left: #c0c1c3 3px solid;
+  border-right: #c0c1c3 3px solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  /* height: 200px; */
+  font-family: 'Source Sans Pro';
+  /* max-width: 100%; */
+  background-color: #f9f9f9;
+  font-size: 20px;
+  font-weight: 500;
 }
 .primero1 {
   background-color: #f9f9f9;
@@ -151,8 +166,8 @@ html {
 }
 .primero,
 .primero1 p {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 500px;
   padding: 15px;
 }
 
