@@ -59,6 +59,7 @@ section {
 .item1 h1 {
   color: yellow;
   font-family: merri;
+  text-shadow: px 5px 5px rgb(245, 242, 2, 0.75);
 }
 
 .item1 ul {
@@ -156,29 +157,37 @@ button {
   }
   .item1 {
     display: block;
-  }
-  .item1 {
     height: auto;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    
   }
   .item1 h1 {
     text-align: left;
     margin: 0;
+    width:50%;
+    
   }
   .grid-container {
     display: block;
   }
 
-  .item1 ul {
-    width: 100%;
+  .item1 #list {
+    display: none;
+    width: 100%;s
     margin: 0;
     padding: 10px;
+    
+  
   }
   .item1 ul li {
-    float: none;
     width: 100%;
     padding: 10px;
     text-align: left;
+    
   }
   .item1 ul li:nth-child(even):not(:last-child) {
     border-bottom: 1px solid #aaa;
@@ -208,4 +217,25 @@ button {
   .item5 section {
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.75);
   }
+  #menu {
+    display: block;
+    
+    
+    
+  }
+}
+@media only screen and (min-width: 824px) {
+  #menu {
+    display: none;
+  }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
 }

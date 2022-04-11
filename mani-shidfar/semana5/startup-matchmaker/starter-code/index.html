@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link  src="./scripts/main.js">
 
     <title>Startup Matchmaker</title>
   </head>
@@ -18,7 +19,12 @@
       
       <div class="grid-item item1">
         <h1 style="color: yellow">Startup Matchmaker</h1>
-        <ul>
+             <div id="menu" onclick="toggleMenu()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+        <ul id="list">
           <li><a href="#" class="first2" >Find Developers<a></li>
           <li><a href="#" class="first2" >Find Designers</a></li>
           <li><a href="#"> How it works</a></li>
@@ -26,6 +32,7 @@
           <li><a href="#">Blog</a></li>
           
         </ul>
+   
       </div>
       
       <div class="grid-item item3">
@@ -90,5 +97,17 @@
       </div>
 
     </div>
+    <script>
+
+function toggleMenu() {
+  let menuBox = document.getElementById("list");
+  if (menuBox.style.display == "block") {
+    menuBox.style.display = "none";
+  } else {
+    menuBox.style.display = "block";
+  }
+}
+
+    </script>
   </body>
 </html>
