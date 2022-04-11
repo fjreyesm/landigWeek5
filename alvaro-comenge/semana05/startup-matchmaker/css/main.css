@@ -56,6 +56,7 @@ header a {
   font-size: 50px;
   text-decoration: none;
   padding-left: 100px;
+  
 }
 nav ul {
   list-style: none;
@@ -97,7 +98,7 @@ section {
 
 .enlaces .wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: row;
   margin-top: 700px;
   width: 100%;
   padding: 20px;
@@ -174,7 +175,6 @@ html {
 .Boton {
   padding: 0.5rem 0.1rem;
   background-color: yellow;
-
   font-size: large;
   color: black;
   box-shadow: 0 5px 10px rgb(0 0 0 / 0.6);
@@ -190,18 +190,20 @@ html {
 
 .header {
   background-color: rgba(0, 0, 0, 2);
-  box-shadow: 1px 1px 15px 0px var(--gray);
-  position: sticky;
-  top: 0;
-  padding: 60px;
+  box-shadow: 10px 10px 15px 10px var(--gray);
+  top:0;
+  padding:30px;
   width: 100%;
+  padding-top: 50px;
+  
+
 }
 
 /* Nav menu */
 .nav {
   width: 100%;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 nav {
   max-height: 0px;
@@ -210,9 +212,10 @@ nav {
 
 .menu a {
   display: block;
-  padding: 0px;
+  padding: 30px;
   padding-right: 30px;
   color: var(--white);
+  border-bottom: #c0c1c3 2px solid;
 }
 .menu a:hover {
   background-color: var(--gray);
@@ -225,6 +228,8 @@ nav {
   margin: 0px;
   padding: 2rem;
 } /* Style label tag */
+
+
 
 .hamb-line {
   background: var(--white);
@@ -270,6 +275,14 @@ nav {
   transform: rotate(45deg);
   top: 0;
 }
+
+ .oculto{
+  font-size: 2em;
+  display:none;
+ }
+ .logo{
+  padding-left:5rem;
+ }
 
 @media (min-width: 740px) {
   .oculto {
