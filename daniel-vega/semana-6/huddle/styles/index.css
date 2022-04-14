@@ -1,0 +1,129 @@
+@import url(./footer.css);
+@import url(./mq-740px.css);
+* {
+  box-sizing: border-box;
+}
+:root {
+  /* Color */
+  --huddle-pink: hsl(322, 100%, 66%);
+  --huddle-verypale-cyan: hsl(193, 100%, 96%);
+  --hudele-grayish-blue: hsl(208, 11%, 55%);
+  --huddle-white: hsl(0, 0%, 100%);
+  --huddle-dark-blue: hsl(192, 100%, 9%);
+  /* Font Weigh */
+  --thin: 100;
+  --extra-light: 200;
+  --light: 300;
+  --normal: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+  --black: 900;
+  --ultra-black: 950;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: var(--semi-bold);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body > * {
+  max-width: 1340px;
+}
+
+button {
+  border-radius: 20px;
+  border: 0px;
+  /*x-offset y-offset blur colour */
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.header-container {
+  padding: 3rem 4.5rem;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: var(--huddle-verypale-cyan);
+  background-image: url(../images/bg-hero-desktop.svg);
+}
+
+.header-container > .row:first-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.header-container > .row:first-of-type > .column-left {
+  width: 70%;
+  height: 4rem;
+}
+.header-container > .row:first-of-type > .column-left img {
+  height: 45%;
+}
+.header-container > .row:first-of-type > .column-right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 3rem;
+}
+.header-container > .row:first-of-type button {
+  height: 2.7rem;
+  width: 10.2rem;
+  color: var(--huddle-dark-blue);
+  background-color: var(--huddle-white);
+  font-size: 12px;
+  font-weight: var(--semi-bold);
+}
+.header-container > .row:nth-of-type(2) {
+  padding: 5rem;
+}
+.header-container > .row:nth-of-type(2) .column-left {
+  width: 40%;
+}
+.header-container > .row:nth-of-type(2) .column-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-container > .row:nth-of-type(2) img {
+  height: 60%;
+}
+
+/* 
+.header-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-container > div:nth-of-type(1) {
+  width: 70%;
+  height: 4rem;
+}
+.header-container > div:nth-of-type(1) > img {
+  width: 20%;
+}
+.header-container > div:nth-of-type(2) {
+  max-width: 30%;
+}
+ */
+/* 
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+ */
