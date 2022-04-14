@@ -38,12 +38,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-body > * {
-  max-width: 1340px;
+body * {
+  max-width: 1440px;
 }
 
 button {
-  border-radius: 20px;
+  border-radius: 30px;
   border: 0px;
   /*x-offset y-offset blur colour */
   box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
@@ -68,41 +68,69 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-bottom: 4rem;
+  padding-right: 3rem;
 }
 .header-container > .row:first-of-type > .column-left {
   width: 70%;
-  height: 4rem;
+  /* height: 4rem; */
+  display: flex;
+  align-items: center;
 }
 .header-container > .row:first-of-type > .column-left img {
-  height: 45%;
+  height: 67%;
 }
 .header-container > .row:first-of-type > .column-right {
   width: 30%;
   display: flex;
   justify-content: flex-end;
-  padding: 0 3rem;
 }
 .header-container > .row:first-of-type button {
-  height: 2.7rem;
-  width: 10.2rem;
+  height: 3rem;
+  width: 13rem;
   color: var(--huddle-dark-blue);
   background-color: var(--huddle-white);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: var(--semi-bold);
 }
 .header-container > .row:nth-of-type(2) {
-  padding: 5rem;
+  /* padding: 0 1rem; */
+  height: 32rem;
 }
 .header-container > .row:nth-of-type(2) .column-left {
-  width: 40%;
+  width: 42%;
+  padding-right: 1.6rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  color: var(--huddle-dark-blue);
+}
+.header-container > .row:nth-of-type(2) .column-left h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+.header-container > .row:nth-of-type(2) .column-left p {
+  margin: 1.6rem 0;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+.header-container > .row:nth-of-type(2) .column-left button {
+  margin-top: 0.6rem;
+  background-color: var(--huddle-pink);
+  color: var(--huddle-white);
+  font-size: 0.9rem;
+  height: 3.5rem;
+  width: 18rem;
 }
 .header-container > .row:nth-of-type(2) .column-right {
-  width: 50%;
+  width: 54%;
   display: flex;
-  justify-content: flex-end;
+  flex-flow: column nowrap;
+  align-items: flex-end;
 }
 .header-container > .row:nth-of-type(2) img {
-  height: 60%;
+  height: 97%;
 }
 
 /* 
