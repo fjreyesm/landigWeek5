@@ -6,6 +6,7 @@
 :root {
   /* Color */
   --huddle-pink: hsl(322, 100%, 66%);
+  --huddle-bright-pink: hsl(322, 100%, 80%);
   --huddle-verypale-cyan: hsl(193, 100%, 96%);
   --hudele-grayish-blue: hsl(208, 11%, 55%);
   --huddle-white: hsl(0, 0%, 100%);
@@ -46,7 +47,8 @@ button {
   border-radius: 30px;
   border: 0px;
   /*x-offset y-offset blur colour */
-  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  background-color: var(--huddle-pink);
 }
 .row {
   display: flex;
@@ -94,6 +96,9 @@ button {
   font-size: 14px;
   font-weight: var(--semi-bold);
 }
+.header-container > .row:first-of-type button:hover {
+  color: var(--hudele-grayish-blue);
+}
 .header-container > .row:nth-of-type(2) {
   /* padding: 0 1rem; */
   height: 32rem;
@@ -118,7 +123,6 @@ button {
 }
 .header-container > .row:nth-of-type(2) .column-left button {
   margin-top: 0.6rem;
-  background-color: var(--huddle-pink);
   color: var(--huddle-white);
   font-size: 0.9rem;
   height: 3.5rem;
@@ -137,6 +141,8 @@ button {
 main {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   padding: 4rem;
 }
 article {
@@ -171,7 +177,42 @@ article {
 article img {
   width: 38%;
 }
+.started-window {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: -10rem;
+  width: 50rem;
+  height: 18rem;
+  /* padding: 1.5rem; */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: var(--huddle-white);
+}
+.started-window p {
+  color: var(--huddle-dark-blue);
+  font-size: 2rem;
+  font-weight: var(--semi-bold);
+  margin-bottom: 2.6rem;
+}
+.started-window button {
+  border-radius: 40px;
+  border: 0px;
+  background-color: var(--huddle-pink);
+  color: var(--huddle-white);
+  font-size: 1.2rem;
+  font-weight: var(--semi-bold);
+  /*x-offset y-offset blur colour */
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.3);
+  height: 5rem;
+  width: 25.5rem;
+}
 
+.start-button:hover {
+  background-color: var(--huddle-bright-pink);
+}
 /* 
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
