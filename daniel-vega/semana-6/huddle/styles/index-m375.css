@@ -1,23 +1,3 @@
-:root {
-  /* Color */
-  --huddle-pink: hsl(322, 100%, 66%);
-  --huddle-bright-pink: hsl(322, 100%, 80%);
-  --huddle-verypale-cyan: hsl(193, 100%, 96%);
-  --hudele-grayish-blue: hsl(208, 11%, 55%);
-  --huddle-white: hsl(0, 0%, 100%);
-  --huddle-dark-blue: hsl(192, 100%, 9%);
-  /* Font Weigh */
-  --thin: 100;
-  --extra-light: 200;
-  --light: 300;
-  --normal: 400;
-  --medium: 500;
-  --semi-bold: 600;
-  --bold: 700;
-  --extra-bold: 800;
-  --black: 900;
-  --ultra-black: 950;
-}
 @media only screen and (max-width: 375px) {
   html body * {
     max-width: 375px;
@@ -27,6 +7,8 @@
     padding: 1rem 0.5rem;
     margin: 0;
     background-image: url(../images/bg-hero-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .header-container > .row:first-of-type {
     padding: 1rem;
@@ -86,9 +68,11 @@
   body article {
     flex-direction: column;
     width: 95%;
+    height: 29.5rem;
     padding: 3rem 1rem;
     margin: 1.2rem 0;
     flex-direction: column-reverse;
+    justify-content: space-between;
     align-items: center;
   }
   body article:nth-last-of-type(2) {
@@ -111,7 +95,7 @@
   }
   body article img {
     width: 80%;
-    margin-bottom: 3rem;
+    /* margin-bottom: 2.8rem; */
   }
   body .started-window {
     padding: 0;
@@ -127,5 +111,47 @@
     height: 2.4rem;
     width: 13rem;
     font-size: 0.6rem;
+  }
+  /* FOOTER */
+  body footer {
+    padding: 8rem 0.8rem 4rem 0.8rem;
+  }
+  body footer .logo {
+    padding: 0;
+  }
+  body footer .logo img {
+    width: 46%;
+  }
+  body .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .footer-container ul {
+    width: 100%;
+  }
+  body .contact {
+    padding: 0;
+    margin: 0.6rem 0 2rem 0;
+  }
+  body .contact p {
+    width: 85%;
+  }
+  body .footer-navigation {
+    margin: 1rem 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    height: unset;
+  }
+  body .footer-navigation li {
+    padding: 0;
+  }
+  body .social {
+    padding: 0;
+    margin: 1rem 0;
+    justify-content: center;
+  }
+  body footer > div:last-of-type {
+    font-size: 0.7rem;
+    text-align: center;
   }
 }

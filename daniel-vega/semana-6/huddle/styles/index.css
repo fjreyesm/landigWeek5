@@ -47,7 +47,7 @@ button {
   border-radius: 30px;
   border: 0px;
   /*x-offset y-offset blur colour */
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
   background-color: var(--huddle-pink);
 }
 .row {
