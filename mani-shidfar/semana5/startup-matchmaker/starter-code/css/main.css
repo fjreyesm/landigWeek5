@@ -59,7 +59,7 @@ section {
 .item1 h1 {
   color: yellow;
   font-family: merri;
-  text-shadow: px 5px 5px rgb(245, 242, 2, 0.75);
+  text-shadow: 0 5px 5px rgb(245, 242, 2, 0.75);
 }
 
 .item1 ul {
