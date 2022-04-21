@@ -1,0 +1,4 @@
+al hacer un git pull antes de que me hicieran la correcion del ejercio de relaxr 1 provoco que 
+el ejercisio de relaxr 1 se borarra en mi ordenador, por lo que puse la carpeta semana 3 y este 
+notepad como ejemplo de que puedo hacer el link, ademas pondria en el nav del ejercisio anterior
+un enlaze en blog a el ejercisio relaxr 2 para poder volver a relaxr 2
