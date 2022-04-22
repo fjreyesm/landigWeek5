@@ -1,10 +1,13 @@
 * {
   box-sizing: border-box;
 }
+html{
+  font-size: 100%;
+}
 body{
   background-color: #121212;
-  width: 800px;
-  max-width: 100%;
+  width: 50em;
+  max-width: 50em;
   margin: 0 auto;
   font-family:sans-serif;
 }
@@ -26,11 +29,11 @@ main{
 
 }
 aside{
-  max-width: 200%;
+  max-width: 200px;
   width: 200px;
 }
 .barra-nav{
-  max-width:960px;
+  max-width:80%;
   width:80%;
   margin:0 auto;
   
@@ -139,16 +142,15 @@ color: #033048;
   /* color: red; */
 /* } */
 
-.footer{
-  width: 100px;
+
  }
 .boton{
   padding:25px 300px;
   background-color:#f9e42e;
  }
- .bot-cent a{
-   color: #f0efef;
- }
+ 
+   
+ 
 .pie{
   background-color:#606161;
   padding: 50px 320px;
@@ -177,7 +179,8 @@ footer p{
 }
 .bot-cent a{
   padding-left: 30px;
-  text-align: center
+  text-align: center;
+  color: #f0efef;
 }
 
 
