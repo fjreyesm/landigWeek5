@@ -1,14 +1,29 @@
 * {
   box-sizing: border-box;
 }
-.container {
-  display: grid;
+@font-face {
+  font-family: "poppin";
+  src: url("./fonts/Poppins-Bold.ttf");
 }
-.header.grid {
-  display: grid;
+body {
+  margin: 0;
+  padding: 0;
+
+
+  font-family:  poppin;
+}
+
+.header.grid{
+  display:grid;
   background-image: url("../images/bg-hero-desktop.svg");
   gap: 30px;
   height: 400px;
+  
+  
+}
+.header h1, .header h2{
+  font-family: poppin;
+
 }
 .grid1 {
   display: grid;
@@ -29,6 +44,7 @@
   max-width: 80%;
   margin: auto;
 }
+
 .grid2 > .item1 {
   width: 90%;
   max-width: 70%;
@@ -44,6 +60,10 @@
   padding: 12px 16px;
   border-radius: 20px;
 }
+.container{
+  display: grid;
+  gap:10px;
+}
 .main1 {
   display: grid;
   align-items: center;
@@ -58,10 +78,14 @@
   box-shadow: 1px 1px 1px rgba(56, 55, 55, 0.8);
   position: relative;
 }
+.main1 h2{
+  font-family: poppin;
+}
 .mitem2 {
 }
 .mitem2 > img {
-  width: 400px;
+    max-width: 400px;
+    
 }
 .mitem1 {
   width: 90%;
@@ -85,32 +109,88 @@
   padding: 8px 12px;
   border: 1px solid #999;
 }
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  max-width: 100%;
+}
 .fgrid {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  justify-content: space-between;
+  justify-content: space-around;
+  color: hsl(208, 11%, 55%);
+  margin: 0;
 }
 .fmenu1 {
-  width: 35%;
+  width: 30%;
 }
 .fmenu1 ul {
   list-style: none;
-  width: 300px;
+  width: 250px;
+  margin: 0;
 }
 .fmenu1 li {
   margin-bottom: 8px;
+}
+.link a:link,
+.link a:visited {
+  text-decoration: none;
+  color: hsl(208, 11%, 55%);
 }
 .fmenu1 li#first {
   list-style-image: url("../images/icon-location.svg");
   list-style-position: outside;
 }
+.fmenu1 li#sec {
+  list-style-image: url("../images/icon-phone.svg");
+  list-style-position: outside;
+}
+.fmenu1 li#third {
+  list-style-image: url("../images/icon-email.svg");
+  list-style-position: outside;
+}
+
 .fmenu2 {
-  width: 35%;
+  width: 25%;
 }
 .fmenu2 ul {
+  width: 250px;
   list-style: none;
-  width: 300px;
 }
 .fmenu2 li {
   margin-bottom: 8px;
+}
+.icons > .fab {
+  padding-right: 20px;
+}
+.cright {
+  width: 100%;
+  text-align: right;
+  color: hsl(208, 11%, 55%);
+  padding: 15px;
+}
+.icons a:link,
+.icon a:visited {
+  text-decoration: none;
+  padding-right: 10px;
+  color: hsl(208, 11%, 55%);
+}
+@media screen and (max-width: 375px) {
+.header.grid{
+  
+  display:grid;
+  grid-template-columns:auto;
+ width:100%;
+  grid-template-columns:1fr;
+}
+  
+.col{
+  grid-column-start: 1;
+  grid-column-end: 12;
+  width: 100%;
+}
+  
+}
+.grid2 > .item1{
+  width:100%;
+}
 }

@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+     
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
@@ -27,14 +27,16 @@
       }
     </style>
   </head>
-  <body>
+<body>
+  
+    
     <div class="header grid">
-      <div class="grid1">
+      <div class="grid1 col">
         <img src="./images/logo.svg" alt="" />
         <button method="submit" class="btn1">try it for free</button>
       </div>
 
-      <div class="grid2">
+      <div class="grid2 col">
         <div class="item1">
           <h2>Build The Community Your Fans Will Love</h2>
           <p>
@@ -46,12 +48,12 @@
           <button method="submit" class="btn2">Started For Free</button>
         </div>
         <div class="item2">
-          <img src="./images/illustration-mockups.svg" alt="" width="500px" />
+         <img src="./images/illustration-mockups.svg" alt="" width="500px" />
         </div>
       </div>
 
       <div class="container">
-        <div class="main1">
+        <div class="main1 col">
           <div class="mitem1">
             <h2>Grow Together</h2>
             <p>
@@ -65,7 +67,7 @@
           </div>
         </div>
       </div>
-      <div class="main1">
+      <div class="main1 col">
         <div class="mitem2">
           <img src="./images/illustration-flowing-conversation.svg" />
         </div>
@@ -78,7 +80,7 @@
           </p>
         </div>
       </div>
-      <div class="main1">
+      <div class="main1 col">
         <div class="mitem1">
           <h2>Your Users</h2>
           <p>
@@ -97,40 +99,50 @@
         </div>
       </div>
       <br /><br />
+
       <div class="footer">
         <footer>
-          <div class="flogo">
-          <img src="./images/logo.svg" />
+          <div class="flogo col">
+          <img src="./images/logo.svg">
           <br>
           </div>
           <div class="fgrid">
             
-          <div class="fmenu1">
+          <div class="link fmenu1 col">
           <ul>
-         <li id="first"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+         <li id="first"> <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua</a></li>
 
-          <li id="sec">+1-543-123-4567 </li>
-          <li id="third">@huddle.com </li>
+          <li id="sec"><a href="#">+1-543-123-4567</a> </li>
+          <li id="third"><a href="#">@huddle.com</a> </li>
           </ul>
           </div> 
-          <div class="fmenu2">
+          <div class="link fmenu2 col">
             <ul>
-         <li>About Us</li> 
-         <li>What We Do</li>
-         <li> FAQ </li>
+         <li><a href="#">About Us</a></li> 
+         <li><a href="#">We Do</a></li>
+         <li> <a href="#">FAQ</a> </li>
             </ul>
           </div>
           
-          <div class="fmenu2">
+          <div class="link fmenu2 col">
           <ul>
-           <li> Career </li>
-           <li>Blog</li>
-         <li> Contact Us</li>
+           <li><a href="#"> Career </a></li>
+           <li><a href="#">Blog</a></li>
+         <li> <a href="#">Contact Us</a></li>
           </ul>
           </div>
-         &copy; Copyright 2018 Huddle. All rights reserved.
-
+          <script src="https://kit.fontawesome.com/3ae38b4f15.js" crossorigin="anonymous"></script>
+          <div class="icons col">
+            <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+           <a href="http:www.twitter.com"> <i class="fab fa-twitter"></a></i>
+            <a href="http:www.instagram.com"><i class="fab fa-instagram"></a></i>
+          </div>
+          </div>
+      
+          <div class="cright col">
+        <p > &copy; Copyright 2018 Huddle. All rights reserved.</p>
+         </div >
           <p class="attribution">
             Challenge by
             <a
@@ -141,7 +153,8 @@
           </div>
           </p>
         </footer>
-      </div>
     </div>
+    </div>
+  
   </body>
 </html>
