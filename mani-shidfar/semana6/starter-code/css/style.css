@@ -27,6 +27,7 @@ h1,
 h2,
 button {
   font-family: poppin;
+  font-weight: 600;
 }
 
 .grid-container {
@@ -189,4 +190,8 @@ ul li a:visited {
  .gson15 a:link{
    margin-left: 40px;
  }
+}
+ion-icon {
+  color: white;
+  font-size: 30px;
 }
