@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,600;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1.13rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+  h1 h2 h3 h4 h5 h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+  #logo {
+    width: 13%;
+    height: auto;
+}
+img {
+    width: 40%;
+    height: auto;
+}
+.button-white {
+    border: none;
+    border-radius: 3rem;
+    background-color: white;
+    box-shadow: 5px 5px 20px hsl(208, 11%, 55%);
+    color: black;
+    padding: 1rem 2.5rem ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+
+
+}
+ /* huddle {
+    height: 100px;
+    background-color:black;
+    position: sticky;
+    top: 0; 
+  }
+  #header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    justify-content:space-between;
+    padding: 1em 2em;
+}
+#header-img {
+    width: 30%;
+    height: auto;
+}
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
