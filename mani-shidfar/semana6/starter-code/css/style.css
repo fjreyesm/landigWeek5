@@ -132,15 +132,15 @@ ul li a:visited {
   color: hsl(208, 11%, 55%);
 }
 .gson12 li#first {
-  list-style-image: url("./images/icon-location.svg");
+  list-style-image: url("../images/icon-location.svg");
   list-style-position: outside;
 }
 .gson12 li#sec {
-  list-style-image: url("./images/icon-phone.svg");
+  list-style-image: url("../images/icon-phone.svg");
   list-style-position: outside;
 }
 .gson12 li#third {
-  list-style-image: url("./images/icon-email.svg");
+  list-style-image: url("../images/icon-email.svg");
   list-style-position: outside;
 }
 .gson15 a:link {
