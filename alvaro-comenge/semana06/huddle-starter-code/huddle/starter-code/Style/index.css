@@ -1,2 +1,11 @@
-@import url(./normalize.css);
-@import url(./global.css);
+
+@media screen and (min-width: 900px) {
+}
+
+@supports (display: flex) {
+  @media screen and (min-width: 900px) {
+    article {
+      display: flex;
+    }
+  }
+}
