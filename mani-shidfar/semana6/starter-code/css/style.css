@@ -18,6 +18,10 @@ body {
   font-family: paraf;
   src: url(./fonts/static/OpenSans_Condensed/OpenSans_Condensed-Regular.ttf);
 }
+@font-face {
+  font-family: small;
+  src: url(./fonts/Poppins-Light.ttf);
+}
 
 h1,
 h2,
@@ -55,6 +59,7 @@ button {
   border-radius: 25px;
   background-color: hsl(322, 100%, 66%);
   text-align: center;
+  
 }
 .gson4 {
 }
@@ -67,33 +72,35 @@ button {
   gap: 20px;
   border: 1px solid black;
   border-radius: 25px;
-  padding: 25px;
+  padding: 30px;
   margin-left: 5%;
   margin-right: 5%;
+
 }
-.lastmain {
-  position: relative;
-}
-.lastmain > .position {
+
+.footer > .position {
   position: absolute;
-  left: 30%;
-  top: 300px;
+  left: 40%;
+  bottom: 270px;
   color: ;
   border: 1px solid black;
   border-radius: 15px;
   padding: 15px;
   opacity: 1;
   background-color: white;
+  text-align: center;
 }
 .position button {
   background-color: hsl(322, 100%, 66%);
   padding: 12px 18px;
-  text-decoration: center;
-  border-radius: 15px;
-  color: white;
-}
-.position p {
   text-align: center;
+  border-radius: 15px;0
+  color: white;
+  
+}
+.position h4{
+  text-align: center;
+  font-family: poppin;
 }
 
 img {
@@ -107,6 +114,7 @@ img {
   background-size: cover;
   margin-top: 50px;
   align-items: center;
+  position: relative;
 }
 .gson11 {
   grid-column: 1/5;
@@ -136,8 +144,11 @@ ul li a:visited {
 }
 .gson15 a:link {
   color: white;
-  background-color: white;
-  margin-right: 30px;
+   margin-right: 30px;
+}
+.gson15{
+  text-align: center;
+
 }
 .gson16 {
   grid-column: 1/5;
@@ -151,9 +162,8 @@ ul li a:visited {
     grid-column: 1/3;
     text-align: center;
   }
-  .position {
-    display: none;
-  }
+  
+
   .footer {
     display: grid;
     grid-template-columns: 100%;
@@ -165,4 +175,18 @@ ul li a:visited {
     margin-right: auto;
     text-align: center;
   }
+  .footer > .position {
+    bottom: 550px;
+    text-align: center;
+    left: 20%;
+  }
+  .position h4{
+    margin:0;
+  }
+ .gson16{
+   text-align: center;
+ }
+ .gson15 a:link{
+   margin-left: 40px;
+ }
 }
