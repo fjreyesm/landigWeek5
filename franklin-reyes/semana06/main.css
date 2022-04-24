@@ -39,6 +39,8 @@ button {
   border-radius: 30px;
   width: 9rem;
   font-style: bold;
+  box-shadow: 0.11rem 0.11rem 0.22rem grey;
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
 }
 
 .btn2 {
@@ -46,6 +48,7 @@ button {
   width: 14rem;
   color: white;
   padding: 0.7rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
 }
 
 .btn3 {
@@ -53,6 +56,7 @@ button {
   width: 18rem;
   color: white;
   padding: 0.7rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
 }
 
 .wrapper {
@@ -64,6 +68,7 @@ button {
   margin: 2rem;
   box-shadow: 0.44rem 0.44rem 0.88rem grey;
   padding: 2rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
 }
 
 .wrapper2 {
@@ -79,40 +84,41 @@ div > picture > img {
   padding: 3rem;
 }
 
-footer > picture > img {
-  max-width: 20%;
-  background-color: red;
-  margin-left: 4rem;
+footer > div > picture > img {
+  margin-bottom: 4rem;
+  background-color: wheat;
+  margin-left: auto;
 }
 
 footer > div > div > .icons {
-  background-color: black;
   display: flex;
   justify-content: left;
+}
 
-  align-items: center;
+footer > div > div > ul {
+  margin: 0px;
+  text-align: left;
+}
+
+footer > div p {
+  margin-top: 0px;
 }
 
 footer > div > div > .icons img {
-  background-color: pink;
-
   margin-left: 4rem;
   margin-right: 2rem;
 }
 
-footer > div > ul {
-  background-color: red;
-  display: flex;
-  flex: column;
-  align-items: space-around;
-}
-
 footer > div > div:last-child {
-  background-color: orange;
   display: flex;
+  width: 7%;
   justify-content: space-between;
-  width: 5%;
   align-items: flex-start;
+}
+footer > p {
+  text-align: end;
+  margin-right: 3rem;
+  padding: 3rem;
 }
 
 .icons picture img {
@@ -134,7 +140,6 @@ footer > div {
   justify-content: space-evenly;
 }
 div li {
-  background-color: orange;
   margin-bottom: 1rem;
 }
 
