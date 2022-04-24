@@ -1,0 +1,187 @@
+:root {
+  --darkcyan: hsl(192, 100%, 9%);
+  --pink: hsl(322, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.superior {
+  background: url(images/bg-hero-desktop.svg);
+  padding: 1rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1440px;
+}
+
+button {
+  background: white;
+  padding: 0.25rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 30px;
+  width: 9rem;
+  font-style: bold;
+}
+
+.btn2 {
+  background: hsl(322, 100%, 66%);
+  width: 14rem;
+  color: white;
+  padding: 0.7rem;
+}
+
+.btn3 {
+  background: hsl(322, 100%, 66%);
+  width: 18rem;
+  color: white;
+  padding: 0.7rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-center;
+  align-items: center;
+  border: 0.07rem solid;
+  border-radius: 10px;
+  margin: 2rem;
+  box-shadow: 0.44rem 0.44rem 0.88rem grey;
+  padding: 2rem;
+}
+
+.wrapper2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+div > picture > img {
+  width: 100%;
+  padding: 3rem;
+}
+
+footer > picture > img {
+  max-width: 20%;
+  background-color: red;
+  margin-left: 4rem;
+}
+
+footer > div > div > .icons {
+  background-color: black;
+  display: flex;
+  justify-content: left;
+
+  align-items: center;
+}
+
+footer > div > div > .icons img {
+  background-color: pink;
+
+  margin-left: 4rem;
+  margin-right: 2rem;
+}
+
+footer > div > ul {
+  background-color: red;
+  display: flex;
+  flex: column;
+  align-items: space-around;
+}
+
+footer > div > div:last-child {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  width: 5%;
+  align-items: flex-start;
+}
+
+.icons picture img {
+  width: 15%;
+}
+
+footer {
+  background-color: var(--darkcyan);
+}
+
+.icons {
+  display: flex;
+  width: 15rem;
+  align-items: flex-start;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+div li {
+  background-color: orange;
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding-top: 10rem;
+  position: relative;
+  bottom: 4rem;
+  z-index: -5;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.ready {
+  display: flex;
+  padding: 2rem;
+  width: 28rem;
+  border: 0.07rem solid;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+@media only screen and (max-width: 475px) {
+  body {
+    width: 100%;
+    min-width: 375px;
+  }
+
+  .btn2 {
+    background: orange;
+    width: 14rem;
+    color: white;
+    padding: 0.7rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .body {
+  }
+}
