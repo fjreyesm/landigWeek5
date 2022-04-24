@@ -1,0 +1,66 @@
+@import url(./global.css);
+@import url(./normalize.css);
+
+/* Small breakpoint is 600px; */
+
+:root {
+  --BackgroundColor: #fffaf0;
+  --InputColor: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.25rem;
+  font-size: 100%;
+  background-color: var(--BackgroundColor);
+}
+
+.contact {
+  padding: 1em;
+}
+
+.come {
+  display: flex;
+  padding: 1em;
+}
+
+.box {
+  width: 50%;
+  margin-left: 7rem;
+}
+
+option {
+  background-color: var(--InputColor);
+}
+
+label {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+input {
+  max-width: 150px;
+  background-color: var(--InputColor);
+}
+
+textarea {
+  width: 800px;
+  max-width: 800px;
+  background-color: var(--InputColor);
+}
+
+button {
+  background-color: var(--BackgroundColor);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer span {
+  color: red;
+}
