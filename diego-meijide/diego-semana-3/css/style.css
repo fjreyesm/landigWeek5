@@ -3,142 +3,171 @@
   }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  /* max-width: max-content; */
-  /* text-align: center; */
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  max-width: 100%;
+     
 }
 
-.block ¨{
-  border: 2px solid;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  width: 400px;
-  box-sizing: border-box;
-  margin: 10px 20px 10px 20px; 
-  
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem;
 }
 
-.inline p {
+.get {
   text-align: center;
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 25vh;
+
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 24px; 
+.get h1 {
+  font-family: sans-serif;
   color: #f0efef;
+  text-align: left;
+  font-weight: 800;
+  font-size: 24px;
+  /* margin-left: 10%; */
+  margin: 0;
 }
-.relaxr {
-  background-image: url("../images/header-bg.jpg");
-  background-repeat: repeat-x;
-  background-repeat: repeat-y;
+
+.get p {
+  color: #f0efef;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
 }
+
+.get a {
+  color: #033048;
+  font-weight: 800;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  border: #f9e42e solid;
+  background-color: #f9e42e;
+  border-radius: 5px;
+  padding: 10px 40px;
+  font-family: sans-serif;
+}
+
+
+/* Fin de sección */
+
+
+/* Sección benefits */
 
 .benefits {
+  font-weight: 200;
+  font-size: 13px;
   background-color: #f0efef;
-}
-
-.cite {
-  background-image: url("../images/testimonial-bg.jpg");
-  background-repeat: repeat-x;
-  background-repeat: repeat-y;
-}
-
-blockquote {
-  font-family: "Light Italic";
-  font-size: 18px;
-  color: lightgrey;
-  font-style: italic;
-}
-
-.sign-up-now {
-  background-color: #f9e42e;
-}
-
-.footer-relaxr {
-  background-color: #606161;
-}
-
-.footer-relaxr li {
-  display: inline;
-  padding-left: 290px;
-  /* padding-right: 10px;
-  margin-right: 8px; */
-}
-
-.relaxr p {
-  font-weight: 600;
-  font-size: 24px;
-  color: #f0efef;
-  margin-left: 50px;
+  color: #777777;
+  /* height: 300px; */
+  /* display: flex; */
 }
 
 .benefits h2 {
-  font-weight: 600;
-  font-size: 20px;
-  margin-left: 15px;
-}
-
-.relaxr a {
-  font-weight: 700;
-  font-size: 14px;
-  border-radius: 5px;
   color: #033048;
+  font-family: sans-serif;
+}
+
+.list {
+  /* text-align: left; */
+  /* align-items: center; */
+  /* width: 55%; */
+  /* max-width: 100%; */
+  /* margin-left: 10%; */
+  /* padding: 5%; */
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+.list ul li {
+  padding: 1%;
+}
+
+
+/* Fin de sección */
+
+
+/* Sección  de cita y sign up */
+
+.cita {
+  text-align: center;
+  color: #f0efef;
+  background-image: url(../images/testimonial-bg.jpg);
+  padding: 5% 10%;
+}
+
+.cita p {
+  color: #d4d4d4;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  padding: auto;
+  font-size: 18px;
+  font-weight: lighter italic;
+}
+
+.cita-autor {
+  color: #f0efef;
+  padding-top: 1%;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.sign {
+  text-align: center;
   background-color: #f9e42e;
-  text-decoration: none;
-  margin-left: 280px;
-  padding: 10px 50px;
+  padding: 3% 10%;
 }
 
-.sign-up-now a {
-  font-weight: 700;
+.sign a {
+  text-decoration: none;
+  color: #f0efef;
+  font-weight: 800;
   font-size: 12px;
-  border-radius: 5px;
-  color: #f0efef;
+  /* position: relative; */
+  text-align: center;
+  border: #033048 solid;
   background-color: #033048;
-  text-decoration: none;
-  margin-left: 280px;
-  padding: 10px 50px;
+  border-radius: 5px;
+  padding: 10px 40px;
+  font-family: sans-serif;
 }
 
-.amanda {
-  font-weight: 600;
+
+/* Fin de sección */
+
+
+/* Footer */
+
+footer {
+  /* position: relative; */
+  text-align: center;
+  background-color: #424242;
   color: #f0efef;
-  font-size: 18px;
-  text-align: center;
-}
-
-.texto-cite {
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.footer-relaxr h2 {
-  color: #f9e42e;
-  margin-left: 330px;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.footer-relaxr p {
-  font-weight: 600;
   font-size: 9px;
-  color: #f0efef;
-  text-align: center;
+  padding: 2%;
 }
 
-.relaxr h1 {
-  /* margin-right: 400px; */
-  margin-left: 15px;
+footer h2 {
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: sans-serif;
 }
 
-.benefits ul {
-  margin-left: 50px;
-  padding-left: 50px;
-}
-
-.benefits p {
-  margin-left: 50px;
+.social {
+  list-style: none;
+  display: inline;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
 }
