@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  max-width: 100%;
+     
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.get {
+  text-align: center;
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 25vh;
+
+}
+
+.get h1 {
+  font-family: sans-serif;
+  color: #f0efef;
+  text-align: left;
+  font-weight: 800;
+  font-size: 24px;
+  /* margin-left: 10%; */
+  margin: 0;
+}
+
+.get p {
+  color: #f0efef;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+}
+
+.get a {
+  color: #033048;
+  font-weight: 800;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  border: #f9e42e solid;
+  background-color: #f9e42e;
+  border-radius: 5px;
+  padding: 10px 40px;
+  font-family: sans-serif;
+}
+
+
+/* Fin de sección */
+
+
+/* Sección benefits */
+
+.benefits {
+  font-weight: 200;
+  font-size: 13px;
+  background-color: #f0efef;
+  color: #777777;
+  /* height: 300px; */
+  /* display: flex; */
+}
+
+.benefits h2 {
+  color: #033048;
+  font-family: sans-serif;
+}
+
+.list {
+  /* text-align: left; */
+  /* align-items: center; */
+  /* width: 55%; */
+  /* max-width: 100%; */
+  /* margin-left: 10%; */
+  /* padding: 5%; */
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+.list ul li {
+  padding: 1%;
+}
+
+
+/* Fin de sección */
+
+
+/* Sección  de cita y sign up */
+
+.cita {
+  text-align: center;
+  color: #f0efef;
+  background-image: url(../images/testimonial-bg.jpg);
+  padding: 5% 10%;
+}
+
+.cita p {
+  color: #d4d4d4;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  padding: auto;
+  font-size: 18px;
+  font-weight: lighter italic;
+}
+
+.cita-autor {
+  color: #f0efef;
+  padding-top: 1%;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.sign {
+  text-align: center;
+  background-color: #f9e42e;
+  padding: 3% 10%;
+}
+
+.sign a {
+  text-decoration: none;
+  color: #f0efef;
+  font-weight: 800;
+  font-size: 12px;
+  /* position: relative; */
+  text-align: center;
+  border: #033048 solid;
+  background-color: #033048;
+  border-radius: 5px;
+  padding: 10px 40px;
+  font-family: sans-serif;
+}
+
+
+/* Fin de sección */
+
+
+/* Footer */
+
+footer {
+  /* position: relative; */
+  text-align: center;
+  background-color: #424242;
+  color: #f0efef;
+  font-size: 9px;
+  padding: 2%;
+}
+
+footer h2 {
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+.social {
+  list-style: none;
+  display: inline;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+}

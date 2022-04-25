@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  height: 400vh;
+}
+
+footer {
+  background-color: goldenrod;
+  background-color: rgb(70, 200, 67);
+  background-color: hsl(90, 50%, 98%);
+  background-color: #30ff00;
+}
+p {
+  font-family: sans-serif;
+}
