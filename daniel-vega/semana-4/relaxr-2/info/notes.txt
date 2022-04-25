@@ -1,0 +1,13 @@
+Ancho de página:
+1200px
+
+Margen izquierdo y derecho:
+120px 10%
+
+header>h1+nav+div>h2+boton+div>boton+footer>span+ul>li*2
+
+blog body 960
+artible 700 73%
+separation 2%
+aside 240 25%
+
