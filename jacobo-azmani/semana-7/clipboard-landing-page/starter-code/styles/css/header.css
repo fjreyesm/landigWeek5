@@ -43,15 +43,8 @@ header div {
 }
 
 .logo-header {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.header-text {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=header.css.map */
