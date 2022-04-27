@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 1.25rem;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* COLORS */
+/* #### Primary ####  */
+/* #### Neutral #### */
+/* ### Typography ### */
+/* #### Fonts #### */
+/* - Family: Bai Jamjuree */
+/* -Weights: 400, 600 */
+/* Header */
+header {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../../images/bg-header-desktop.png), linear-gradient(to bottom 80% white);
+}
+
+header div {
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-header {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-text {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Contenido */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+p {
+  color: hsl(201deg, 11%, 66%);
+  font-weight: 400;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.keep {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.search picture img {
+  width: 60%;
+  position: relative;
+  left: -7%;
+}
+
+.search-text {
+  width: 40%;
+  margin-right: 2rem;
+  margin: 0 auto;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+}
+
+.logos ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/* Botones */
+button {
+  border: 1px hsl(171deg, 66%, 44%) solid;
+  background-color: hsl(171deg, 66%, 44%);
+  border-radius: 1em;
+  color: white;
+  padding: 0.5em 2em;
+  -webkit-box-shadow: 2px 3px 5px 0px hsl(210deg, 10%, 33%);
+  box-shadow: 2px 3px 5px 0px hsl(201deg, 11%, 66%);
+}
+
+button:last-of-type {
+  border: 1px hsl(233deg, 100%, 69%) solid;
+  background-color: hsl(233deg, 100%, 69%);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

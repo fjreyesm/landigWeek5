@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'Bai Jamjuree', sans-serif;
+  padding: 1.25rem;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* COLORS */
+/* #### Primary ####  */
+$StrongCyan: hsl(171, 66%, 44%);
+$LightBlue: hsl(233, 100%, 69%);
+/* #### Neutral #### */
+$DarkGrayishBlue: hsl(210, 10%, 33%);
+$GrayishBlue: hsl(201, 11%, 66%);
+
+/* ### Typography ### */
+/* #### Fonts #### */
+/* - Family: Bai Jamjuree */
+/* -Weights: 400, 600 */
+
+/* Contenido */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+p {
+  color: $GrayishBlue;
+  font-weight: 400;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.keep {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.search picture img {
+  width: 60%;
+  position: relative;
+  left: -7%;
+}
+
+.search-text {
+  width: 40%;
+  margin-right: 2rem;
+  margin: 0 auto;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+}
+
+.logos ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/* Botones */
+button {
+  border: 1px $StrongCyan solid;
+  background-color: $StrongCyan;
+  border-radius: 1em;
+  color: white;
+  padding: 0.5em 2em;
+  -webkit-box-shadow: 2px 3px 5px 0px $DarkGrayishBlue;
+  box-shadow: 2px 3px 5px 0px $GrayishBlue;
+}
+
+button:last-of-type {
+  border: 1px $LightBlue solid;
+  background-color: $LightBlue;
+}
+
+button:hover {
+  cursor: pointer;
+}

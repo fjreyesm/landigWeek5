@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'Bai Jamjuree', sans-serif;
+  padding: 1.25rem;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* COLORS */
+/* #### Primary ####  */
+$StrongCyan: hsl(171, 66%, 44%);
+$LightBlue: hsl(233, 100%, 69%);
+/* #### Neutral #### */
+$DarkGrayishBlue: hsl(210, 10%, 33%);
+$GrayishBlue: hsl(201, 11%, 66%);
+
+/* ### Typography ### */
+/* #### Fonts #### */
+/* - Family: Bai Jamjuree */
+/* -Weights: 400, 600 */
+
+/* Header */
+header {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../../images/bg-header-desktop.png),
+    linear-gradient(to bottom 80% white);
+}
+
+header div {
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-header {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-text {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
