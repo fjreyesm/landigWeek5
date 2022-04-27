@@ -1,3 +1,23 @@
 @import url(./header.css);
 @import url(./main.css);
 @import url(./footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
