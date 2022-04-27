@@ -161,7 +161,7 @@ footer{
 }
 
 .contact2{
-  width: 20%;
+  width: 30%;
   margin-top: 5rem;
   margin-left: 8rem;
 }
@@ -184,13 +184,18 @@ footer{
 .socialIcons{
   margin-top: 12rem;
   display: flex;
-  flex-direction:row-reverse;
-  justify-content:space-around;
+
+ 
 }
-.socialIcons picture img{ 
+.social{
+  display: flex;
+  
+}
+.socialIcons  img{ 
  width:20px;
  margin-left: 5rem;
 }
+
 .remate{
   color: var(--blanco);
   font-size: 12px;
@@ -224,6 +229,18 @@ footer{
  -webkit-box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75); 
   box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75); 
 }
+.social a:hover{
+
+}
+.float a:hover{
+  color: var(--azul);
+}
+.primera-flex a:hover{
+  color: var(--azul);
+}
+.cabezera-flex a:hover{
+  color: var(--azul);
+}
 
 .float {
   font-family: "Open Sans", sans-serif;
@@ -247,14 +264,4 @@ footer{
   text-decoration: none;
  -webkit-box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75); 
   box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75); 
-}
-@media screen and (min-width: 900px) {
-}
-
-@supports (display: flex) {
-  @media screen and (min-width: 900px) {
-    article {
-      display: flex;
-    }
-  }
 }
