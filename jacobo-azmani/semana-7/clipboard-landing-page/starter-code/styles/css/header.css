@@ -28,10 +28,13 @@ img {
 /* -Weights: 400, 600 */
 /* Header */
 header {
-  display: flex;
+  display: block;
+  justify-content: center;
+  /*   display: flex; */
+  /*   align-items: center; */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)), url(../../images/bg-header-desktop.png);
   width: 100%;
   margin: 0 auto;
-  background-image: url(../../images/bg-header-desktop.png), linear-gradient(to bottom 80% white);
 }
 
 header div {
