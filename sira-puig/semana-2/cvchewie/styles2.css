@@ -1,3 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* height: 297mm;
+  width: 210mm; */
+  background-color: white;
+  font-family: arial, helvetica;
+  color: black;
+  margin: 0 450px 0 450px;
+  border: 10px solid black;
+  border-style: double;
+  max-width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+img {
+  max-width: 50%;
+}
+section {
+  padding: 0 20px 0 20px;
+}
 p {
   font-size: 12pt;
   font-family: arial, helvetica;
@@ -9,27 +36,7 @@ h1 {
   font-size: 30pt;
   font-family: arial, helvetica;
   text-align: center;
-}
-body {
-  height: 297mm;
-  width: 210mm;
-  background-color: rgb(122, 109, 109);
-  font-family: arial, helvetica;
-  color: black;
-  margin-right: auto;
-  margin-left: auto;
-}
-page {
-  background: white;
-  display: block;
-  border: 2mm double black;
-  padding-left: 10mm;
-  padding-right: 10mm;
-  margin: auto;
-}
-page[size="A4"] {
-  width: 210mm;
-  height: 297mm;
+  padding: 1px;
 }
 h2 {
   font-size: 15pt;
@@ -54,18 +61,21 @@ hr {
   background-color: black;
   margin-top: 0;
 }
-ul#horizontal li {
-  display: inline-block;
-  text-align: center;
-  padding-left: 3px;
-  padding-right: 3px;
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
 }
-ul#columna {
+.horizontal li {
+  display: inline;
+  text-align: center;
+}
+.columna {
   column-count: 3;
 }
 footer {
-  display: inline-block;
-  text-align: center;
+  text-align: left;
+  padding: 20px;
   color: grey;
-  padding: 10px;
 }
