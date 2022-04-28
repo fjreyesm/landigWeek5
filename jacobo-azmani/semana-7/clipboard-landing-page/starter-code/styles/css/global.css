@@ -1,6 +1,6 @@
-@import url(./header.css);
+/* @import url(./header.css); */
+/* @import url(./footer.css); */
 @import url(./main.css);
-@import url(./footer.css);
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
 
 * {
@@ -22,7 +22,7 @@ img {
   height: auto;
 }
 
-/* @media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   body {
     font-size: 100%;
   }
@@ -95,5 +95,8 @@ img {
   }
 
   .socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
-} */
+}

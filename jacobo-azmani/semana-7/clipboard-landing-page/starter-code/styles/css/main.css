@@ -1,6 +1,96 @@
 /* COLORS */
 /* #### Primary ####  */
 /* #### Neutral #### */
+/* footer */
+footer {
+  display: flex;
+  justify-content: flex-start;
+  background-color: hsl(201deg, 11%, 66%);
+  font-size: 12px;
+  width: 100%;
+}
+
+footer picture img {
+  width: 4.5rem;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+footer ul li {
+  list-style: none;
+  padding: 1rem;
+}
+
+footer ul li a {
+  justify-content: space-between;
+  color: hsl(210deg, 10%, 33%);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.socialIcons {
+  list-style: none;
+  color: hsl(210deg, 10%, 33%);
+  font-size: 20px;
+  position: relative;
+  left: 4rem;
+  top: 2rem;
+}
+
+.socialIcons ul li {
+  display: inline;
+}
+
+footer a:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/* COLORS */
+/* #### Primary ####  */
+/* #### Neutral #### */
+/* ### Typography ### */
+/* #### Fonts #### */
+/* - Family: Bai Jamjuree */
+/* -Weights: 400, 600 */
+/* Header */
+header {
+  display: block;
+  justify-content: center;
+  /*   display: flex; */
+  /*   align-items: center; */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255)), url(../../images/bg-header-desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1.25rem;
+}
+
+header div {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: center;
+}
+
+/* COLORS */
+/* #### Primary ####  */
+/* #### Neutral #### */
 /* ### Typography ### */
 /* #### Fonts #### */
 /* - Family: Bai Jamjuree */
