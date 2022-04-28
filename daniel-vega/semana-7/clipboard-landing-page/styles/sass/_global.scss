@@ -4,6 +4,8 @@
 
 html {
   font-size: 100%;
+  display: fkex;
+  justify-content: center;
 }
 
 picture {
@@ -14,4 +16,106 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+// DECLARATIONS
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+$strong-cyan: hsl(171, 66%, 44%);
+$light-blue: hsl(233, 100%, 69%);
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+$white: white;
+$regular: 400;
+$semi-bold: 600;
+
+@mixin flexing($flexflow: row, $wrap: wrap, $justify: center, $align: center) {
+  display: flex;
+  flex-flow: $flexflow $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+body > * {
+  max-width: 1440px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 1.125rem;
+  color: $dark-grayish-blue;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem;
+}
+h2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+p {
+  color: $grayish-blue;
+  margin: 0.5rem 0;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+button {
+  padding: 0.93rem 1.8rem;
+  border-radius: 2rem;
+  color: $white;
+  font-weight: $semi-bold;
+  border-style: none;
+}
+.ios {
+  background-color: $strong-cyan;
+  margin-right: 0.7rem;
+  box-shadow: 0.1rem 0.6rem 20px transparentize($strong-cyan, 0.8),
+    inset -1px -1px 2px 2px darken($strong-cyan, 8);
+  &:hover {
+    background-color: lighten($strong-cyan, 8);
+    box-shadow: 0.1rem 0.6rem 20px transparentize($strong-cyan, 0.9),
+      inset -1px -1px 2px 2px darken($strong-cyan, 2);
+  }
+}
+.mac {
+  background-color: $light-blue;
+  box-shadow: 0.1rem 0.6rem 20px transparentize($light-blue, 0.8),
+    inset -1px -1px 2px 2px darken($light-blue, 8);
+  &:hover {
+    background-color: lighten($light-blue, 8);
+    box-shadow: 0.1rem 0.6rem 20px transparentize($light-blue, 0.9),
+      inset -1px -1px 2px 2px darken($light-blue, 2);
+  }
+}
+
+header {
+  padding: 2rem;
+  background-image: url(../../images/png/bg-header-desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  @include flexing(column, nowrap, center, center);
+}
+
+.header-logo {
+  height: 6.8rem;
+  width: 6.8rem;
+  margin-top: 5.4rem;
+  margin-bottom: 2.8rem;
+}
+.header-intro {
+  @include flexing(column, nowrap, center, center);
+  width: 40rem;
+  margin-bottom: 2.3rem;
+}
+main {
+  margin: 6rem 0;
+  @include flexing(column, nowrap, center, center);
+}
+main p {
+  font-size: 1rem;
+}
+.track {
+  @include flexing(column, nowrap, center, center);
+}
+.track > div:first-of-type {
+  @include flexing(column, nowrap, center, center);
+  width: 40rem;
 }

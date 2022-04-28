@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -343,6 +344,8 @@ template {
 
 html {
   font-size: 100%;
+  display: fkex;
+  justify-content: center;
 }
 
 picture {
@@ -353,6 +356,111 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+body > * {
+  max-width: 1440px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.125rem;
+  color: hsl(210deg, 10%, 33%);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+p {
+  color: hsl(201deg, 11%, 66%);
+  margin: 0.5rem 0;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+button {
+  padding: 0.93rem 1.8rem;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 600;
+  border-style: none;
+}
+
+.ios {
+  background-color: hsl(171deg, 66%, 44%);
+  margin-right: 0.7rem;
+  box-shadow: 0.1rem 0.6rem 20px rgba(38, 186, 164, 0.2), inset -1px -1px 2px 2px #1f9886;
+}
+.ios:hover {
+  background-color: #34d5bd;
+  box-shadow: 0.1rem 0.6rem 20px rgba(38, 186, 164, 0.1), inset -1px -1px 2px 2px #24b29d;
+}
+
+.mac {
+  background-color: hsl(233deg, 100%, 69%);
+  box-shadow: 0.1rem 0.6rem 20px rgba(97, 115, 255, 0.2), inset -1px -1px 2px 2px #384fff;
+}
+.mac:hover {
+  background-color: #8a97ff;
+  box-shadow: 0.1rem 0.6rem 20px rgba(97, 115, 255, 0.1), inset -1px -1px 2px 2px #576aff;
+}
+
+header {
+  padding: 2rem;
+  background-image: url(../../images/png/bg-header-desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  height: 6.8rem;
+  width: 6.8rem;
+  margin-top: 5.4rem;
+  margin-bottom: 2.8rem;
+}
+
+.header-intro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  margin-bottom: 2.3rem;
+}
+
+main {
+  margin: 6rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main p {
+  font-size: 1rem;
+}
+
+.track {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.track > div:first-of-type {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
 }
 
 /*# sourceMappingURL=main.css.map */
