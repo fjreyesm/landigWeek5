@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  /* width: 700px; ajustar*/
+  background-color: #f0efef;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: auto;
+}
+
+header {
+  background-color: #033048;
+  /* flexbox */
+  display: flex;
+  flex-flow: row wrap;
+  /* con estas dos propiedades se centran
+  y se colocan a cada lado el h2 y el nav*/
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  padding-left: 5rem;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #121212;
+}
+
+nav {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 40px;
+  text-align: center;
+  flex: 1;
+  gap: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: #f0efef;
+  text-align: center;
+}
+
+.contenedor {
+  padding: 5rem;
+  width: 70%;
+}
+aside {
+  padding: 5rem;
+  width: 30%;
+}
+article {
+  /* width: 460px; */
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+section img {
+  width: 100%;
+}
+aside div {
+  background-color: white;
+  height: 80vh;
+}
+aside div h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+.derecha {
+  float: right;
+}
+.inline {
+  display: inline-block;
+}
+footer {
+  background-color: #033048;
+  text-align: center;
+  margin: auto;
+}
+footer p {
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+}
+footer h2 {
+  color: white;
+}
+button {
+  background-color: #033048;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: 5px;
+  color: white;
+}
