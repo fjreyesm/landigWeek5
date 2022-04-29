@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 1.25rem;
+  background-image: url(/clipboard-landing-page/starter-code/images/bg-header-desktop.png);
+  background: cover;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
