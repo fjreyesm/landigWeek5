@@ -267,5 +267,6 @@ footer{
 }
 @media only screen and(max-width: 375px){
   .img{max-width: 50%;
+    order:1;
   }
 }
