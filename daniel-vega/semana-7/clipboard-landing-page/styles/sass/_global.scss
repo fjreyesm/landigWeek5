@@ -4,7 +4,7 @@
 
 html {
   font-size: 100%;
-  display: fkex;
+  display: flex;
   justify-content: center;
 }
 
@@ -20,13 +20,13 @@ img {
 
 // DECLARATIONS
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
-$strong-cyan: hsl(171, 66%, 44%);
-$light-blue: hsl(233, 100%, 69%);
-$dark-grayish-blue: hsl(210, 10%, 33%);
-$grayish-blue: hsl(201, 11%, 66%);
-$white: white;
-$regular: 400;
-$semi-bold: 600;
+$c_strong-cyan: hsl(171, 66%, 44%);
+$c_light-blue: hsl(233, 100%, 69%);
+$c_dark-grayish-blue: hsl(210, 10%, 33%);
+$c_grayish-blue: hsl(201, 11%, 66%);
+$c_white: white;
+$f_regular: 400;
+$f_semi-bold: 600;
 
 @mixin flexing($flexflow: row, $wrap: wrap, $justify: center, $align: center) {
   display: flex;
@@ -34,12 +34,15 @@ $semi-bold: 600;
   justify-content: $justify;
   align-items: $align;
 }
+@mixin mark($color: red) {
+  outline: 2px solid $color;
+}
 
 body > * {
   max-width: 1440px;
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 1.125rem;
-  color: $dark-grayish-blue;
+  color: $c_dark-grayish-blue;
 }
 
 h1 {
@@ -51,7 +54,7 @@ h2 {
   margin: 0.5rem;
 }
 p {
-  color: $grayish-blue;
+  color: $c_grayish-blue;
   margin: 0.5rem 0;
   text-align: center;
   line-height: 1.6rem;
@@ -60,29 +63,29 @@ p {
 button {
   padding: 0.93rem 1.8rem;
   border-radius: 2rem;
-  color: $white;
-  font-weight: $semi-bold;
+  color: $c_white;
+  font-weight: $f_semi-bold;
   border-style: none;
 }
 .ios {
-  background-color: $strong-cyan;
+  background-color: $c_strong-cyan;
   margin-right: 0.7rem;
-  box-shadow: 0.1rem 0.6rem 20px transparentize($strong-cyan, 0.8),
-    inset -1px -1px 2px 2px darken($strong-cyan, 8);
+  box-shadow: 0.1rem 0.6rem 20px transparentize($c_strong-cyan, 0.8),
+    inset -1px -1px 2px 2px darken($c_strong-cyan, 8);
   &:hover {
-    background-color: lighten($strong-cyan, 8);
-    box-shadow: 0.1rem 0.6rem 20px transparentize($strong-cyan, 0.9),
-      inset -1px -1px 2px 2px darken($strong-cyan, 2);
+    background-color: lighten($c_strong-cyan, 8);
+    box-shadow: 0.1rem 0.6rem 20px transparentize($c_strong-cyan, 0.9),
+      inset -1px -1px 2px 2px darken($c_strong-cyan, 2);
   }
 }
 .mac {
-  background-color: $light-blue;
-  box-shadow: 0.1rem 0.6rem 20px transparentize($light-blue, 0.8),
-    inset -1px -1px 2px 2px darken($light-blue, 8);
+  background-color: $c_light-blue;
+  box-shadow: 0.1rem 0.6rem 20px transparentize($c_light-blue, 0.8),
+    inset -1px -1px 2px 2px darken($c_light-blue, 8);
   &:hover {
-    background-color: lighten($light-blue, 8);
-    box-shadow: 0.1rem 0.6rem 20px transparentize($light-blue, 0.9),
-      inset -1px -1px 2px 2px darken($light-blue, 2);
+    background-color: lighten($c_light-blue, 8);
+    box-shadow: 0.1rem 0.6rem 20px transparentize($c_light-blue, 0.9),
+      inset -1px -1px 2px 2px darken($c_light-blue, 2);
   }
 }
 
@@ -103,7 +106,7 @@ header {
 .header-intro {
   @include flexing(column, nowrap, center, center);
   width: 40rem;
-  margin-bottom: 2.3rem;
+  margin-bottom: 2.2rem;
 }
 main {
   margin: 6rem 0;
@@ -114,8 +117,169 @@ main p {
 }
 .track {
   @include flexing(column, nowrap, center, center);
+  margin-bottom: 6rem;
+
+  & > .top {
+    @include flexing(column, nowrap, center, center);
+    width: 40rem;
+    margin-bottom: 4.3rem;
+  }
+  & > .bottom {
+    @include flexing(row, nowrap, center, center);
+  }
+  & .left {
+    width: 55%;
+  }
+  & .left > .image-container {
+    width: 94.5%;
+    position: relative;
+    right: 1.7rem;
+  }
+  & .right {
+    width: 45%;
+    @include flexing(column, nowrap, flex-start, flex-start);
+    padding: 2.6rem 15rem 3.45em 2rem;
+
+    & div {
+      margin: 1.1rem 0;
+    }
+    & div:first-child {
+      margin-top: 0 0;
+    }
+    & h3,
+    & p {
+      margin: 0.5rem 0;
+      text-align: left;
+    }
+    & p {
+      font-size: 0.9rem;
+    }
+  }
 }
-.track > div:first-of-type {
+.access {
+  @include flexing(column, wrap, center, center);
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+
+  & .top {
+    width: 50%;
+  }
+  & .top h2 {
+    margin-bottom: 1rem;
+  }
+  & .bottom {
+    padding-top: 5.5rem;
+    width: 70%;
+    @include flexing(column, wrap, center, center);
+  }
+  & .image-container {
+    width: 90%;
+  }
+}
+.supercharge {
+  @include flexing(column, wrap, center, center);
+  & .top {
+    padding: 1.3rem;
+
+    & h2 {
+      margin-bottom: 1.3rem;
+    }
+    & p {
+      font-size: 1rem;
+    }
+  }
+  & .bottom {
+    @include flexing(row, nowrap, space-evenly, flex-start);
+    padding: 2.5rem 8rem;
+  }
+  & .card {
+    @include flexing(column, nowrap, center, center);
+    width: 31%;
+    /* margin: 0 0.5rem; */
+    padding: 0 0.8rem;
+  }
+  & .image-container {
+    width: 2rem;
+    height: 2.5rem;
+  }
+  & .card:first-of-type .image-container {
+    width: 2.4rem;
+  }
+  & .card:last-of-type .image-container {
+    width: 3rem;
+  }
+  & .card h3 {
+    margin: 2rem 0 0.5rem 0;
+  }
+  & p {
+    font-size: 0.85rem;
+  }
+}
+.partners {
+  @include flexing(row, nowrap, space-evenly, center);
+  margin: 5rem 0;
+  width: 100%;
+  padding: 0.8rem 5.9rem;
+
+  & .image-container {
+    @include flexing(row, nowrap, center, center);
+    max-width: 12.5%;
+    margin: 0 1.5rem;
+  }
+}
+.download {
   @include flexing(column, nowrap, center, center);
-  width: 40rem;
+  width: 100%;
+  padding: 2rem 0 2.5rem 0;
+
+  & p {
+    width: 50%;
+    margin-bottom: 2.8rem;
+  }
+}
+footer {
+  background-color: lighten($c_grayish-blue, 30);
+  @include flexing(row, nowrap, space-between, center);
+  padding: 0 9rem;
+  & .image-container {
+    width: 40%;
+  }
+  & nav ul {
+    @include flexing(column, wrap, flex-start, flex-start);
+    list-style: none;
+    height: 6rem;
+    width: 32rem;
+    padding: 1.2rem 0 0 0;
+    margin-right: 9rem;
+    font-size: 1rem;
+  }
+  & nav li {
+    margin-bottom: 1.2rem;
+  }
+  & nav .link {
+    text-decoration: none;
+    color: $c_dark-grayish-blue;
+    &:hover {
+      color: $c_strong-cyan;
+    }
+  }
+  & .social {
+    @include flexing(row, nowrap, space-between, center);
+    padding: 0;
+    list-style: none;
+    width: 7rem;
+    & li:hover {
+      filter: invert(48%) sepia(79%) saturate(206%) hue-rotate(116deg)
+        brightness(98%) contrast(119%);
+    }
+  }
+}
+.placeholder {
+  @include mark(black);
+  border-radius: 50px;
+  margin-top: 15rem;
+  padding: 2rem;
+  background-color: red;
+  color: $c_white;
 }

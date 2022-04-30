@@ -344,7 +344,7 @@ template {
 
 html {
   font-size: 100%;
-  display: fkex;
+  display: flex;
   justify-content: center;
 }
 
@@ -433,7 +433,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 40rem;
-  margin-bottom: 2.3rem;
+  margin-bottom: 2.2rem;
 }
 
 main {
@@ -453,14 +453,217 @@ main p {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 6rem;
 }
-
-.track > div:first-of-type {
+.track > .top {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 40rem;
+  margin-bottom: 4.3rem;
+}
+.track > .bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.track .left {
+  width: 55%;
+}
+.track .left > .image-container {
+  width: 94.5%;
+  position: relative;
+  right: 1.7rem;
+}
+.track .right {
+  width: 45%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2.6rem 15rem 3.45em 2rem;
+}
+.track .right div {
+  margin: 1.1rem 0;
+}
+.track .right div:first-child {
+  margin-top: 0 0;
+}
+.track .right h3, .track .right p {
+  margin: 0.5rem 0;
+  text-align: left;
+}
+.track .right p {
+  font-size: 0.9rem;
+}
+
+.access {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+}
+.access .top {
+  width: 50%;
+}
+.access .top h2 {
+  margin-bottom: 1rem;
+}
+.access .bottom {
+  padding-top: 5.5rem;
+  width: 70%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.access .image-container {
+  width: 90%;
+}
+
+.supercharge {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.supercharge .top {
+  padding: 1.3rem;
+}
+.supercharge .top h2 {
+  margin-bottom: 1.3rem;
+}
+.supercharge .top p {
+  font-size: 1rem;
+}
+.supercharge .bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 2.5rem 8rem;
+}
+.supercharge .card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+  /* margin: 0 0.5rem; */
+  padding: 0 0.8rem;
+}
+.supercharge .image-container {
+  width: 2rem;
+  height: 2.5rem;
+}
+.supercharge .card:first-of-type .image-container {
+  width: 2.4rem;
+}
+.supercharge .card:last-of-type .image-container {
+  width: 3rem;
+}
+.supercharge .card h3 {
+  margin: 2rem 0 0.5rem 0;
+}
+.supercharge p {
+  font-size: 0.85rem;
+}
+
+.partners {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5rem 0;
+  width: 100%;
+  padding: 0.8rem 5.9rem;
+}
+.partners .image-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 12.5%;
+  margin: 0 1.5rem;
+}
+
+.download {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0 2.5rem 0;
+}
+.download p {
+  width: 50%;
+  margin-bottom: 2.8rem;
+}
+
+footer {
+  background-color: #f4f5f6;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 9rem;
+}
+footer .image-container {
+  width: 40%;
+}
+footer nav ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  height: 6rem;
+  width: 32rem;
+  padding: 1.2rem 0 0 0;
+  margin-right: 9rem;
+  font-size: 1rem;
+}
+footer nav li {
+  margin-bottom: 1.2rem;
+}
+footer nav .link {
+  text-decoration: none;
+  color: hsl(210deg, 10%, 33%);
+}
+footer nav .link:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+footer .social {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  width: 7rem;
+}
+footer .social li:hover {
+  filter: invert(48%) sepia(79%) saturate(206%) hue-rotate(116deg) brightness(98%) contrast(119%);
+}
+
+.placeholder {
+  outline: 2px solid black;
+  border-radius: 50px;
+  margin-top: 15rem;
+  padding: 2rem;
+  background-color: red;
+  color: white;
+}
+
+@media only screen and (max-width: 375px) {
+  html {
+    background-color: red;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
