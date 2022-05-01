@@ -352,13 +352,15 @@ picture {
   display: block;
 }
 
-img {
+html body img.image {
+  /* Artificially increased specifity becouse max-width gave problems with 
+  .image-container. See the push notes for further info. */
   display: block;
   height: auto;
   max-width: 100%;
 }
 
-body > * {
+body * {
   max-width: 1440px;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 1.125rem;
@@ -368,6 +370,7 @@ body > * {
 h1 {
   font-size: 2.5rem;
   margin: 0.5rem;
+  text-align: center;
 }
 
 h2 {
@@ -554,7 +557,6 @@ main p {
   justify-content: center;
   align-items: center;
   width: 31%;
-  /* margin: 0 0.5rem; */
   padding: 0 0.8rem;
 }
 .supercharge .image-container {
@@ -661,8 +663,190 @@ footer .social li:hover {
 }
 
 @media only screen and (max-width: 375px) {
-  html {
-    background-color: red;
+  html body.mediaquery {
+    width: 375px;
+  }
+  html body.mediaquery * {
+    max-width: 375px;
+    margin: 0;
+  }
+  html body.mediaquery header {
+    background-image: url(../../images/png/bg-header-mobile.png);
+  }
+  html body.mediaquery h1 {
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 1.3rem;
+    padding: 0 1rem;
+  }
+  html body.mediaquery h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  html body.mediaquery h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  html body.mediaquery p {
+    padding: 0 2.1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  html body.mediaquery .button {
+    width: 20rem;
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  html body.mediaquery header.mediaquery {
+    padding-top: 8rem;
+  }
+  html body.mediaquery header.mediaquery .header-buttons {
+    margin-top: 2.8rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  html body.mediaquery main.mediaquery {
+    margin: 7rem 0;
+  }
+  html body.mediaquery main.mediaquery .track {
+    margin-bottom: 5rem;
+  }
+  html body.mediaquery main.mediaquery .track h2 {
+    margin-bottom: 1.2rem;
+  }
+  html body.mediaquery main.mediaquery .track > .bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  html body.mediaquery main.mediaquery .track .left {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  html body.mediaquery main.mediaquery .track .left .image-container {
+    display: block;
+    position: static;
+    right: unset;
+    width: 80%;
+  }
+  html body.mediaquery main.mediaquery .track .right {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+  html body.mediaquery main.mediaquery .track .right h3, html body.mediaquery main.mediaquery .track .right p {
+    text-align: center;
+  }
+  html body.mediaquery main.mediaquery .access .top {
+    width: 110%;
+    padding-top: 2.5rem;
+  }
+  html body.mediaquery main.mediaquery .access .bottom {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 92%;
+    padding-top: 3.8rem;
+  }
+  html body.mediaquery main.mediaquery .access .bottom .image-container {
+    width: 100%;
+  }
+  html body.mediaquery main.mediaquery .supercharge {
+    margin-top: 2.8rem;
+  }
+  html body.mediaquery main.mediaquery .supercharge .top h2 {
+    margin-bottom: 0.8rem;
+  }
+  html body.mediaquery main.mediaquery .supercharge .bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.8rem;
+  }
+  html body.mediaquery main.mediaquery .supercharge .bottom .card {
+    margin-top: 3.7rem;
+    width: 100%;
+  }
+  html body.mediaquery main.mediaquery .supercharge .bottom .card .image-container {
+    width: 3rem;
+  }
+  html body.mediaquery main.mediaquery .supercharge .bottom .card h3 {
+    margin: 2.5rem 0 1.3rem 0;
+  }
+  html body.mediaquery main.mediaquery .supercharge .bottom .card p {
+    padding: 0;
+  }
+  html body.mediaquery main.mediaquery .partners {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  html body.mediaquery main.mediaquery .partners .image-container {
+    max-width: 95%;
+    margin-bottom: 3.8rem;
+  }
+  html body.mediaquery main.mediaquery .partners .image-container:first-of-type {
+    margin-top: 6.5rem;
+  }
+  html body.mediaquery main.mediaquery .partners .image-container:nth-of-type(2), html body.mediaquery main.mediaquery .partners .image-container:nth-of-type(4), html body.mediaquery main.mediaquery .partners .image-container:nth-of-type(5) {
+    max-width: 65%;
+  }
+  html body.mediaquery main.mediaquery .download {
+    margin-top: 5rem;
+    padding: 1rem;
+  }
+  html body.mediaquery main.mediaquery .download h2 {
+    width: 90%;
+    font-size: 1.7rem;
+  }
+  html body.mediaquery main.mediaquery .download p {
+    width: 90%;
+    padding: 0.1rem;
+    margin: 1rem 0 3rem 0;
+  }
+  html body.mediaquery footer.mediaquery {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8rem;
+    padding: 3.2rem 0;
+  }
+  html body.mediaquery footer.mediaquery .footer-logo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.1rem 0 0.6rem 0;
+  }
+  html body.mediaquery footer.mediaquery .image-container {
+    width: 45%;
+  }
+  html body.mediaquery footer.mediaquery nav ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: unset;
+  }
+  html body.mediaquery footer.mediaquery nav ul li {
+    margin: 1rem 0;
+  }
+  html body.mediaquery footer.mediaquery .social {
+    margin-top: 2rem;
+    width: 10rem;
   }
 }
 
