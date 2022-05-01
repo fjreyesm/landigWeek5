@@ -1,0 +1,362 @@
+@import url(./normalize.css);
+@import url(./global.css);
+
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.h3-grid {
+  width: 75%;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  text-align: left;
+}
+h3 {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+.p-grid {
+  width: 75%;
+  text-align: left;
+  margin: 1rem 1rem auto 2rem;
+}
+
+/* ---------------------- header ------------------ */
+
+.header,
+.clipboard {
+  width: 60%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.logo {
+  position: relative;
+  display: flex;
+  margin-top: 1rem;
+  margin: auto;
+}
+.logo img {
+  height: 4rem;
+  position: relative;
+  display: flex;
+}
+.button-header-container,
+.button-main-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.button1-header,
+.button1-main {
+  text-align: center;
+  height: 3.5rem;
+  width: 14rem;
+  border-radius: 20%/50%;
+  position: relative;
+  display: block;
+  margin-right: 1rem;
+  margin-left: auto;
+  background-color: hsl(171, 66%, 44%);
+  color: white;
+  border: 1px solid hsl(171, 69%, 35%);
+  padding-top: 1rem;
+  text-decoration: none;
+}
+.button2-header,
+.button2-main {
+  text-align: center;
+  margin-top: 0.2rem;
+  margin-bottom: auto;
+  height: 3.5rem;
+  width: 14rem;
+  border-radius: 20%/50%;
+  position: relative;
+  display: block;
+  margin-right: 1rem;
+  margin-left: auto;
+  background-color: hsl(233, 100%, 69%);
+  color: white;
+  border: 1px solid hsl(233, 57%, 55%);
+  padding-top: 1rem;
+  text-decoration: none;
+}
+
+.bg-header-mobile {
+  display: none;
+}
+.bg-header-desktop {
+  display: flex;
+  position: absolute;
+  max-width: 1440px;
+  width: 100%;
+  height: 23rem;
+  top: -3rem;
+  z-index: -1;
+}
+.bg-header-desktop img {
+  max-width: 100%;
+  height: auto;
+}
+/* ---------------------- main -------------------- */
+main {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.keep_snipper,
+.access-clipboard {
+  position: relative;
+  width: 50%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.computer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(6, 6rem);
+  flex-direction: column;
+}
+.picture-image-computer {
+  display: flex;
+  grid-row: 1 / 7;
+  max-width: 100%;
+}
+.picture-image-computer img {
+  display: flex;
+  max-width: 100%;
+}
+.picture-image-devices {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.picture-image-devices img {
+  display: flex;
+  max-width: 180%;
+}
+.blacklist_container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+}
+.blacklist {
+  position: relative;
+  width: 22rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.blacklist picture {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.blacklist img {
+  position: relative;
+  display: flex;
+}
+.logos-empresas__container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.logos-empresas__container picture {
+  position: relative;
+  width: 10rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.logos-empresas__container picture img {
+  position: relative;
+  display: flex;
+}
+
+/* ---------------------- Footer ------------------ */
+
+footer {
+  background-color: hsl(200, 12%, 76%);
+  padding-top: 2rem;
+}
+.div-footer {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-rows: 3rem 3rem;
+  grid-auto-flow: column;
+}
+.logo-footer {
+  grid-column: 1;
+  grid-row: 1/3;
+  position: relative;
+  display: flex;
+  margin-top: 1rem;
+  margin: auto;
+}
+.logo-footer img {
+  height: 4rem;
+  position: relative;
+  display: flex;
+}
+.pie-footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+p a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+}
+footer div p {
+  text-align: left;
+}
+.icons-redes {
+  grid-column: 6/7;
+  grid-row: 1/3;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+.icons-redes a {
+  margin-right: 1rem;
+}
+/* Feel free to remove these styles or customise in your own stylesheet 👍 */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ---------------------- 500px ------------------- */
+
+@media screen and (max-width: 500px) {
+  .button-header-container,
+  .button-main-container {
+    flex-direction: column;
+  }
+  .computer {
+    grid-template-columns: 100%;
+    grid-template-rows: 18rem repeat(6, 6rem);
+    grid-auto-flow: column;
+    align-items: center;
+  }
+  .picture-image-computer {
+    display: flex;
+    grid-row: 1 /2;
+    max-width: 90%;
+    margin: auto;
+  }
+  .h3-grid {
+    width: 100%;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .p-grid {
+    text-align: center;
+    margin: 1rem 2rem 0rem 3rem;
+  }
+  .div-footer {
+    grid-template-columns: repeat(4, 1fr) 10rem;
+    grid-template-rows: 3rem 3rem;
+    grid-auto-flow: column;
+  }
+  .icons-redes {
+    grid-column: 5/6;
+    grid-row: 1/3;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .icons-redes a {
+    margin-right: 0.5rem;
+  }
+}
+
+/* ---------------------- 375px ------------------- */
+
+@media screen and (max-width: 375px) {
+  .bg-header-desktop {
+    display: none;
+  }
+  .bg-header-mobile {
+    display: flex;
+    position: absolute;
+    max-width: 375px;
+    width: 100%;
+    height: 30rem;
+    top: -3rem;
+    z-index: -1;
+  }
+  .bg-header-mobile img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .div-footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    font-size: medium;
+  }
+  .logo-footer {
+    position: relative;
+    display: flex;
+    margin-top: 1rem;
+    margin: auto;
+  }
+  .logo-footer img {
+    height: 4rem;
+    position: relative;
+    display: flex;
+  }
+  .pie-footer {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  p a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+  }
+  footer div p {
+    text-align: center;
+  }
+  .icons-redes {
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .icons-redes a {
+    margin-right: 1rem;
+  }
+}
