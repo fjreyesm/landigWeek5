@@ -1,0 +1,75 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  row-gap: 70px;
+}
+
+.header {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  row-gap: 30px;
+}
+
+.head1,
+.head2 {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.main1 .col2 section {
+  padding: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.main2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  text-align: center;
+}
+
+.mani2 .col3,
+.mani2 .col5 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+.main4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+}
+
+.mainl {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
