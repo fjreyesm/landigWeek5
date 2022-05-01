@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.13rem;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+h1 h2 h3 {
+  color: hsl(210,10%,33%);
+}
+p {
+  color: hsl(201,11%,66%);
+  line-height: 3.5vh;
+}
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:center;
+  padding-top: 126px;
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header img {
+  width:9%;
+  height: auto;
+}
+header h1 {
+  padding-top: 35px;
+}
+header p {
+  width: 45%;
+  text-align: center;
+}
+header section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header button {
+  border: none;
+  border-radius: 100px;
+  color: black;
+  padding: 1rem 2.5rem ;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button-green {
+  background-color:  hsl(171, 66%, 44%);
+  box-shadow: 5px 5px 20px hsl(171, 56%, 40%);
+  border-style:groove hsl(170, 89%, 15%);
+}
+.button-blue {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 5px 5px 20px hsl(233, 58%, 46%);
+}
+.snippets {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:center;
+  padding-top: 100px;
+}
+.snippets p {
+  width: 50%;
+  text-align: center;
+}
+.keep-track {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content:center;
+}
+.keep-track img {
+  width: 50%;
+}
+.keep-track-snippets {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:center;
+}
+.keep-track-snippets, h4, p {
+  width: 50%;
+}
+.access-clipboard-anywhere, h2, p  {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:center;
+}
+.supercharge-workflow, h2, p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:center;
+}
+.supercharge-workflow .box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:left;
+}
+.logos img {
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content:space-around;
+  padding: 10px 10px;
+}
+.clipboard-ios-mac-os, h2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content:center;
+}
+.clipboard-ios-mac-os p {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content:center;
+}
+.clipboard-ios-mac-os, button {
+  border: none;
+  border-radius: 100px;
+  color: black;
+  padding: 1rem 2.5rem ;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button-green {
+  background-color:  hsl(171, 66%, 44%);
+  box-shadow: 5px 5px 20px hsl(171, 56%, 40%);
+  border-style:groove hsl(170, 89%, 15%);
+}
+.button-blue {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 5px 5px 20px hsl(233, 58%, 46%);
+}
+.clipboard-ios-mac-os, button {
+  
+}
+footer img {
+  width:9%;
+  height: auto;
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+}
