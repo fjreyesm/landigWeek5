@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+/* good luck reading those ids and classes （／_＼） */
+body {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#pa1 {
+  padding-bottom: 20%;
+  background-image: url("../../starter-code/images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#fondo2 {
+  background-image: url("../../starter-code/images/testimonial-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 5%;
+}
+.paa {
+  padding-top: 50px;
+}
+#pa2 {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: rgb(244, 241, 238);
+}
+
+#a1 {
+  font-weight: 800;
+  font-size: 24px;
+  padding-left: 5%;
+  padding-top: 1%;
+  color: #f0efef;
+}
+#a2 {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #f0efef;
+  padding-bottom: 3%;
+  padding-top: 6%;
+}
+#divcenter {
+  text-align: center;
+}
+#a3 {
+  font-weight: 800;
+  font-size: 14px;
+  border: 2px solid #f9e42e;
+  border-radius: 5px;
+  background-color: #f9e42e;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #033048;
+}
+#b1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #033048;
+}
+#divcenter2 {
+  padding-left: 5%;
+}
+.b2 {
+  font-weight: 300;
+  font-size: 13px;
+  color: #606161;
+}
+#b2lis {
+  padding-top: 1%;
+}
+.li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+#c1 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 3%;
+  color: white;
+}
+#c2 {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 5%;
+  color: white;
+}
+#divcenter3 {
+  text-align: center;
+  background-color: #f9e42e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#d1 {
+  font-weight: 800;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #f0efef;
+  background-color: #033048;
+  border: solid #033048;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+#e1 {
+  font-weight: 800;
+  font-size: 24px;
+  color: #f9e42e;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+#e2 {
+  font-weight: 600;
+  font-size: 9px;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.logos {
+  text-align: center;
+  padding-right: 50px;
+}
+#logo1 {
+  display: inline;
+}
+#logo2 {
+  display: inline;
+  padding-left: 50px;
+}
+
+footer {
+  background-color: black;
+  padding-top: 1px;
+}

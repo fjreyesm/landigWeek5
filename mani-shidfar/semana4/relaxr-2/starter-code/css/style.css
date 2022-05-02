@@ -33,8 +33,14 @@ header #navtop {
 }
 #navtop li {
   display: inline-block;
+<<<<<<< HEAD
 
   margin-left: 20px;
+=======
+}
+#navtop li:not(:last-child) {
+  margin-right: 10px;
+>>>>>>> e859397781fe5f1853de7b1eecc0967d1f3e2012
 }
 #navtop li a:link,
 ul li a:visited {
@@ -50,7 +56,8 @@ ul li a:visited {
 }
 .content-flex {
   display: flex;
-  margin-left: 200px;
+
+  justify-content: center;
 }
 .main {
   width: 700px;
@@ -59,9 +66,14 @@ ul li a:visited {
   font-family: light;
   font-size: 24px;
 }
-.main p::first-letter {
-  font-size: 200%;
+.main .fcharacter {
+  float: left;
   font-family: extra;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
 }
 .content-flex .sec1 {
   border-bottom: 2px solid black;
@@ -78,6 +90,7 @@ footer button {
   padding: 12px 25px;
   color: #f0efef;
   order: 5;
+  border-radius: 8px;
 }
 .note {
   display: flex;
@@ -137,6 +150,8 @@ footer button {
 }
 #face {
   margin-left: 20px;
+  width: 10px;
+  height: 20px;
 }
 
 .rmore {

@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  scrollbar-width: none; /*oculta el scroll bar pero solo funciona en Firefox*/
+}
+body {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #f0efef;
+}
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #033048;
+  width: 100%;
+}
+header nav {
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  gap: 2rem;
+}
+header nav a {
+  color: #f9e42e;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: cornflowerblue;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #f0efef;
+  padding: 0.8rem 5rem;
+}
+
+hr {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+ul {
+  list-style: none;
+  text-align: left;
+}
+.flex {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+}
+.central {
+  width: 70%;
+  padding: 5rem;
+}
+
+.lateral {
+  width: 30%;
+  padding: 2rem;
+}
+aside {
+  padding: 1rem 1rem;
+  color: #033048;
+  background-color: #e0dede;
+}
+aside h3 {
+  margin-top: 5rem;
+  font-size: 32px;
+  font-weight: 800;
+}
+aside p {
+  font-size: 22px;
+  font-weight: 300;
+}
+.fotos {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.titulos {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: left;
+}
+.textos {
+  color: #606161;
+  padding-bottom: 2rem;
+  text-align: justify;
+}
+p.textos::first-letter {
+  font-size: 330%;
+  float: left;
+}
+.more {
+  font-size: 22px;
+  font-weight: 600;
+}
+.derecha {
+  text-align: right;
+}
+.izquierda {
+  text-align: left;
+}
+.unit {
+  width: 80%;
+  height: 40%;
+  background-color: white;
+}
+.unit h3 {
+  text-align: center;
+  padding-top: 2rem;
+}
+div .copyrigth {
+  position: relative;
+  height: 15vh;
+  background-color: #f9e42e;
+  text-align: center;
+}
+div.copyrigth a {
+  background-color: #033048;
+  color: #f0efef;
+  font-weight: 700;
+  padding: 10px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer {
+  display: inline-block;
+  width: 100%;
+  background-color: #242828;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer h2 {
+  font-weight: 800;
+  color: #f9e42e;
+}
+footer button {
+  color: #f9e42e;
+  margin-bottom: 68px;
+}
+
+footer img {
+  display: inline-block;
+  margin: 1em 0.5em;
+  padding-left: 1em;
+}
