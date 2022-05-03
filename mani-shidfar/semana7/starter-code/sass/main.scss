@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 @import "resorts";
 @import "variables";
 
@@ -52,4 +61,68 @@
   display: grid;
   grid-template-columns: auto;
   text-align: center;
+}
+button {
+  margin: 10px;
+}
+.head1 .ios {
+  background-color: hsl(171, 66%, 44%);
+  border-radius: 15px;
+  padding: 8px 12px;
+}
+.head1 .mac {
+  background-color: hsl(233, 100%, 69%);
+  border-radius: 15px;
+  padding: 8px 12px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
+  align-items: center;
+}
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+}
+.footer ul li {
+  margin-bottom: 20px;
+}
+.footer ul a:link,
+.footer ul a:visited {
+  text-decoration: none;
+  padding: 8px;
+  color: black;
+}
+.footer ul a:hover {
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+.item6 a:link,
+.item6 a:visited {
+  text-decoration: none;
+  margin-right: 20px;
+}
+.fcontainer {
+  background-color: hsl(201, 11%, 66%);
+}
+@media only screen and (max-width: 375px) {
+  .main {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+  .main img {
+    width: 375px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    row-gap: 20px;
+  }
+  .main4 img {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }

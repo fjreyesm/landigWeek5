@@ -1,3 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
@@ -71,5 +81,88 @@
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   text-align: center;
+}
+
+button {
+  margin: 10px;
+}
+
+.head1 .ios {
+  background-color: #26baa4;
+  border-radius: 15px;
+  padding: 8px 12px;
+}
+
+.head1 .mac {
+  background-color: #6173ff;
+  border-radius: 15px;
+  padding: 8px 12px;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
+      grid-template-columns: 16.3% 16.3% 16.3% 16.3% 16.3% 16.3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 20px;
+}
+
+.footer ul a:link,
+.footer ul a:visited {
+  text-decoration: none;
+  padding: 8px;
+  color: black;
+}
+
+.footer ul a:hover {
+  color: #26baa4;
+  cursor: pointer;
+}
+
+.item6 a:link,
+.item6 a:visited {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.fcontainer {
+  background-color: #9fabb2;
+}
+
+@media only screen and (max-width: 375px) {
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    text-align: center;
+  }
+  .main img {
+    width: 375px;
+  }
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    text-align: center;
+    row-gap: 20px;
+  }
+  .main4 img {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
