@@ -66,8 +66,74 @@ function operationRepeatInput() {
   return answerLocal;
 }
 
+function basicOperations() {
+  let number1,
+    number2 = 0;
+  switch (operation) {
+    case 'SU':
+      number1 = parseFloat(prompt('Introduzca el primer valor: '));
+      number2 = parseFloat(prompt('Introduzca el valor a sumar: '));
+      alert('El resultado de la suma es ' + (number1 + number2));
+      break;
+    case 'RE':
+      number1 = parseFloat(prompt('Introduzca el primer valor: '));
+      number2 = parseFloat(prompt('Introduzca el valor a restar: '));
+      alert('El resultado de la resta es ' + (number1 - number2));
+      break;
+    case 'MU':
+      number1 = parseFloat(prompt('Introduzca el multiplicando: '));
+      number2 = parseFloat(prompt('Introduzca el multiplicador: '));
+      alert('El resultado de la multiplicación es ' + number1 * number2);
+      break;
+    case 'DI':
+      number1 = parseFloat(prompt('Introduzca el dividendo: '));
+      number2 = parseFloat(prompt('Introduzca el divisor: '));
+      if (number2 === 0) {
+        alert('El resultado de la división es ∞ porque el divisior es 0.');
+      } else {
+        alert('El resultado de la división es ' + number1 / number2);
+      }
+      break;
+    case 'PO':
+      number1 = parseFloat(prompt('Introduzca la base: '));
+      number2 = parseFloat(
+        prompt('Introduzca el exponente (Se redondea al alza): '),
+      );
+      number2 = Math.ceil(number2);
+      alert('El resultado de la potencia es ' + number1 ** number2);
+      break;
+    case 'RA':
+      number1 = parseFloat(prompt('Introduzca el radicando: '));
+      number2 = parseFloat(
+        prompt('Introduzca el índice (se redondea al alza): '),
+      );
+      number2 = Math.ceil(number2);
+      if (number2 < 1) {
+        alert('Error: El índice de una raíz no puede ser inferior a 1.');
+      } else if (number1 < 0 && number2 % 2 === 0) {
+        alert(`El resultado de la raiz no existe en números reales.
+        La base es negativa y el índice es par.`);
+      } else {
+        alert('El resultado de la raíz es ' + number1 ** (1 / number2));
+      }
+      break;
+  }
+}
+
+// MAIN
 do {
   operation = operationInput();
+
+  if (
+    operation === 'SU' ||
+    operation === 'RE' ||
+    operation === 'MU' ||
+    operation === 'DI' ||
+    operation === 'PO' ||
+    operation === 'RA'
+  ) {
+    basicOperations();
+  }
 
   answer = operationRepeatInput();
 } while (answer === 'S');
