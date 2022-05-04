@@ -3,46 +3,71 @@
 // ! 👨‍🏫 Leé cuidadosamente el readme, y practica utilizando "window.prompt()" para tomar la entrada del usuario.
 
 // * Escribe tu código debajo.
-let answer = 'n';
-let operation = 'a';
-let operationType = 'a';
-const operationChoices = ['SU', 'RE', 'MU', 'DI', 'PO', 'RA', 'HI', 'IM', 'VI'];
 
-do {
+//Variables
+let answerLocal = 'n';
+let operation = 'a';
+
+//Functions
+function operationInput() {
+  let operationLocal = 'a';
+  let operationTypeLocal = 'a';
+  const operationChoicesLocal = [
+    'SU',
+    'RE',
+    'MU',
+    'DI',
+    'PO',
+    'RA',
+    'HI',
+    'IM',
+    'VI',
+  ];
   do {
-    operation = null;
-    operationType = prompt(
+    operationLocal = null;
+    operationTypeLocal = prompt(
       '¿Qué tipo de operación vas a hacer? ( (N)ormales / (A)vanzadas ) ',
     );
 
-    operationType = operationType.toUpperCase();
+    operationTypeLocal = operationTypeLocal.toUpperCase();
 
-    if (operationType === 'N') {
-      operation = prompt(
+    if (operationTypeLocal === 'N') {
+      operationLocal = prompt(
         `¿Qué operación deseas hacer?
       ( \(SU\)mar / \(RE\)star / \(MU\)ltiplicar / \(DI\)vidir / \(PO\)tencia / \(RA\)iz )`,
       );
-    } else if (operationType === 'A') {
-      operation = prompt(
+    } else if (operationTypeLocal === 'A') {
+      operationLocal = prompt(
         `¿Qué operación deseas hacer?
       ( \(HI\)poteca / \(IM\)c / \(VI\)aje )`,
       );
     } else {
-      operation = 'e';
+      operationLocal = 'e';
     }
 
-    operation = operation.toUpperCase();
+    operationLocal = operationLocal.toUpperCase();
 
-    if (!operationChoices.includes(operation)) {
+    if (!operationChoicesLocal.includes(operationLocal)) {
       alert('¡Atención! Operacion no válida');
     }
-  } while (!operationChoices.includes(operation));
+  } while (!operationChoicesLocal.includes(operationLocal));
+  return operationLocal;
+}
 
-  answer = prompt('¿Quieres hacer otra operación? (S/N) ');
-  answer = answer.toUpperCase();
-  if (answer === 'S') {
+function operationRepeatInput() {
+  let answerLocal = 'n';
+  answerLocal = prompt('¿Quieres hacer otra operación? (S/N) ');
+  answerLocal = answerLocal.toUpperCase();
+  if (answerLocal === 'S') {
     alert('De acuerdo. ¡Vamos allá!');
   } else {
     alert('De acuerdo. ¡Hasta Otra!');
   }
+  return answerLocal;
+}
+
+do {
+  operation = operationInput();
+
+  answer = operationRepeatInput();
 } while (answer === 'S');
