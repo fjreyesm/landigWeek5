@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+}
+
+.resultado {
+  width: 200px;
+  padding: 1%;
+  border: 1px solid black;
+}
+
+footer {
+  align-items: center;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+footer span {
+  color: red;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: lightcoral;
+}
