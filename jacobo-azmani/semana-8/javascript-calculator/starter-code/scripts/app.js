@@ -6,9 +6,9 @@
 function calculadoraUsuario() {
   let z, operacion;
   alert('Introduzca lo que desee calcular');
-  let x = prompt('Primeros dígitos');
+  let x = parseFloat(prompt('Primer o primeros dígitos'));
   operacion = prompt('Tipo de operación');
-  let y = prompt('Segundos dígitos');
+  let y = parseFloat(prompt('Segundo o segundos dígitos'));
 
   if (operacion == '+') {
     z = Number(x) + Number(y);
@@ -34,9 +34,6 @@ function calculadoraUsuario() {
 
 let resultado = (document.getElementById(
   'calcu',
-).innerHTML = `Resultado: ${calculadoraUsuario()}`);
+).innerHTML = `Su resultado es: ${calculadoraUsuario()}`);
 
-/* document.getElementById('calcu').innerHTML =
-  'Resultado:' + ' ' + calculadoraUsuario(); */
-
-alert('Su resultado es' + ' ' + operacion);
+alert(resultado);
