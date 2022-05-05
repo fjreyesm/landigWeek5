@@ -1,5 +1,5 @@
 'use strict';
-
+console.log('working')
 
 
 
@@ -25,10 +25,11 @@ console.log(lastName)
 const age = "47";
 // 6. print a string to the console that reads: 'My name is [first name] [last name] and my favourite number is [age]'
 console.log("My name is" +" " +firstName +" " +lastName +" " +"and my favourite number is" +" " + age);
+console.log( 'my name is'+' ' + `${firstName}` + " " + `${lastName}` + ' '+ 'and my favorite number is' +` ${age}` )
 // 7. create a variable X and assign it any number
-var X = 10
+var X = 10;
 // 8. create a variable Y and assign it any number
-var Y = 20
+var Y = 20;
 // 9. print to the console the total of X and Y
 console.log(X + Y);
 console.log(`${X + Y}`);
@@ -43,7 +44,7 @@ console.log(changeNumber);
 changeNumber = "300";
 console.log(changeNumber);
 // 14. uncomment the variables below, concatinate them and print the result to the console
-const fruit = 'Oranges'
-const vegetable = 'potatos'
-const drink = 'cola'
-console.log(`${fruit}, ${vegetable}, ${drink}`)
+const fruit = 'Oranges';
+const vegetable = 'potatos';
+const drink = 'cola';
+console.log(`${fruit}, ${vegetable}, ${drink}`);
