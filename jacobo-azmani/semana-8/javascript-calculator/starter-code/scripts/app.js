@@ -3,37 +3,36 @@
 // ! 👨‍🏫 Leé cuidadosamente el readme, y practica utilizando "window.prompt()" para tomar la entrada del usuario.
 
 // * Escribe tu código debajo.
-function calculadoraUsuario() {
-  let z, operacion;
+
+function calculadoraUsuario(resultadoOperacion = 0) {
+  let operacion;
   alert('Introduzca lo que desee calcular');
-  let x = parseFloat(prompt('Primer o primeros dígitos'));
+  let primerNumero = Number(parseFloat(prompt('Primer o primeros dígitos')));
   operacion = prompt('Tipo de operación');
-  let y = parseFloat(prompt('Segundo o segundos dígitos'));
+  let segundoNumero = Number(parseFloat(prompt('Segundo o segundos dígitos')));
 
   if (operacion == '+') {
-    z = Number(x) + Number(y);
+    resultadoOperacion = primerNumero + segundoNumero;
   } else if (operacion == '/') {
-    z = Number(x) / Number(y);
+    resultadoOperacion = primerNumero / segundoNumero;
   } else if (operacion == '*') {
-    z = Number(x) * Number(y);
+    resultadoOperacion = primerNumero * segundoNumero;
   } else if (operacion == '-') {
-    z = Number(x) - Number(y);
+    resultadoOperacion = primerNumero - segundoNumero;
   } else if ((operacion = !null)) {
-    z = 'Error';
+    resultadoOperacion = 'Error';
     alert('Introduzca una operación válida');
   } else if ((x = !null)) {
-    z = 'Error';
+    resultadoOperacion = 'Error';
     alert('¡No ha introducido datos!');
   } else if ((y = !null)) {
-    z = 'Error';
+    resultadoOperacion = 'Error';
     alert('¡No ha introducido datos!');
   }
 
-  return z;
+  document.getElementById(
+    'calcu',
+  ).innerHTML = `Su resultado es: ${resultadoOperacion}`;
 }
-
-let resultado = (document.getElementById(
-  'calcu',
-).innerHTML = `Su resultado es: ${calculadoraUsuario()}`);
 
 alert(resultado);

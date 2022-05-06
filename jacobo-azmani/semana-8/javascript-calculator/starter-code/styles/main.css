@@ -6,6 +6,10 @@ body {
   font-size: 100%;
 }
 
+h2 {
+  text-align: center;
+}
+
 .resultado {
   width: 200px;
   margin: 0 auto;
