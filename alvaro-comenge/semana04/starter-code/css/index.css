@@ -143,16 +143,15 @@ color: #033048;
   color: red;
 }
 
-.footer{
-  width: 100px;
+
  }
 .boton{
   padding:25px 300px;
   background-color:#f9e42e;
  }
- .bot-cent a{
-   color: #f0efef;
- }
+ 
+   
+ 
 .pie{
   background-color:#606161;
   padding: 50px 320px;
@@ -183,9 +182,12 @@ footer p{
   padding-left: 30px;
   text-align: center;
   color: #f0efef;
+<<<<<<< HEAD
 }
 .bot-cent a:hover{
   color:red;
+=======
+>>>>>>> 5ece5430cb0a9966d423c3db2edd8a8138404f2c
 }
 
 
