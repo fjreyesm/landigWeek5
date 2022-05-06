@@ -39,6 +39,10 @@ aside{
   
   
 }
+.barra-nav a:hover{
+  color: red;
+
+}
 header .barra-nav{
  display:flex;
  justify-content: space-between;
@@ -52,12 +56,6 @@ h1{
   
 }
 
-/* .barra-nav a{ */
-  /* color:#f9e42e; */
-  /* padding-bottom: 20px; */
-  /* padding-left: 50px; */
-  
-/* } */
 header ul{
   margin:0px;
   margin-left: 50px;
@@ -97,7 +95,10 @@ section h2{
   max-width: 200px;
   
    
-  }
+}
+.nav-lateral a:hover{
+  color:red
+}
  .nav-lateral h2{
 font-family:sans-serif;
 font: weight 600px;;
@@ -122,9 +123,9 @@ color: #033048;
   font-weight: bolder;
   
  }
- /* :hover .nav-lateral-en{ */
-   /* color:red; */
- /* } */
+ .nav-lateral-en:hover{
+   color:red;
+ }
  .add img{
   padding-top: 50px;
    width: 80%;
@@ -138,19 +139,20 @@ color: #033048;
   color:#033048;
   font-weight: bold;
 }
-/* :hover .main-de-a{ */
-  /* color: red; */
-/* } */
+.main-de-a:hover{
+  color: red;
+}
 
-
+.footer{
+  width: 100px;
  }
 .boton{
   padding:25px 300px;
   background-color:#f9e42e;
  }
- 
-   
- 
+ .bot-cent a{
+   color: #f0efef;
+ }
 .pie{
   background-color:#606161;
   padding: 50px 320px;
@@ -182,5 +184,9 @@ footer p{
   text-align: center;
   color: #f0efef;
 }
+.bot-cent a:hover{
+  color:red;
+}
+
 
 
