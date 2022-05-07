@@ -22,7 +22,8 @@ do {
     (operacion === "+") |
       (operacion === "-") |
       (operacion === "*") |
-      (operacion === "/") &&
+      (operacion === "/") |
+      (operacion === "2") &&
     typeof numero1 === "number" &&
     typeof numero2 === "number"
   ) {
@@ -34,11 +35,11 @@ do {
       alert("El resultado de la multiplicación es: " + numero1 * numero2);
     } else if (operacion == "/") {
       alert("El resultado de la división es: " + numero1 / numero2);
-    } else if (operacion == "2") {
+    } else if (operacion === "2") {
       alert("El resultado de la potencia es: " + Math.pow(numero1, numero2));
     }
   } else {
-    alert("Operación no válida");
+    alert("Operación no válida o alguno de los operandos no es un número");
   }
   i++;
   let resp = prompt(" deseas hacer otra operacion? ( si/no)");
