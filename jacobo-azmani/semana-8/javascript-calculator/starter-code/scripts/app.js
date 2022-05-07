@@ -6,7 +6,7 @@
 
 function calculadoraUsuario(resultadoOperacion = 0) {
   let operacion;
-  alert('Introduzca lo que desee calcular');
+  /*  alert('Introduzca lo que desee calcular'); */
   let primerNumero = Number(parseFloat(prompt('Primer o primeros dígitos')));
   operacion = prompt('Tipo de operación');
   let segundoNumero = Number(parseFloat(prompt('Segundo o segundos dígitos')));
