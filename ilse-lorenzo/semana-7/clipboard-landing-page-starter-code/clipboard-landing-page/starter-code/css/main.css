@@ -107,11 +107,15 @@ header button {
   flex-direction: column;
   justify-content:center;
 }
-.supercharge-workflow .box {
+.box {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content:left;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.box img, h5, p {
+  text-align: center;
+  line-height: 1.5rem;
 }
 .logos img {
   display:flex;
