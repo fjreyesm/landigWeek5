@@ -88,7 +88,7 @@ function makeOperations() {
       number1 = parseFloat(prompt('Introduzca el primer valor:'));
       number2 = parseFloat(prompt('Introduzca el valor a sumar:'));
       number3 = Decimal(String(number1 + number2)).toFixed();
-      if (Number.isNaN(number3)) {
+      if (Number.isNaN(parseFloat(number3))) {
         alert('Error en alguno de los valores.');
       } else alert('El resultado de la suma es: ' + number3);
       break;
@@ -96,7 +96,7 @@ function makeOperations() {
       number1 = parseFloat(prompt('Introduzca el primer valor:'));
       number2 = parseFloat(prompt('Introduzca el valor a restar:'));
       number3 = Decimal(String(number1 - number2)).toFixed();
-      if (Number.isNaN(number3)) {
+      if (Number.isNaN(parseFloat(number3))) {
         alert('Error en alguno de los valores.');
       } else alert('El resultado de la resta es: ' + number3);
       break;
@@ -104,7 +104,7 @@ function makeOperations() {
       number1 = parseFloat(prompt('Introduzca el multiplicando:'));
       number2 = parseFloat(prompt('Introduzca el multiplicador:'));
       number3 = Decimal(String(number1 * number2)).toFixed();
-      if (Number.isNaN(number3)) {
+      if (Number.isNaN(parseFloat(number3))) {
         alert('Error en alguno de los valores.');
       } else alert('El resultado de la multiplicación es: ' + number3);
       break;
@@ -115,7 +115,7 @@ function makeOperations() {
         alert('El resultado de la división es ∞ porque el divisior es 0.');
       } else {
         number3 = Decimal(String(number1 / number2)).toFixed();
-        if (Number.isNaN(number3)) {
+        if (Number.isNaN(parseFloat(number3))) {
           alert('Error en alguno de los valores.');
         } else alert('El resultado de la división es: ' + number3);
       }
@@ -127,7 +127,7 @@ function makeOperations() {
       );
       number2 = Math.ceil(number2);
       number3 = Decimal(String(number1 ** number2)).toFixed();
-      if (Number.isNaN(number3)) {
+      if (Number.isNaN(parseFloat(number3))) {
         alert('Error en alguno de los valores.');
       } else alert('El resultado de la potencia es: ' + number3);
       break;
@@ -219,7 +219,7 @@ function makeOperations() {
       number2 = parseFloat(
         prompt('Introduzca el peso en libras(pounds) <positivo>:'),
       ).toFixed(2);
-      if (number2 < 4.40925 && number > 1410.96) number2 = NaN;
+      if (number2 < 4.40925 && number2 > 1410.96) number2 = NaN;
       // Jon Brower Minnoch's weight was 635KG, from wikipedia. 🤨
       if (Number.isNaN(number1 * number2)) number3 = NaN;
 
@@ -265,6 +265,7 @@ function makeOperations() {
 
       if (Number.isNaN(number5)) {
         alert('Error en los datos introducidos.');
+        break;
       } else {
         if (number4 > 96.5606) number2 = number2 - (number4 - 96.5606) / 2;
       }
@@ -307,6 +308,7 @@ function makeOperations() {
 
       if (Number.isNaN(number5)) {
         alert('Error en los datos introducidos.');
+        break;
       } else {
         if (number4 > 60) number2 = number2 - (number4 - 60) / 2;
       }
