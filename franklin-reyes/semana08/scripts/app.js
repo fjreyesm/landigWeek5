@@ -5,15 +5,12 @@
 // * Escribe tu código debajo.
 let calcular = true;
 let tipo = 1;
-1;
-let i = 0;
 do {
   let tipo = prompt("Desea realizar una operacion basica(1) o Avanzazada(2)");
   if (tipo == 1) {
     let operacion1 = prompt("Que operacion deseas realizar? ( + - * /)");
     let numero1 = parseInt(prompt("Introduce el primer operando"));
     let numero2 = parseInt(prompt("Introduce el segundo operando"));
-
     if (operacion1 == "+") {
       alert("El resultado de la suma es: " + (numero1 + numero2));
     } else if (operacion1 == "-") {
@@ -39,9 +36,9 @@ do {
       let numero1 = parseInt(prompt("A cual numero quieres calcular la raiz2"));
       alert("El resultado de la raiz cuadrada es: " + Math.sqrt(numero1));
     }
+  } else {
+    alert("Opción no válida");
   }
-
-  i++;
   let resp = prompt(" deseas hacer otra operacion? ( si/no)");
   if (resp == "no" || resp == "No" || resp == "NO") {
     calcular = false;
