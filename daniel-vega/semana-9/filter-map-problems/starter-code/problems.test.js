@@ -7,7 +7,7 @@ describe('Este es nuestra prueba de demonstración, debe volver un array vacío'
   });
 });
 
-xdescribe('soloStrings', () => {
+describe('soloStrings', () => {
   test('debería devolver solo los strings de un array', () => {
     expect(fns.soloStrings([10, 'Mike', '23', NaN, 'elefante'])).toEqual([
       'Mike',
@@ -24,7 +24,7 @@ xdescribe('soloStrings', () => {
   });
 });
 
-xdescribe('convertirTemps', () => {
+describe('convertirTemps', () => {
   test('debería convertir farenheit a celsius para todas las temperaturas en el array', () => {
     expect(fns.convertirTemps([23, 140, 212, 41])).toEqual([-5, 60, 100, 5]);
     expect(fns.convertirTemps([-58, -22, -4, 14])).toEqual([
@@ -34,7 +34,7 @@ xdescribe('convertirTemps', () => {
   });
 });
 
-xdescribe('cuentaCaracter', () => {
+describe('cuentaCaracter', () => {
   test('debería sumar el número total de caracteres en cada elemento en el array', () => {
     expect(fns.cuentaCaracter(['Stay', 'hungry', 'stay', 'foolish'])).toEqual([
       4, 6, 4, 7,
@@ -58,7 +58,7 @@ xdescribe('cuentaCaracter', () => {
   });
 });
 
-xdescribe('contieneFalso', () => {
+describe('contieneFalso', () => {
   test('debería devolver un array de con solo valores falsos', () => {
     expect(fns.contieneFalso([100, {}, [], 'Mike'])).toEqual([]);
     expect(fns.contieneFalso([100, {}, NaN, 'Mike', '', null])).toEqual([
@@ -70,7 +70,7 @@ xdescribe('contieneFalso', () => {
   });
 });
 
-xdescribe('palabrasDeLongitud', () => {
+describe('palabrasDeLongitud', () => {
   test('debería devolver los strings que tengan el número determinado de caracteres o más', () => {
     expect(
       fns.palabrasDeLongitud(['emu', 'caterpiller', 'rooster'], 4),
@@ -82,7 +82,7 @@ xdescribe('palabrasDeLongitud', () => {
   });
 });
 
-xdescribe('medidaANumero', () => {
+describe('medidaANumero', () => {
   test('debería devolver las medidas a números', () => {
     expect(fns.medidaANumero(['10cm', '4.2cm', '205cm'])).toEqual([
       10, 4.2, 205,
@@ -93,7 +93,7 @@ xdescribe('medidaANumero', () => {
   });
 });
 
-xdescribe('numeroDeVocales', () => {
+describe('numeroDeVocales', () => {
   test('debería devolvers el numero de total de vocales en el string', () => {
     expect(fns.numeroDeVocales('Stay classy San Diego')).toEqual(6);
     expect(fns.numeroDeVocales('I love lamp')).toEqual(4);
@@ -101,7 +101,7 @@ xdescribe('numeroDeVocales', () => {
   });
 });
 
-xdescribe('convertirATitulo', () => {
+describe('convertirATitulo', () => {
   test('debería hacer mayuscula la primer letra de cada palabra', () => {
     expect(fns.convertirATitulo('The lord of the rings')).toEqual(
       'The Lord Of The Rings',
