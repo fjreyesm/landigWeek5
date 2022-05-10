@@ -82,7 +82,7 @@ describe('palabrasDeLongitud', () => {
   });
 });
 
-xdescribe('medidaANumero', () => {
+describe('medidaANumero', () => {
   test('debería devolver las medidas a números', () => {
     expect(fns.medidaANumero(['10cm', '4.2cm', '205cm'])).toEqual([
       10, 4.2, 205,
@@ -93,7 +93,7 @@ xdescribe('medidaANumero', () => {
   });
 });
 
-xdescribe('numeroDeVocales', () => {
+describe('numeroDeVocales', () => {
   test('debería devolvers el numero de total de vocales en el string', () => {
     expect(fns.numeroDeVocales('Stay classy San Diego')).toEqual(6);
     expect(fns.numeroDeVocales('I love lamp')).toEqual(4);

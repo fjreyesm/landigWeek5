@@ -46,12 +46,23 @@ function palabrasDeLongitud(array, minLongitud) {
 // ? utilizando en método array, escribe una función que convierte un array de medidas en strings, a un array de números
 // ? eg: medidaANumero(['10cm', '4.2cm', '205cm']) => [10, 4.2, 205]
 
-function medidaANumero(array) {}
+function medidaANumero(array) {
+  return array.map((element) => parseFloat(element));
+}
 
 // ? utilizando `split` y `filter` escribe una función que cuenta el número de vocales en una frase
 // ? eg: numeroDeVocales('Stay classy San Diego') => 6
 
-function numeroDeVocales(string) {}
+function numeroDeVocales(string) {
+  function vowelCount(str) {
+    let counter = 0;
+    let vowels = /[aeiou]/gi;
+    let result = str.match(vowels);
+    counter = result.length;
+    return counter;
+  }
+  return vowelCount(string);
+}
 
 // ? utilizando `split`, `map` y `join`, escribe una función que hace mayuscula la primer letra de cada palabre en una frase
 // ? eg: convertirATitulo('The lord of the rings') => 'The Lord Of The Rings'
