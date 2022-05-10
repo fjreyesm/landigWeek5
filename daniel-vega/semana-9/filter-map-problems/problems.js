@@ -67,8 +67,15 @@ function numeroDeVocales(string) {
 // ? utilizando `split`, `map` y `join`, escribe una función que hace mayuscula la primer letra de cada palabre en una frase
 // ? eg: convertirATitulo('The lord of the rings') => 'The Lord Of The Rings'
 
-function convertirATitulo(string) {}
-
+function convertirATitulo(string) {
+  let wordTable = string.split(' ');
+  let wordTable2 = [];
+  wordTable2 = wordTable.map((element) => {
+    element = element.charAt(0).toUpperCase() + element.slice(1);
+    return element;
+  });
+  return wordTable2.join(' ');
+}
 // ! por favor no cambies lo de abajo ✋
 
 module.exports = {

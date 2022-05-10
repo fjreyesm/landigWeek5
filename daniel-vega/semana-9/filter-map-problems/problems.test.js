@@ -101,7 +101,7 @@ describe('numeroDeVocales', () => {
   });
 });
 
-xdescribe('convertirATitulo', () => {
+describe('convertirATitulo', () => {
   test('debería hacer mayuscula la primer letra de cada palabra', () => {
     expect(fns.convertirATitulo('The lord of the rings')).toEqual(
       'The Lord Of The Rings',
