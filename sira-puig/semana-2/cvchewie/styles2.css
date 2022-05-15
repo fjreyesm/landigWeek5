@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-}
+
 body {
   /* height: 297mm;
   width: 210mm; */
@@ -25,6 +25,8 @@ img {
 section {
   padding: 0 20px 0 20px;
 }
+
+
 p {
   font-size: 12pt;
   font-family: arial, helvetica;
@@ -36,7 +38,31 @@ h1 {
   font-size: 30pt;
   font-family: arial, helvetica;
   text-align: center;
+
   padding: 1px;
+
+}
+body {
+  /* height: 297mm;*/
+  /*width: 210mm;*/
+  background-color: rgb(122, 109, 109);
+  font-family: arial, helvetica;
+  color: black;
+  margin-right: auto;
+  margin-left: auto;
+}
+page {
+  background: white;
+  display: block;
+  border: 2mm double black;
+  padding-left: 10mm;
+  padding-right: 10mm;
+  margin: auto;
+}
+page[size="A4"] {
+  width: 210mm;
+  height: 297mm;
+
 }
 h2 {
   font-size: 15pt;
@@ -50,7 +76,7 @@ h3 {
   margin-bottom: 0px;
 }
 ul {
-  list-style-type: circle;
+  list-style-type: square;
   font-weight: bold;
   line-height: 2;
 }

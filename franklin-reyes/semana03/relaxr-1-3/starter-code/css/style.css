@@ -2,12 +2,20 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+#tope {
+=======
 .tope {
+>>>>>>> 9253183e5c05bd78b5ac47407a0e4d94b369a603
   background-image: url("/images/header-bg.jpg");
   height: 450px;
 }
 
+<<<<<<< HEAD
+#textomain {
+=======
 .textomain {
+>>>>>>> 9253183e5c05bd78b5ac47407a0e4d94b369a603
   text-align: center;
   color: white;
   position: relative;
@@ -17,7 +25,11 @@
   top: 155px;
 }
 
+<<<<<<< HEAD
+#benefits {
+=======
 .benefits {
+>>>>>>> 9253183e5c05bd78b5ac47407a0e4d94b369a603
   height: 300px;
   background-color: #f0efef;
   margin-left: 100px;
@@ -27,9 +39,16 @@ body {
   background-color: #f0efef;
   font-family: "Open+Sans";
   width: 850px;
+<<<<<<< HEAD
+  margin-left: auto;
+  margin-right: auto;
+}
+#blockq {
+=======
   margin: 0 auto;
 }
 .blockq {
+>>>>>>> 9253183e5c05bd78b5ac47407a0e4d94b369a603
   background-image: url("/images/testimonial-bg.jpg");
   font-size: 18px;
   height: 350px;
@@ -54,9 +73,15 @@ h1 {
   margin-top: 50;
   position: absolute;
 }
+<<<<<<< HEAD
+#signup {
+  height: 50px;
+  background-color: #f9e42e;
+=======
 .signup {
   background-color: #f9e42e;
   padding: 30px 0;
+>>>>>>> 9253183e5c05bd78b5ac47407a0e4d94b369a603
 
   display: flex;
   justify-content: center;
@@ -69,18 +94,58 @@ h5 {
   text-align: center;
 }
 
+<<<<<<< HEAD
+#btn1 {
+  background-color: yellow;
+}
+
+#btn2 {
+  background-color: #033048;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+=======
 .btn1 {
   background-color: yellow;
   font-size: 14px;
   font-weight: 800;
   border-radius: 10px;
   padding: 20px 50px;
+>>>>>>> 9253183e5c05bd78b5ac47407a0e4d94b369a603
 }
 
 p {
   width: 350px;
 }
 
+<<<<<<< HEAD
+footer {
+  color: yellow;
+  background-color: #606161;
+
+  height: 200px;
+
+  text-align: center;
+  padding-top: 30px;
+}
+
+#piepag {
+  font-size: 9px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+}
+
+#pdpcopy {
+  font-size: 9px;
+  font-weight: 300;
+}
+
+#socialn {
+  position: relative;
+  text-align: center;
+}
+=======
 .socialn {
   position: relative;
   text-align: center;
@@ -125,3 +190,4 @@ p {
   color: yellow;
   margin: 20px;
 }
+>>>>>>> 9253183e5c05bd78b5ac47407a0e4d94b369a603
