@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  /*para hacer las fuentes relativas*/
+  font-size: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f0efef;
+  /*he quitado el display flex al body*/
+}
+main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+header {
+  background-color: #033048;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between; /*a cada lado*/
+  height: 10%; /*probando*/
+  display: flex;
+}
+h1 {
+  font-size: 1.5rem; /*relativa*/
+  font-weight: 800;
+  color: white;
+  padding: 1rem 0 1rem 4rem;
+}
+nav {
+  width: 75%;
+  color: white;
+  flex-direction: row;
+  text-align: right;
+  padding: 2rem 2rem 1rem 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: #f9e42e;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 1rem;
+  width: 50%;
+}
+main {
+  /* width: 75%; Main column 700px */
+  display: flex;
+  flex-flow: row;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #033048;
+}
+.contenedor {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0rem 2rem 0rem 2rem;
+}
+.lateral {
+  flex-direction: row;
+  width: 30%;
+  gap: 20px;
+  padding: 0rem 2rem 0rem 2rem;
+}
+section img {
+  width: 100%;
+}
+.lateral div {
+  background-color: #f0efef;
+}
+.lateral aside div:nth-child(3n) {
+  background-color: white;
+  height: 25rem;
+}
+aside div h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+h3 {
+  color: #033048;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.lateral ul {
+  font-size: 1.37rem;
+  font-weight: 300;
+  list-style: none;
+  padding: 0;
+}
+.lateral p {
+  font-size: 1.37rem;
+  font-weight: 300;
+}
+
+.derecha {
+  /*read more*/
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem;
+}
+.sign-up {
+  background-color: #f9e42e;
+  height: 4em;
+  text-align: center;
+  padding: 1rem;
+}
+
+.sign-up button {
+  background-color: #033048;
+  border-color: #033048;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  color: white;
+  width: 10rem;
+  height: 2rem;
+}
+footer {
+  display: block;
+  background-color: #033048;
+  padding: 2em; /*igual a relax 1*/
+}
+footer ul {
+  display: block;
+  padding: 1em;
+  text-align: center;
+}
+footer li {
+  list-style-type: none;
+  padding: 1em; /*igual a relax 1*/
+  display: inline;
+}
+footer h2 {
+  color: white;
+  font-size: 24px; /*cambiar a rem*/
+  font-weight: 800;
+  text-align: center;
+}
+footer p {
+  font-size: 9px; /*cambiar a rem*/
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
