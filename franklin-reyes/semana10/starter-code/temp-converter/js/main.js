@@ -20,10 +20,10 @@ BONUS 3: Clear the contents of the text box after you've displayed your results,
 */
 
 "use strict";
-const temp = document.querySelector("#temperature");
-const button_fahrenheit = document.querySelector("#fahrenheit");
-const button_celsius = document.querySelector("#celsius");
-const result = document.querySelector("#result");
+const temp = document.querySelector("temperature");
+const button_fahrenheit = document.querySelector("fahrenheit");
+const button_celsius = document.querySelector("celsius");
+const result = document.querySelector("result");
 button_celsius.addEventListener("click", function () {
   result.innerHTML = (temp.value - 32) / 1.8;
 });
