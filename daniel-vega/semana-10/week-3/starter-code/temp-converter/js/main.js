@@ -18,3 +18,25 @@ BONUS 3: Clear the contents of the text box after you've displayed your results,
 */
 
 'use strict';
+// Element
+const textBox = document.getElementById('temperature');
+const faToCe = document.getElementById('fahrenheit_to_celsius');
+const ceToFa = document.getElementById('celsius_to_fahrenheit');
+const result = document.getElementById('result');
+
+// Function
+const fixNum = function (number) {
+  return number.toFixed(2).replace(/[.,]00$/, '');
+};
+const calcFaToCe = function () {
+  result.innerText = fixNum(parseFloat(textBox.value) * 1.8 + 32);
+  textBox.value = null;
+};
+const calcCeToFa = function () {
+  result.innerText = fixNum((parseFloat(textBox.value) - 32) / 1.8);
+  textBox.value = null;
+};
+
+// Event
+faToCe.addEventListener('click', calcFaToCe);
+ceToFa.addEventListener('click', calcCeToFa);

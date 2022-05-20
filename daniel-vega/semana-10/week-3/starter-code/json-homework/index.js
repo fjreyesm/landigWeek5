@@ -11,6 +11,11 @@ const jsonString =
 variable called `flickrObj`
 */
 
+const flickrObj = JSON.parse(jsonString);
+console.log('Test 1.: %cOK ', 'color: #8c8');
+//___console.log(flickrObj);
+//___console.log(typeof flickrObj);
+
 /*
 2. Iterate (this means 'use a loop') and do a console.log of each of the item 
 titles with the date the photo was taken. The first console.log should return 
@@ -19,11 +24,23 @@ the following:
 "Edelweiss Air, Airbus A320-214, HB-IJU 2016-02-23T18:48:14Z"
 
 */
+console.log('\nTest 2.: %cOK ', 'color: #8c8');
+console.log('\nFlickr elements:\n');
+for (const element in flickrObj.items) {
+  console.log(
+    `${element} \n${flickrObj.items[element].title} ${flickrObj.items[element].date_taken}\n`,
+  );
+}
 
 /*
 3. Create a new array called 'links'. Iterate through the items array in 
 flickrObj and store the the links to each item in the 'links' array.
 */
+console.log('\nTest 3.: %cOK ', 'color: #8c8');
+let links = [];
+for (const element in flickrObj.items) {
+  links.push(flickrObj.items[element].link);
+}
 
 /*
 4. Convert the 'links' array into a JSON string. Do a console.log of that JSON 
@@ -31,3 +48,7 @@ string, copy the results from the terminal and paste them into the input box at
 http://jsonlint.com/
 Did it create a valid JSON string?
 */
+console.log('\nTest 4.: %cOK ', 'color: #8c8');
+console.log('JSON Links:\n');
+console.log(JSON.stringify(links));
+console.log(`\nValidated JSON tested in https://jsonlint.com/`);
