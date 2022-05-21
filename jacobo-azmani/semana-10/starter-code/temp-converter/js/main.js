@@ -36,7 +36,7 @@ const calcularFahrenheitToCelsius = function () {
 };
 
 const calcularCelsiusToFahrenheit = function () {
-  result.innerHTML = (addNumber - 32) / 1.8;
+  result.innerHTML = addNumber - 32 / 1.8;
 };
 
 // Event
