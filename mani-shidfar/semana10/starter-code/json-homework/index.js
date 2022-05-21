@@ -10,7 +10,8 @@ const jsonString =
 1. Convert the string `jsonString` to a JavaScript object and store it in a 
 variable called `flickrObj`
 */
-
+const text = "jsonString";
+const flickrObj = JSON.parse(text);
 /*
 2. Iterate (this means 'use a loop') and do a console.log of each of the item 
 titles with the date the photo was taken. The first console.log should return 
@@ -19,15 +20,21 @@ the following:
 "Edelweiss Air, Airbus A320-214, HB-IJU 2016-02-23T18:48:14Z"
 
 */
-
+let txt = "";
+for (let x in flickrObj) {
+  txt = flickrObj[x] + " ";
+  console.log(text);
+}
 /*
 3. Create a new array called 'links'. Iterate through the items array in 
 flickrObj and store the the links to each item in the 'links' array.
 */
-
+flickrObj.filter(element => element = document.getElementsByTagName("a").innerHTML;)
+const links = flickrObj[element];
 /*
 4. Convert the 'links' array into a JSON string. Do a console.log of that JSON 
 string, copy the results from the terminal and paste them into the input box at
 http://jsonlint.com/
 Did it create a valid JSON string?
 */
+var jString = JSON.stringify(links);
