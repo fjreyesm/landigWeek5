@@ -23,18 +23,16 @@ BONUS 3: Clear the contents of the text box after you've displayed your results,
 let x = parseInt(document.getElementById("temperature").value;)
 document
   .getElementById("fahrenheit_to_celsius")
-  .addEventListener("click", "fnsToCelsius()");
-function fnsToCelsius() {
-  let celsius = (x - 32) * 1.8;
-  document.getElementById("result").innerHTML = celsius;
-}
+  .addEventListener("click", function {
+    let celsius = (x - 32) * 1.8;
+    document.getElementById("result").innerHTML = celsius;
+  });
 
 let y =parseInt( document.getElementById("temperature").value;)
 document
   .getElementById("celsius_to_fahrenheit")
-  .addEventListener("click", "clsToFahrenheit()");
-function clsToFahrenheit() {
-  let fahrenheit = y * 1.8 + 32;
+  .addEventListener("click", function {
+    let fahrenheit = y * 1.8 + 32;
 
-  document.getElementById("result").innerHTML = fahrenheit;
-}
+    document.getElementById("result").innerHTML = fahrenheit;
+  });
