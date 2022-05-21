@@ -33,7 +33,15 @@
 // - an address
 
 // Answer Starts Here
+let ownerName = document.createElement("input");
+ownerName.placeholder = "please enter owners name";
+let address = document.createElement("input");
+address.placeholder = "please enter owners address";
 
+const pet_owner = {
+  "owner name": ownerName.value,
+  "Adress": address.value
+};
 // Answer Ends Here
 
 // 3. Create an Object literal that lines up with the following description. Store it in the variable `some_pet`, below.
@@ -49,6 +57,23 @@
 // - make noise (each pet makes its own unique noise, as specified by `noise`.
 
 // Answer Starts Here
+let petName = document.createElement("input");
+petName.placeholder = "please enter pets name";
+let species = document.createElement("input");
+species.placeholder = "please enter pets species";
+let breed = document.createElement("input");
+breed.placeholder = "please enter the pet breeding";
+let noise = document.createElement("input");
+noise.placeholder = "please enter pets noise";
+
+const some_pet {
+  "pet name": petName.value,
+  "species": species.value,
+  "breeding": breed.value,
+  "noise": noise.velue
+};
+
+
 
 // Answer Ends Here
 
