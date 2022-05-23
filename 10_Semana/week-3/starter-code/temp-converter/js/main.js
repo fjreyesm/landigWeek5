@@ -4,27 +4,32 @@
   C = (F - 32) / 1.8
   Test your function.*/
 
-function convertirEnFahrenheit(gradosFahrenheit) {
-  let celsius = (gradosFahrenheit - 32) / 1.8;
+//Defino la funcion para lo grados CELSIUS
+function convertToCelsius(valueFahrenheit) {
+  const celsius = (valueFahrenheit - 32) / 1.8;
+  console.log(`Grados ${celsius} ºCelsius`);
   return celsius;
 }
 
 /* 2. Create a second function that accepts a temperature value in Celsius and converts it to Fahrenheit.
   Note: Equation to convert C to F:
-   F = 1.8 * C + 32
+  F = 1.8 * C + 32
   Test your function.*/
 
-function convertirCelsius(gradosCelsius) {
-  let farenheit = gradosCelsius * 1.8 + 32;
-  return farenheit;
+//Defino la funcion para lo grados FAHRENHEIT
+function convertToFahrenheit(valueCelsius) {
+  const fahrenheit = valueCelsius * 1.8 + 32;
+  console.log(`Grados ${fahrenheit} ºFahtenheit`);
+  return fahrenheit;
 }
 
-function verificarTemperatura(temperature) {
+//COMPROBACIÓN DE LAS TEMPERATURAS
+function checkTemperatures(temperature) {
   console.log(temperature);
-  if (temperature != null && !isNaN(temperature)) {
+  if (temperature != null || !isNaN) {
     return true;
   } else {
-    alert("El valor introducido no es válido");
+    alert("El valor no es válido");
     return false;
   }
 }
@@ -40,24 +45,22 @@ function verificarTemperatura(temperature) {
 // BONUS 3: Clear the contents of the text box after you've displayed your results, so a user can easily enter another temperature to convert. (Hint: Read about the 'value' property in JavaScript. What string value could you assign as the value of an input box that would give it no content to display?)
 // */
 
-const inputTemperature = document.getElementsById("temperature");
+//Defino las var para tomar elementos del DOM
+const inputTemperature = document.getElementById("temperature");
+const btnToCelsius = document.getElementById("fahrenheit_to_celsius");
+const btnToFahrenheit = document.getElementById("celsius_to_fahrenheit");
+const results = document.getElementById("result");
 
-const btnToCelsius = document.getElementsById("fahrenheit_to_celsius");
-
-const btnToFahrenheit = document.getElementsById("celsius_to_fahrenheit");
-
-const results = document.getElementsById("result");
-
-btnToCelsius.addEventListener("click", function result1() {
-  document.getElementById("result").innerText = operation1(
-    document.getElementById("temperature").value
-  );
-  document.getElementById("temperature").value = "";
+btnToCelsius.addEventListener("click", function () {
+  if (checkTemperatures(inputTemperature.value)) {
+    results.textContent =
+      "The result is " + convertToFahrenheit(inputTemperature.value);
+  }
 });
 
-btnToFahrenheit.addEventListener("click", function result2() {
-  document.getElementById("result").innerText = operation2(
-    document.getElementById("temperature").value
-  );
-  document.getElementById("temperature").value = "";
+btnToFahrenheit.addEventListener("click", function () {
+  if (checkTemperatures(inputTemperature.value)) {
+    results.innerText =
+      "The result is " + convertToCelsius(inputTemperature.value);
+  }
 });
