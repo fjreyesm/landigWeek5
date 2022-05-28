@@ -18,7 +18,31 @@ BONUS 3: Clear the contents of the text box after you've displayed your results,
 */
 
 'use strict';
-var TempCel= console.log(TempFar);
-function () {((TempFar - 32) / 1.8);  
- console.log(Tempcel);
+let temp = document.querySelector("#temperature");
+let resultado = document.querySelector("#result");
+
+function farenheitToCelsius() {
+  console.log("Option: Farenheit to Celsius");
+  console.log("Introduce temperatura: " + temp.value + "°F");
+  result = (temp.value - 32) / 1.8;
+  console.log("Result:" + result + "°C");
+  document.querySelector("#result").textContent = result + "°C";
+  document.querySelector("#input").value = " ";
+  // return result;
 }
+ 
+function celsiusToFarenheit() {
+  console.log("Option: Celsius to Farenheit.");
+  console.log("Introduce temperature: " + temp.value + "°C");
+  result = 1.8 * temp.value + 32;
+  console.log("Result:" + result + "°F");
+  document.querySelector("#result").textContent = result + "°F";
+  document.querySelector("#input").value = " ";
+  // return result;
+}
+ 
+let firstButton = document.getElementById("farenheit_to_celsius");
+firstButton.addEventListener("click", farenheitToCelsius);
+
+let secondButton = document.getElementById("celsius_to_farenheit");
+secondButton.addEventListener("click", celsiusToFarenheit);
