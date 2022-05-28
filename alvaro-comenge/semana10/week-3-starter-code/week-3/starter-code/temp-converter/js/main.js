@@ -18,3 +18,7 @@ BONUS 3: Clear the contents of the text box after you've displayed your results,
 */
 
 'use strict';
+var TempCel= console.log(TempFar);
+function () {((TempFar - 32) / 1.8);  
+ console.log(Tempcel);
+}
