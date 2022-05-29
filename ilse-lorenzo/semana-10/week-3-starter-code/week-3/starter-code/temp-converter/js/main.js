@@ -19,6 +19,7 @@ BONUS 3: Clear the contents of the text box after you've displayed your results,
 
 'use strict';
 
+Otro ejemplo
 function convertirFahrenheit(valorFahrenheit) {
    const celsius = (valorFahrenheit - 32) / 1.8;
    return celsius;
@@ -40,7 +41,7 @@ btnToCelsius.addEventListener('click', function() {
   if (temperatura != null) {
     resultado.textContent = convertirFahrenheit(temperatura);
   } else {
-    alert('Temperatura a convertir');
+    alert('Introduce la temperatura que deseas convertir.');
   }
 });
 
@@ -48,9 +49,62 @@ btnToFahrenheit.addEventListener('click', function() {
   if (temperatura != null) {
     resultado.textContent = convertirCelsius(temperatura);
   } else {
-    alert('Temperatura a convertir');
+    alert('Introduce la temperatura que deseas convertir.');
   }
 });
 
 
 
+Otro ejemplo
+
+// Element
+const temp = document.querySelector('#temperature');
+const fahrenheitToCelsius = document.querySelector('#fahrenheit_to_celsius');
+const celsiusToFahrenheit = document.querySelector('#celsius_to_fahrenheit');
+const result = document.querySelector('#result');
+const addNumber = parseInt(`${temp.value}`);
+
+console.log(typeof addNumber);
+console.log(temp.value);
+console.log(addNumber);
+
+// Function
+const calcularFahrenheitToCelsius = function () {
+  result.innerHTML = addNumber * 1.8 + 32;
+};
+
+const calcularCelsiusToFahrenheit = function () {
+  result.innerHTML = (addNumber - 32) / 1.8;
+  result.innerHTML = addNumber - 32 / 1.8;
+};
+
+// Event
+fahrenheitToCelsius.addEventListener('click', calcularFahrenheitToCelsius);
+celsiusToFahrenheit.addEventListener('click', calcularCelsiusToFahrenheit);
+
+
+
+
+// Element
+const temp = document.querySelector('#temperature');
+const fahrenheitToCelsius = document.querySelector('#fahrenheit_to_celsius');
+const celsiusToFahrenheit = document.querySelector('#celsius_to_fahrenheit');
+const result = document.querySelector('#result');
+const addNumber = parseInt(`${temp.value}`);
+
+console.log(typeof addNumber);
+console.log(temp.value);
+console.log(addNumber);
+
+// Function
+const calcularFahrenheitToCelsius = function () {
+  result.innerHTML = addNumber * 1.8 + 32;
+};
+
+const calcularCelsiusToFahrenheit = function () {
+  result.innerHTML = (addNumber - 32) / 1.8;
+};
+
+// Event
+fahrenheitToCelsius.addEventListener('click', calcularFahrenheitToCelsius);
+celsiusToFahrenheit.addEventListener('click', calcularCelsiusToFahrenheit);
