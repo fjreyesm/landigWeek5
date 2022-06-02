@@ -1,0 +1,66 @@
+@import url(./normalize.css);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+picture {
+  display: block;
+  border: 1px solid black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 20px 5px lightgray;
+}
+
+.bodyContainer {
+  max-width: 66vw;
+}
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1.25rem;
+  /* column-gap: 1px; */
+  justify-content: space-between;
+}
+
+/* .root > * {
+  border: 1px solid black;
+  flex-basis: 33%;
+} */
+
+form {
+  margin-bottom: 1rem;
+}
+.card {
+  flex-flow: column;
+  justify-content: flex-start;
+  flex-basis: 23%;
+  border: 1px solid lightgray;
+  padding: 1rem;
+
+  font-weight: 600;
+}
+.card p {
+  margin: 0.4rem 0;
+  font-size: 0.8rem;
+}
+
+.card p:nth-child(2) {
+  font-size: 0.6rem;
+}
