@@ -1,6 +1,7 @@
 //  Global Element
 let rootElement;
 let pLoading;
+//nativeNameArray = [];
 
 //  Execution
 
@@ -36,15 +37,24 @@ const getCountries = async (url) => {
   }
 };
 
-const nativeNameEvaluate = function (textInput, country) {
-  /*
-  Esta función ha sido creada específicamente para poder realizar la búsqueda del
-  input no solo por el nombre común del país, sino también por el nombre nativo
-  en el primer idioma hablado del país, de haberlo. De esta forma, podemos buscar
-  "españa" por "spain" o por la propia "esp" porque ambos resultan criterios
-  válidos.
-  */
+/* const createNativeNameArray = async (countries) => {
+  let firstKey;
+  console.log(nativeNameArray);
+  countries.forEach((country) => {
+    if (country.name.nativeName != undefined) {
+      // Returning native name.
+      firstKey = Object.keys(country.name.nativeName)[0];
+      nativeNameArray.push(
+        country.name.nativeName[firstKey].common.toLowerCase(),
+      );
+      
+    }
+  });
+  console.log(nativeNameArray);
+}; */
 
+const filterCountries = async (countries, textRegion, textInput) => {
+  let filteredCountries;
   let nativeName;
   let firstKey;
 
@@ -57,14 +67,6 @@ const nativeNameEvaluate = function (textInput, country) {
     firstKey = Object.keys(country.name.nativeName)[0];
     nativeName = country.name.nativeName[firstKey].common.toLowerCase();
   }
-  return (
-    country.name.common.toLowerCase().includes(textInput) ||
-    nativeName.includes(textInput)
-  );
-};
-
-const filterCountries = async (countries, textRegion, textInput) => {
-  let filteredCountries;
 
   textInput = textInput.toLowerCase();
   try {
@@ -73,25 +75,24 @@ const filterCountries = async (countries, textRegion, textInput) => {
         (country) => country.region == textRegion,
       );
     } else filteredCountries = countries;
-    //console.log(filteredCountries);
-    //console.log('comparando:');
-    //console.log(textInput);
-    //console.log(nativeNameArray);
-
+    console.log(filteredCountries);
+    console.log('comparando:');
+    console.log(textInput);
+    console.log(nativeNameArray);
     if (textInput.length > 0) {
       filteredCountries = filteredCountries.filter(
-        nativeNameEvaluate.bind(this, textInput),
+        (country) =>
+          country.name.common.toLowerCase().includes(textInput) ||
+          nativeName.includes(textInput),
+        //array.some((element) => element.includes('z'))
+        //nativeNameArray.some((element) => element.includes(textInput)),
       );
-      //(country) =>
-
-      //array.some((element) => element.includes('z'))
-      //nativeNameArray.some((element) => element.includes(textInput)),
-
-      //console.log(filteredCountries);
+      console.log(filteredCountries);
     }
+    console.log('filtrado:');
+    console.log(filteredCountries);
     return filteredCountries;
   } catch (error) {
-    console.log(`bla`);
     createSignBoard(`Filter Error:\n\n ${error}`, 'error');
   }
 };
@@ -99,15 +100,14 @@ const filterCountries = async (countries, textRegion, textInput) => {
 const renderCountries = async (countries, rootElement) => {
   let firstKey;
 
+  // Deleting Loading Board
+  deleteSignBoard();
   // Displaying countries.
-  if (countries == undefined) {
+  if (countries.length == 0) {
     // if there's no cards.
-    // enable when program fixed.!!!
-    //createSignBoard(`No cards to show.\nChange the filters.`, 'warning');
+    createSignBoard(`No cards to show.\nChange the filters.`, 'warning');
   } else {
-    deleteSignBoard();
     countries.forEach((country) => {
-      // Deleting Loading Board
       // Creating Each Card
       const card = document.createElement('div');
       card.classList.add(`card`);
@@ -179,6 +179,7 @@ const main = async (event) => {
 
   // Representando filteredCountries
   renderCountries(filteredCountries, rootElement);
+
   // Activando elementos de formulario y sus listeners.
   formRegion.classList.remove('hide');
   formCriteria.classList.remove('hide');

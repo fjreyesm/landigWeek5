@@ -28,32 +28,51 @@ img {
 }
 
 .bodyContainer {
-  max-width: 66vw;
+  width: 64rem;
 }
 
 .root {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   row-gap: 1.25rem;
   /* column-gap: 1px; */
-  justify-content: space-between;
 }
-
-/* .root > * {
-  border: 1px solid black;
-  flex-basis: 33%;
-} */
 
 form {
   margin-bottom: 1rem;
 }
+
+.hide {
+  display: none;
+}
+
+/* SIGN BOARD */
+.sign-board {
+  color: black;
+  padding: 1rem;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.sign-warning {
+  background-color: lightyellow;
+}
+
+.sign-error {
+  background-color: lightcoral;
+}
+
 .card {
+  width: 15rem;
   flex-flow: column;
   justify-content: flex-start;
-  flex-basis: 23%;
+  /* flex-basis: 23%; */
   border: 1px solid lightgray;
   padding: 1rem;
-
+  margin-right: 1rem;
   font-weight: 600;
 }
 .card p {
