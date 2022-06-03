@@ -1,29 +1,29 @@
 //  Global Element
 let rootElement;
-let pLoading;
+let pBoard;
 
 //  Execution
 
 const createSignBoard = (text, level) => {
   // Loading label
-  pLoading.innerText = text;
-  pLoading.classList.add(`sign-board`);
+  pBoard.innerText = text;
+  pBoard.classList.add(`sign-board`);
   // Evaluating warning level
   switch (level) {
     case 'warning':
-      pLoading.classList.add(`sign-warning`);
+      pBoard.classList.add(`sign-warning`);
       break;
     case 'error':
-      pLoading.classList.add(`sign-error`);
+      pBoard.classList.add(`sign-error`);
       break;
   }
   // Rendering sign
-  rootElement.appendChild(pLoading);
+  rootElement.appendChild(pBoard);
 };
 
 const deleteSignBoard = () => {
   // Removing sign
-  rootElement.removeChild(pLoading);
+  rootElement.removeChild(pBoard);
 };
 
 const getCountries = async (url) => {
@@ -147,6 +147,36 @@ const renderCountries = async (countries, rootElement) => {
   }
 };
 
+const formUpdate = async (
+  formRegion,
+  formCriteria,
+  filteredCountries,
+  filterText,
+) => {
+  // Deleting previous content
+  rootElement.textContent = '';
+
+  // Actualizando valores
+  filterRegion = formRegion.value;
+  filterText = formCriteria.value;
+
+  // Creando aviso de carga.
+  createSignBoard('Loading...', 'warning');
+
+  // Filfrando countries en filteredCountries
+  filteredCountries = await filterCountries(
+    countries,
+    filterRegion,
+    filterText,
+  );
+
+  // Creando aviso de carga.
+  createSignBoard('Loading...', 'warning');
+
+  // Representando filteredCountries
+  renderCountries(filteredCountries, rootElement);
+};
+
 const main = async (event) => {
   //Element
   const countriesFecthURL = 'https://restcountries.com/v3.1/all';
@@ -158,7 +188,7 @@ const main = async (event) => {
   let filterRegion = formRegion.value;
   let filterText = formCriteria.value;
   rootElement = document.querySelector('#root');
-  pLoading = document.createElement('p');
+  pBoard = document.createElement('p');
 
   // Creando aviso de carga.
   createSignBoard('Loading...', 'warning');
@@ -178,58 +208,24 @@ const main = async (event) => {
   // Activando elementos de formulario y sus listeners.
   formRegion.classList.remove('hide');
   formCriteria.classList.remove('hide');
-  formRegion.addEventListener('change', async (event) => {
-    // Deleting previous content
-    rootElement.textContent = '';
-
-    // Creando aviso de carga.
-    createSignBoard('Loading...', 'warning');
-
-    // Actualizando valores
-    filterRegion = formRegion.value;
-    filterText = formCriteria.value;
-
-    // Filfrando countries en filteredCountries
-    filteredCountries = await filterCountries(
-      countries,
-      filterRegion,
-      filterText,
-    );
-
-    // Representando filteredCountries
-    renderCountries(filteredCountries, rootElement);
+  formRegion.addEventListener('change', function (e) {
+    formUpdate(formRegion, formCriteria, filteredCountries, filterText);
+  });
+  formCriteria.addEventListener('input', function (e) {
+    formUpdate(formRegion, formCriteria, filteredCountries, filterText);
   });
 
-  formCriteria.addEventListener('input', async (event) => {
-    // Deleting previous content
-    rootElement.textContent = '';
-
-    // Creando aviso de carga.
-    createSignBoard('Loading...', 'warning');
-
-    // Actualizando valores
-    filterRegion = formRegion.value;
-    filterText = formCriteria.value;
-
-    // Filfrando countries en filteredCountries
-    filteredCountries = await filterCountries(
-      countries,
-      filterRegion,
-      filterText,
-    );
-
-    // Representando filteredCountries
-    renderCountries(filteredCountries, rootElement);
-  });
 };
 
-//  Events
-//
-// ! don't forget to wait for DOM content to be loaded!
-//
-// Las declacariones de la primera linea, etiquetadas como
-// "Global Element" y éste listener serán lo único que se
-// ejecute hasta que el DOM esté cargado. Cuando lo esté,
-// Procedemos a ejecutar la función main
-//
+/*
+Events
+
+ ! don't forget to wait for DOM content to be loaded!
+
+ Las declacariones de la primera linea, etiquetadas como
+ "Global Element" y éste listener serán lo único que se
+ ejecute hasta que el DOM esté cargado. Cuando lo esté,
+ Procedemos a ejecutar la función main
+*/
+
 window.addEventListener('DOMContentLoaded', main);

@@ -18,6 +18,7 @@ body {
 picture {
   display: block;
   border: 1px solid black;
+  margin-top: 0.8rem;
 }
 
 img {
@@ -28,7 +29,7 @@ img {
 }
 
 .bodyContainer {
-  width: 64rem;
+  width: 60rem;
 }
 
 .root {
@@ -66,7 +67,7 @@ form {
 }
 
 .card {
-  width: 15rem;
+  width: 14rem;
   flex-flow: column;
   justify-content: flex-start;
   /* flex-basis: 23%; */
