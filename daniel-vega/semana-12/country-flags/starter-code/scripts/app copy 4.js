@@ -8,7 +8,6 @@ const createSignBoard = (text, level) => {
   // Loading label
   pLoading.innerText = text;
   pLoading.classList.add(`sign-board`);
-  // Evaluating warning level
   switch (level) {
     case 'warning':
       pLoading.classList.add(`sign-warning`);
@@ -17,17 +16,14 @@ const createSignBoard = (text, level) => {
       pLoading.classList.add(`sign-error`);
       break;
   }
-  // Rendering sign
   rootElement.appendChild(pLoading);
 };
 
 const deleteSignBoard = () => {
-  // Removing sign
   rootElement.removeChild(pLoading);
 };
 
 const getCountries = async (url) => {
-  // Tries to fetch the countries from URL
   try {
     const response = await fetch(url, {
       method: 'GET',
@@ -68,44 +64,46 @@ const nativeNameEvaluate = function (textInput, country) {
 };
 
 const filterCountries = async (countries, textRegion, textInput) => {
-  /*
-  Filters the data using the form elements of the page. In first place, it filters
-  the data using region, next it calls a function named nativeNameEvaluate to
-  filter based in the input text of the user. Using toLowerCase to compare
-  without case sensitive troubling.
-  */
   let filteredCountries;
 
   textInput = textInput.toLowerCase();
   try {
-    // First filter: Form Region Drop Down.
     if (textRegion != `All`) {
       filteredCountries = countries.filter(
         (country) => country.region == textRegion,
       );
     } else filteredCountries = countries;
+    //console.log(filteredCountries);
+    //console.log('comparando:');
+    //console.log(textInput);
+    //console.log(nativeNameArray);
 
-    // Second filter: Form Input Text
     if (textInput.length > 0) {
       filteredCountries = filteredCountries.filter(
         nativeNameEvaluate.bind(this, textInput),
       );
+      //(country) =>
+
+      //array.some((element) => element.includes('z'))
+      //nativeNameArray.some((element) => element.includes(textInput)),
+
+      //console.log(filteredCountries);
     }
     return filteredCountries;
   } catch (error) {
+    console.log(`bla`);
     createSignBoard(`Filter Error:\n\n ${error}`, 'error');
-    return undefined;
   }
 };
 
 const renderCountries = async (countries, rootElement) => {
   let firstKey;
+
   // Displaying countries.
   if (countries == undefined) {
-    console.log('Error');
-  } else if (countries.length == 0) {
     // if there's no cards.
-    createSignBoard(`No cards to show.\nChange the filters.`, 'warning');
+    // enable when program fixed.!!!
+    //createSignBoard(`No cards to show.\nChange the filters.`, 'warning');
   } else {
     deleteSignBoard();
     countries.forEach((country) => {
@@ -157,6 +155,10 @@ const main = async (event) => {
   let filteredCountries;
   let filterRegion = formRegion.value;
   let filterText = formCriteria.value;
+  // Temp
+  //filterRegion = 'Europe';
+  //filterText = 'Un';
+  //
   rootElement = document.querySelector('#root');
   pLoading = document.createElement('p');
 
@@ -164,6 +166,9 @@ const main = async (event) => {
   createSignBoard('Loading...', 'warning');
   // Obteniendo countries desde la URL.
   countries = await getCountries(countriesFecthURL);
+
+  // Creando array con nombres nativos.
+  //createNativeNameArray(countries);
 
   // Filfrando countries en filteredCountries
   filteredCountries = await filterCountries(
@@ -174,50 +179,42 @@ const main = async (event) => {
 
   // Representando filteredCountries
   renderCountries(filteredCountries, rootElement);
-
   // Activando elementos de formulario y sus listeners.
   formRegion.classList.remove('hide');
   formCriteria.classList.remove('hide');
   formRegion.addEventListener('change', async (event) => {
+    //console.log('¡EVENTO');
+    //console.log(event);
     // Deleting previous content
     rootElement.textContent = '';
-
     // Creando aviso de carga.
     createSignBoard('Loading...', 'warning');
-
     // Actualizando valores
     filterRegion = formRegion.value;
     filterText = formCriteria.value;
-
     // Filfrando countries en filteredCountries
     filteredCountries = await filterCountries(
       countries,
       filterRegion,
       filterText,
     );
-
     // Representando filteredCountries
     renderCountries(filteredCountries, rootElement);
   });
-
   formCriteria.addEventListener('input', async (event) => {
     // Deleting previous content
     rootElement.textContent = '';
-
     // Creando aviso de carga.
     createSignBoard('Loading...', 'warning');
-
     // Actualizando valores
     filterRegion = formRegion.value;
     filterText = formCriteria.value;
-
     // Filfrando countries en filteredCountries
     filteredCountries = await filterCountries(
       countries,
       filterRegion,
       filterText,
     );
-
     // Representando filteredCountries
     renderCountries(filteredCountries, rootElement);
   });
