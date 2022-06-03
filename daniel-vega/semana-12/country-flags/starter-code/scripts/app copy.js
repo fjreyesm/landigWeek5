@@ -1,4 +1,4 @@
-// Copia previa almacenada como simple referencia rápida.
+// Copia previa sin usar almacenada como simple referencia rápida.
 //Element
 let rootElement;
 
