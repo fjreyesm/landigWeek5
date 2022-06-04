@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Countries</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <h1>fetch</h1>
+    <div class="div-forms">
+      <form method="post">
+        <label for="paises-select">continentes:</label>
+        <select name="paises" id="paises-select">
+          <option selected value="all">--all--</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </form>
+      <form method="post">
+        <label for="paises-search">Search:</label>
+        <input type="search" id="paises-search" name="q" />
+      </form>
+
+      <button>Search</button>
+    </div>
+    <div id="root" class="root"></div>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
