@@ -12,13 +12,17 @@
       <code> Banderas </code>
     </h1>
     // filter countries by region
-    <select name="select" id="region">
-      <option value="Americas">Americas</option>
-      <option value="Europe">Europe</option>
-      <option value="Asia">Asia</option>
-      <option value="Africa">Africa</option>
-      <option value="Oceania">Oceania</option>
-    </select>
+    <form>
+      <select name="region" id="region">
+        <option value="africa">Africa</option>
+        <option value="americas">Americas</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="oceania">Oceania</option>
+      </select>
+      <input type="submit" value="Filter" />
+    </form>
+
     <div id="root" class="root"></div>
 
     <script src="./scripts/app.js"></script>

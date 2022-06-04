@@ -3,11 +3,19 @@ const rootElement = document.querySelector("#root");
 window.addEventListener("DOMContentLoaded", renderCountriesAsync);
 // ejecucion
 
+const select = document.getElementById("region").value;
+//let selectedRegion = select.options[select.selectedIndex].value;
+console.log("region selecionada " + select);
+
 const getCountries = async () => {
   try {
-    const response = await fetch("https://restcountries.com/v3.1/region/asia", {
-      method: "GET",
-    });
+    //const response = await fetch("https://restcountries.com/v3.1/region/americas"
+    const response = await fetch(
+      "https://restcountries.com/v3.1/region/" + select,
+      {
+        method: "GET",
+      }
+    );
     const countries = await response.json();
     return countries;
   } catch (error) {
@@ -44,17 +52,3 @@ async function renderCountriesAsync(event) {
 }
 
 //filter countries by region
-function filter(event) {
-  const region = event.target.value;
-  const countries = document.querySelectorAll("picture");
-
-  countries.forEach((country) => {
-    const countryRegion = country.querySelector("img").alt;
-
-    if (countryRegion.includes(region)) {
-      country.style.display = "block";
-    } else {
-      country.style.display = "none";
-    }
-  });
-}
