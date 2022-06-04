@@ -3,15 +3,16 @@ const rootElement = document.querySelector("#root");
 window.addEventListener("DOMContentLoaded", renderCountriesAsync);
 // ejecucion
 
-const select = document.getElementById("region").value;
-//let selectedRegion = select.options[select.selectedIndex].value;
-console.log("region selecionada " + select);
+const continent = document.getElementById("region").value;
+
+//continent.addEventListener("change", renderCountriesAsync);
+console.log("region selecionada " + continent);
 
 const getCountries = async () => {
   try {
-    //const response = await fetch("https://restcountries.com/v3.1/region/americas"
+    // Ejemplo const response = await fetch("https://restcountries.com/v3.1/region/americas"
     const response = await fetch(
-      "https://restcountries.com/v3.1/region/" + select,
+      "https://restcountries.com/v3.1/region/" + continent,
       {
         method: "GET",
       }
