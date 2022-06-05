@@ -2,6 +2,7 @@
 const [clap, hihat, kick, openhat, boom, ride, snare, tom, tink] = Array.from(
   document.querySelectorAll('audio'),
 );
+const sounds = [clap, hihat, kick, openhat, boom, ride, snare, tom, tink];
 
 /* Evento */
 window.addEventListener('keyup', playSoundByLetter);
