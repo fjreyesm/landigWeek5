@@ -9,6 +9,7 @@ function renderCountriesSync(event) {
   const response = fetch('https://restcountries.com/v3.1/all', {
     method: 'GET',
   });
+ 
 
     response
      .then((data) => {
@@ -30,6 +31,7 @@ const getCountries = async () => {
     });
     const countries = await response.json();
     return countries;
+    
   } catch (error) {
     console.error('HAY UN ERROR', error);
   }
@@ -47,8 +49,12 @@ const getCountries = async () => {
     countries.forEach((country) => {
       const picture = document.createElement('picture');
       const img = document.createElement('img');
+
       img.setAttribute('src', country.flags.svg);
       img.setAttribute('alt', country.name.official);
+
+
+
       img.setAttribute('loading', 'lazy');
 
       picture.appendChild(img);
@@ -59,6 +65,8 @@ const getCountries = async () => {
     pLoading.innerText = 'Error';
     rootElement.appendChild(pLoading);
   }
+ 
+  
   }
 
 
