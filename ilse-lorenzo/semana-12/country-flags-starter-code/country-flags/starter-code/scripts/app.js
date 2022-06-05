@@ -27,7 +27,7 @@ const getCountries = async () => {
     const countries = await response.json();
     return countries;
   } catch (error) {
-    console.error('Error', error);
+    console.error('ERROR', error);
   }
 };
 
@@ -54,7 +54,7 @@ async function renderCountriesAsync(event) {
       rootElement.appendChild(picture);
     });
   } catch (error) {
-    pLoading.innerText = 'Error';
+    pLoading.innerText = 'ERROR';
     rootElement.appendChild(pLoading);
   }
 }
