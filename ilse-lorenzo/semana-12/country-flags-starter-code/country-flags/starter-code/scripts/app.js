@@ -15,7 +15,7 @@ function renderCountriesSync(event) {
       console.log({ json });
     })
     .catch((error) => {
-      console.error('ERRRORRRR AAAAWWWWW ', error);
+      console.error('Error', error);
     });
 }
 
@@ -27,7 +27,7 @@ const getCountries = async () => {
     const countries = await response.json();
     return countries;
   } catch (error) {
-    console.error('ERRRORRRR AAAAWWWWW ', error);
+    console.error('Error', error);
   }
 };
 
@@ -59,9 +59,4 @@ async function renderCountriesAsync(event) {
   }
 }
 
-// Promise.all([renderCountriesAsync, renderCountriesAsync, renderCountriesAsync]);
-// Promise.race([
-//   renderCountriesAsync,
-//   renderCountriesAsync,
-//   renderCountriesAsync,
-// ]);
+
