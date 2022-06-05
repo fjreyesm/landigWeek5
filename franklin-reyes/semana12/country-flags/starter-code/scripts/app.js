@@ -1,11 +1,14 @@
 const rootElement = document.querySelector("#root");
 
 window.addEventListener("DOMContentLoaded", renderCountriesAsync);
-// ejecucion
+let continent = document.getElementById("region").value;
+// filter countries by region
+// event listener para el select OK
+document.getElementById("region").addEventListener("change", (event) => {
+  continent = event.target.value;
+  renderCountriesAsync();
+});
 
-const continent = document.getElementById("region").value;
-
-//continent.addEventListener("change", renderCountriesAsync);
 console.log("region selecionada " + continent);
 
 const getCountries = async () => {
@@ -51,5 +54,3 @@ async function renderCountriesAsync(event) {
     rootElement.appendChild(pLoading);
   }
 }
-
-//filter countries by region
