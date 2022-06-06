@@ -1,0 +1,32 @@
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  nav.box_flex {
+    flex-direction: row;
+  }
+
+  .box_flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box_reverse {
+    flex-direction: column-reverse;
+  }
+
+  .header-img {
+    margin-top: 30px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+}
