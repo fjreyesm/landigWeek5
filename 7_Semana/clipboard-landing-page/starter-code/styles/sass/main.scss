@@ -1,0 +1,197 @@
+@import "normalize";
+@import "mediaquery";
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Strong_Cyan: hsl(171, 66%, 44%);
+  --Light_Blue: hsl(233, 100%, 69%);
+  --Dark_Grayish_Blue: hsl(210, 10%, 33%);
+  --Grayish_Blue: hsl(201, 11%, 66%);
+  --Family_Bai: Bai Jamjure;
+  --Weights_400: 400;
+  --Weights_600: 600;
+}
+
+body {
+  font-family: var(--Family_Bai);
+  font-weight: var(--Weights_400);
+  font-size: 18px;
+}
+
+picture {
+  display: block;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.container {
+  width: 1440px;
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+// .box {
+//   border: 2px solid red;
+// }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header-backgnd {
+  background-image: url(../../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+
+  picture {
+    img {
+      padding-top: 100px;
+      width: 125px;
+      // width: 6.95rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--Weights_600);
+  color: var(--Dark_Grayish_Blue);
+}
+
+p {
+  color: var(--Grayish_Blue);
+}
+
+.box-btn {
+  display: flex;
+  flex-flow: row;
+  padding-bottom: 30px;
+
+  .btn {
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary {
+  background-color: var(--Strong_Cyan);
+  box-shadow: 0px 5px 5px hsl(171, 66%, 44%, 0.5);
+}
+
+.btn-secondary {
+  background-color: var(--Light_Blue);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.box-row {
+  display: flex;
+  // flex-flow: row nowrap;
+  justify-content: space-between;
+  text-align: start;
+  margin-bottom: 50px;
+
+  picture {
+    margin: 80px 170px 80px 0;
+
+    // MOVER HACIA LA IZQ
+    img {
+      max-width: 100%;
+      width: 33.3rem;
+    }
+  }
+}
+
+.aside-content {
+  margin: 85px 0px;
+  width: 19rem;
+}
+
+.content {
+  picture {
+    margin-bottom: 50px;
+    margin-top: 80px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  div {
+    width: 100%;
+    height: auto;
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.logos {
+  margin: 40px 0;
+
+  picture {
+    margin: 10px 20px;
+    img {
+      padding: 5px 0px;
+    }
+  }
+}
+
+footer {
+  background-color: #eee;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    padding: 70px 0;
+    div {
+      img {
+        width: 80px;
+      }
+    }
+  }
+
+  .moreInfo,
+  .socialIcon {
+    ul {
+      padding: 0;
+      li {
+        list-style-type: none;
+        color: var(--Dark_Grayish_Blue);
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .socialIcon {
+    picture {
+      margin: 0 10px;
+      img {
+        width: 25px;
+      }
+    }
+  }
+}
