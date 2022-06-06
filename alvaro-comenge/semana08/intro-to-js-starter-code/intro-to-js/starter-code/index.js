@@ -1,17 +1,6 @@
 'use strict';
 console.log('working')
-
-
-
-
-
-
-
-
 // console.log("My name is" +" " +firstName +" " +lastName +" " +"and my favourite number is" +" " + age);
-
-
-
 // console.log(`My name is ${firstName} ${lastName} and my favourite number is ${age}`);
 // 1. create a variable called firstName and assign it the value of your first name
 const firstName = "alvaro";

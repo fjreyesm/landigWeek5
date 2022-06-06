@@ -14,7 +14,6 @@ const y = parseFloat(prompt('dime el otro numero'));
 // alert(suma);
 
 // CALCULADORA-BÁSICA
-
 if (z == "+") {
   const suma = x + y;
   alert(suma);
