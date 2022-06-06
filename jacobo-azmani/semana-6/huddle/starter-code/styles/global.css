@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(../images/bg-hero-mobile.svg);
+  }
+
+  .ready {
+    width: 590px;
+    margin: 0;
+    padding: 0;
+  }
+}

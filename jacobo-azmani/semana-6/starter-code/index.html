@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive form lab</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+    <div class="content">
+      <header>
+        <h1>Responsive form lab</h1>
+      </header>
+      <section>
+        <h2>Your Contact Info</h2>
+        <form action="#" method="POST">
+          <div class="contact">
+            <div>
+              <label for="name">First Name</label>
+              <input
+                class="box"
+                type="text"
+                id="name"
+                placeholder="First Name"
+              />
+            </div>
+            <div>
+              <label for="last-name">Last Name</label>
+              <input
+                class="box"
+                type="text"
+                id="last-name"
+                placeholder="Last Name"
+              />
+            </div>
+            <div>
+              <label for="phone-numbre">Phone Number</label>
+              <input
+                class="box"
+                type="text"
+                id="phone-numbre"
+                placeholder="0700 456 7890"
+              />
+            </div>
+          </div>
+          <div class="address contact">
+            <div>
+              <label for="address">Address</label>
+            </div>
+            <div>
+              <input
+                class="box"
+                type="text"
+                id="address"
+                placeholder="Street"
+              />
+            </div>
+            <div>
+              <input
+                class="box"
+                type="text"
+                id="address"
+                placeholder="Address line 2"
+              />
+            </div>
+            <div>
+              <input class="box" type="text" id="address" placeholder="Town" />
+            </div>
+            <div>
+              <input
+                class="box"
+                type="text"
+                id="address"
+                placeholder="Postcode"
+              />
+            </div>
+          </div>
+          <h2>Skills and interests</h2>
+          <div class="contact">
+            <label for="course">Course</label>
+            <select name="Select" id="course">
+              <option value="chose-one" selected="selected">Select One</option>
+              <option value="web-development" disabled>Web Development</option>
+              <option value="front-end">Front end</option>
+              <option value="back-end">Back end</option>
+              <option value="desing" disabled>Desing</option>
+              <option value="user-exp">User experience</option>
+              <option value="visual">Visual design</option>
+            </select>
+          </div>
+          <div class="come">
+            <label for="exp">Past experience</label>
+            <textarea name="exp" id="course" cols="30" rows="10"></textarea>
+          </div>
+          <h2>Anything else</h2>
+          <div class="contact">
+            <label for="referral">Referral</label>
+            <select name="referral" id="referral">
+              <option value="None" selected="selected" disabled>None</option>
+              <option value="fiend">Friend</option>
+              <option value="instructor">Instructor</option>
+              <option value="online">Online</option>
+            </select>
+          </div>
+          <div class="come">
+            <label for="comments">Comments</label>
+            <textarea
+              name="comments"
+              id="course"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="contact">
+            <button>Save draft</button>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+      <footer>
+        <p>Made with love <span>&#10084;</span> by Jacobo Azmani 2022</p>
+      </footer>
+    </div>
+  </body>
+</html>

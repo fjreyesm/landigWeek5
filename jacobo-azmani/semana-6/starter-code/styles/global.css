@@ -1,0 +1,53 @@
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 500px;
+  }
+
+  .hero-link {
+    display: block;
+  }
+
+  .grow {
+    display: ;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flowing {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .uer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .ready {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  footer {
+  }
+}

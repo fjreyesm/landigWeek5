@@ -1,0 +1,60 @@
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 100%;
+  }
+  header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .download {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px 10px;
+    margin: 12px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .search picture img {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+  }
+
+  .clip {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .clip picture img {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  footer {
+    display: flex;
+    flex: row;
+  }
+
+  .socialIcons {
+  }
+}
