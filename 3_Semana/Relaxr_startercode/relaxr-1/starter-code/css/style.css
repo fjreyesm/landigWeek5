@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0efef;
+  font-family: "Open Sans", sans-serif;
+  margin: auto;
+  width: 600px;
+}
+.header_bckground {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  height: 900px;
+}
+
+.h1_relaxr {
+  text-align: start;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+  padding: 25px;
+  color: white;
+}
+
+.p_1 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.div_a {
+  padding-top: 100px;
+  border: auto;
+}
+
+.a_1:link,
+.a_1:visited {
+  font-size: 25px;
+  font-weight: 800;
+  color: #033048;
+  text-decoration: none;
+  background-color: #f9e42e;
+  padding: 15px;
+  width: 40%;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.content_h2 {
+  width: 60%;
+  background-color: #f0efef;
+}
+
+.div_img1 {
+  background: url(../images/testimonial-bg.jpg);
+}
+
+.h2_benefits {
+  width: 60%;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.p_2,
+.list_1 {
+  margin-left: 50px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.blockquote_1 {
+  font-size: 18px;
+  font-weight: italic 300;
+  color: #606161;
+  padding: 50px;
+  font-style: italic;
+  display: block;
+}
+
+strong {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f0efef;
+  display: block;
+  margin-top: 20px;
+  margin-left: 140px;
+}
+
+.p_3 {
+  color: #f0efef;
+  text-align: center;
+  font-weight: 600 bold;
+  font-size: 18px;
+}
+
+.singup_content {
+  background-color: #f9e42e;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.button_1 {
+  margin: 20px;
+  background-color: #033048;
+  font-size: 12px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 14px 25px;
+  width: 40%;
+  text-align: center;
+  text-decoration: none;
+}
+footer {
+  background-color: #121212;
+  text-align: center;
+  padding: 20px;
+}
+
+.p_4 {
+  margin: auto;
+  margin-bottom: 10px;
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.p_5 {
+  margin: 20px;
+  color: white;
+  font-size: 12px;
+}
+
+img {
+  margin: 10px;
+  height: 25px;
+}
