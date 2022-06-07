@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- <form action="https://formspree.io/f/xvolwyjy" method="POST">  -->
+    <form class="body-form" action="dump.html" method="POST">
+      <h1 class="grid-item">Your Contact Info</h1>
+      <label class="grid-item primer-nombre" for="primer-nombre"
+        >First name</label
+      >
+      <input
+        class="grid-item primer-nombre"
+        type="text"
+        name="primer-nombre"
+        id="primer-nombre"
+        placeholder="First name"
+      />
+      <!--   pattern="/[a-z]{2,}/g" -->
+      <label class="grid-item apellidos" for="apellidos">Last name</label>
+      <input
+        class="grid-item apellidos"
+        type="text"
+        name="apellidos"
+        id="apellidos"
+        placeholder="Last name"
+      />
+      <label class="grid-item telefon" for="telefon">Phone number</label>
+      <input
+        class="grid-item telefon"
+        type="text"
+        name="telefon"
+        id="telefon"
+        placeholder="0700 456 7890"
+        pattern="/[0-9]{11,11}/g"
+      />
+      <label for="direccion1">Address</label>
+      <input
+        class="grid-item"
+        type="text"
+        name="direccion1"
+        id="direccion1"
+        placeholder="Street"
+      />
+      <label class="grid-item" for="direccion2"> </label>
+      <input
+        class="grid-item"
+        type="text"
+        name="direccion2"
+        id="direccion2"
+        placeholder="Address line 2"
+      />
+      <label class="grid-item" for="direccion3"> </label>
+      <input
+        class="grid-item"
+        type="text"
+        name="direccion3"
+        id="direccion3"
+        placeholder="Town"
+      />
+      <label class="grid-item" for="direccion4"> </label>
+      <input
+        class="grid-item"
+        type="text"
+        name="direccion4"
+        id="direccion4"
+        placeholder="Postcode"
+        pattern="/[0-9]{5,5}/g"
+      />
+      <h2 class="grid-item">Skills and interests</h2>
+      <label class="grid-item" for="course">Course</label>
+      <select class="grid-item" name="course" id="course">
+        <option label="Select One" selected="selected" disabled></option>
+        <optgroup label="Web Development">
+          <option value="fe">Front end</option>
+          <option value="be">Back end</option>
+        </optgroup>
+        <optgroup label="Design">
+          <option value="ue">User experience</option>
+          <option value="vd">Visual design</option>
+        </optgroup>
+      </select>
+      <label class="grid-item" for="experiencia">Past experience</label>
+      <textarea class="grid-item-experiencia"> </textarea>
+      <h2 class="grid-item">Anything else</h2>
+      <label class="grid-item" for="referral">Referral</label>
+      <select class="grid-item" name="referral" id="referral">
+        <option value="none" selected="selected" disabled>None</option>
+        <option value="friend">Friend</option>
+        <option value="instructor">Instructor</option>
+        <option value="online">Online</option>
+      </select>
+      <label class="grid-item" for="comentarios">Comments</label>
+      <textarea class="comentarios"> </textarea>
+      <div class="grid-item botones">
+        <a href="../index.html" class="a-grid-item botones">Cancel</a>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
+
+<!--
+ <select>
+        <optgroup label="Group 1">
+            <option>Option 1.1</option>
+        </optgroup> 
+        <optgroup label="Group 2">
+            <option>Option 2.1</option>
+            <option>Option 2.2</option>
+        </optgroup>
+        <optgroup label="Group 3" disabled>
+            <option>Option 3.1</option>
+            <option>Option 3.2</option>
+            <option>Option 3.3</option>
+        </optgroup>
+    </select>
+  <label for="textarea">Textarea</label>
+  <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+-->
