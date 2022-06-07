@@ -1,0 +1,115 @@
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  font-family: 'Source San Pro', sans-serif;
+  font-size: 20px;
+}
+header {
+  height: 100px;
+  background-color:black;
+  position: sticky;
+  top: 0; 
+  margin: 0;
+}
+header h1 {
+  color: yellow;
+  margin-left: 100px;
+}
+header ul {
+  display: flex;
+  flex-direction:flex-start;
+  justify-content:right;
+  list-style: none;
+}
+header .find {
+  /*font-size: 25px;*/
+  padding-right: 30px;
+}
+header li {
+  font-size: 18px;
+  padding-right: 30px;
+}
+header li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  font-weight: bolder;
+}
+.slogan {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  font-style: italic;
+  height: 50px;
+  background-color: #c6c6c6;
+  margin-top: 10px;
+  
+
+}
+header span{
+  text-decoration: line-through;
+  color: #aaa;
+}
+header .amarillo {
+color: yellow;
+text-decoration: underline;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+  justify-content:space-around;
+  max-width: 1280px;
+  padding: 20px;
+  background-color: white;
+}
+.caja {
+  background-color: #c6c6c6;
+  width: 400px;
+  max-width: fit-content;
+}
+.profile {
+background-image: url("../images/startup-bg.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+align-items: center;
+flex-direction: row;
+justify-content:space-around;
+padding: 8px;
+}
+.create {
+  background-color: #c6c6c6;
+  opacity: 0.8;
+  width: 400px;
+  padding: 20px;
+}
+.create-oculto {
+  width: 400px;
+  visibility: hidden;
+}
+
+/*
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}*/
+
+footer {
+  display: flex;
+	justify-content:flex-start;
+  align-items: center;
+	flex-wrap: wrap;
+  min-height: 10vh;
+  color:white;
+  background-color:black;
+}
+
