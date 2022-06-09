@@ -33,9 +33,14 @@ header #navtop {
 }
 #navtop li {
   display: inline-block;
+<<<<<<< HEAD
+
+  margin-left: 20px;
+=======
 }
 #navtop li:not(:last-child) {
   margin-right: 10px;
+>>>>>>> e859397781fe5f1853de7b1eecc0967d1f3e2012
 }
 #navtop li a:link,
 ul li a:visited {

@@ -1,0 +1,9 @@
+@import url(./normalize.css);
+@import url(./global.css);
+
+input #countries:focus {
+  background-color: aquamarine;
+}
+input {
+  margin-right: 7px;
+}
