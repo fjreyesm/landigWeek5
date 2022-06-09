@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Countries</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Country flags</h1>
+      <form action="">
+        <label for="region">Regions</label>
+        <select name="region" id="region">
+          <option value="All">All</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+        <label for="search">Search</label>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="search by country name "
+        />
+      </form>
+    </header>
+    <main>
+      <article id="js-countries" class="countries"></article>
+    </main>
+    <script src="./scripts/app.js" type="module"></script>
+  </body>
+</html>

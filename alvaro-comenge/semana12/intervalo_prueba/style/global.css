@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box; /*establece que lo que demos de padding y boreder este dentro de la caja*/
+}
+
+:root {
+  --alpha-black: rgba(0, 0, 0, 0.3);
+
+}
+
+html {
+  font-size: 100%; /*1rem sea lo que el usuario establecio como tamaño de fuente original */
+  font-family: var(--normal);
+}
+
+body {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 20px
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* button{
+width: 40px;
+height: 30px;
+} */
