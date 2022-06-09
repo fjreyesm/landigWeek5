@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --grayish-blue: hsl(201, 11%, 66%);
+  --ios-buttom: hsl(172, 96%, 40%);
+  --mac-buttom: hsl(220, 95%, 58%);
+  --white: hsl(0, 0%, 100%);
+}
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 112.5%;
+}
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 p {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+.bg-header {
+  background-image: url(../images/bg-header-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+.text-center {
+  font-size: 0.87rem;
+  text-align: center;
+  line-height: 0.25rem;
+  color: var(--grayish-blue);
+}
+
+.buttoms-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.buttoms-header .buttom-ios {
+  margin-left: 2.4rem;
+  background-color: var(--ios-buttom);
+  border: 3px solid none;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+}
+
+.buttoms-header .buttom-mac {
+  margin-right: 2rem;
+  background-color: var(--mac-buttom);
+  border: 3px solid none;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  margin-left: 0.5rem;
+}
+
+.keep-track {
+  margin-top: 8rem;
+}
+.keep-track h2 {
+  text-align: center;
+}
+
+.keep-track-1 {
+  display: flex;
+  margin-top: 5rem;
+}
+
+span.content::before {
+  content: "\A";
+  white-space: pre;
+}
+
+.keep-track-1 p {
+  font-size: 0.85rem;
+  color: var(--grayish-blue);
+}
+
+.text-mac {
+  margin-top: 2.4rem;
+  margin-left: 3rem;
+}
+
+.text-mac h4 {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.photo-mac img {
+  margin-left: -2rem;
+}
+
+.access {
+  margin-top: 7rem;
+}
+
+.access h2 {
+  text-align: center;
+}
+
+.image-devices {
+  margin-top: 5rem;
+  margin-left: 12rem;
+}
+
+.supercharge h2 {
+  text-align: center;
+}
+
+.supercharge-1 {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.supercharge-1 p {
+  font-size: 0.85rem;
+  color: var(--grayish-blue);
+  text-align: center;
+}
+
+.create img {
+  margin-left: 7.5rem;
+}
+
+.plain img {
+  margin-left: 8.5rem;
+}
+
+.sneak img {
+  margin-left: 8.2rem;
+}
+
+.create {
+  text-align: center;
+  margin-left: 4rem;
+}
+
+.plain {
+  text-align: center;
+  margin-left: 3rem;
+}
+
+.sneak {
+  text-align: center;
+  margin-right: 7.5rem;
+}
+
+.logos {
+  margin-top: 7rem;
+}
+
+.logos ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logos .google {
+  margin-left: -4rem;
+}
+.logos .ibm {
+  margin-left: -3rem;
+  margin-right: -2rem;
+}
+.logos .microsoft {
+  margin-right: -2rem;
+}
+.logos .hp {
+  margin-right: -2rem;
+}
+.logos .vector-graphics {
+  margin-right: 2rem;
+}
+
+.clipboard {
+  margin-top: 8rem;
+}
+
+.footer {
+  background-color: #e5e5e5;
+  margin-top: 10rem;
+  display: flex;
+}
+
+.logo-footer img {
+  max-width: 15%;
+  height: auto;
+  margin-left: 10rem;
+  padding-top: 1.3rem;
+}
+
+.list-1-footer {
+  font-size: 0.87rem;
+  margin-left: 3rem;
+  line-height: 2rem;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+.list-2-footer {
+  font-size: 0.87rem;
+  margin-left: 3rem;
+  line-height: 2rem;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+.list-3-footer {
+  font-size: 0.87rem;
+  margin-left: 3rem;
+  line-height: 2rem;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+.social-media {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 15rem;
+}
+
+.social-media .twitter {
+  padding-left: 1.5rem;
+}
+
+.social-media .instagram {
+  padding-left: 1.5rem;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    background-color: aqua;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  body {
+    background-color: bisque;
+  }
+  .buttoms-header {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
