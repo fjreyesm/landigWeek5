@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* rota desde o hasta el siguiente valor */
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg); 
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.thing-to-spin {
+  /* velocidad y que ruede siempre */
+  animation: spin 4s infinite;
+  /* para que no pare */
+  animation-timing-function: linear;
+}
+
+
+ 
+
+  /* your code here */
+
+

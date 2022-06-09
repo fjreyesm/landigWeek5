@@ -1,0 +1,272 @@
+*{
+  box-sizing: border-box;
+}
+:root {
+  --rosa: hsl(322, 100%, 66%);
+  --blanco: hsl(193, 100%, 96%);
+  --azul: hsl(192, 100%, 9%);
+  --gris: hsl(208, 11%, 55%);
+}
+
+
+body{
+  font-size: 100%;
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 100%;
+  font-family: sans-serif;
+}
+p{
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+h1{
+ font-size:2.5rem;
+}
+h3{
+  font-size: 2.5rem;
+  color:(var(--blanco));
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+/* background 1ºparte */
+section.hero{
+ background-color:white;
+ width: 110%;
+}
+
+/* FLEX CONTAINER */
+.cabezera-flex{
+  background-color: var(--blanco);
+  background-image:url(./starter-code/images/bg-hero-desktop.svg);
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+
+}
+.cabezera-flex img{
+  margin-top: 2rem;
+  margin-left: 4rem;
+  
+}
+
+.primera-flex{
+  width: 40%;
+  display:flex;
+  flex-direction:column;
+  margin-top: 8rem;
+  margin-left: 1rem;
+  
+}
+
+
+.primera-flex p {
+  font-family: sans-serif;
+  font-weight: 500;
+  width: 80%;
+  color: var(--gris);
+
+}
+
+.primera-flex .button-down{
+  text-align: center;
+  width: 50%;
+
+}
+
+.mokus img{
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+
+/* SEGUNDA PARTE */
+.flex-container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+ 
+  margin-left: 6rem;
+  box-shadow: 0 0 40px 2px rgb(242, 239, 239);
+  margin-top: 8rem;
+  border-radius: 30px;
+  padding: 4rem;
+}
+.flex-container2 h1{
+  margin-left: 3rem;
+}
+.flex-container2 p{
+  margin-left: 3rem;
+  width: 100%;
+}
+/* TERCERA PARTE */
+
+.flex-container3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  border-radius: 30px;
+  box-shadow: 0 0 40px 2px rgb(242, 239, 239);
+}
+/* CUARTA PARTE */
+.space-black{
+  background-color:var(-);
+  width: 100%;
+  height: 10rem;
+}
+footer{
+  background-color: var(--azul);
+  width: 100%;
+  height: 30rem;
+}
+.flex-container4{
+  display: flex;
+}
+.logo-location {
+  color:white;
+  font-size: 0.8rem;
+  font-weight: 100%;
+  width: 30%;
+  
+
+}
+
+.contact1{
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+  width: 100%;
+}
+
+.contact1 p{
+  color:var(--blanco);
+  font-size: 0.8rem;
+  margin-top: 2rem;
+
+ 
+}
+.contact1 img{
+  margin-left: 8rem;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.contact2{
+  width: 30%;
+  margin-top: 5rem;
+  margin-left: 8rem;
+}
+.enlaces-fot{
+  padding: 5rem;
+  padding-top:10rem;
+  color: var(--blanco);
+}
+.enlaces-fot li{
+  padding: 1rem;
+   list-style: none;
+}
+.enlaces-fot a:hover{
+  color:var(--blanco);
+
+
+
+}
+.socialIcons{
+  margin-top: 12rem;
+  display: flex;
+
+ 
+}
+.social{
+  display: flex;
+  
+}
+.socialIcons  img{ 
+ width:20px;
+ margin-left: 5rem;
+}
+
+.remate{
+  color: var(--blanco);
+  font-size: 12px;
+  margin-left: 80rem;
+}
+
+
+
+
+/* BOTONES */
+.button-top {
+  font-family: sans-serif;
+  color: var(--gris);
+  background-color:rgb(253, 247, 247);
+  border-radius: 30px;
+  box-shadow: 5rem 5rem 8rem rgba(121, 65, 65, 0.1);
+  font-size: 100%;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  margin-left: 55rem;
+}
+.button-down{
+  font-weight: 600;
+  background-color: #ff52bf;
+  color: white;
+  padding: 0.7rem;
+  margin-left: 2rem;
+  border-radius: 5rem;
+  text-decoration: none;
+ -webkit-box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75); 
+  box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75); 
+}
+.social a:hover{
+
+}
+.float a:hover{
+  color: var(--azul);
+}
+.primera-flex a:hover{
+  color: var(--azul);
+}
+.cabezera-flex a:hover{
+  color: var(--azul);
+}
+
+
+.float {
+  font-family: "Open Sans", sans-serif;
+  width: 60%;
+  position:relative;
+  top:10rem;
+  margin-left: 45rem;
+  transform: translate(-50%, -50%);
+  background-color:rgb(253, 247, 247);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-bottom: 6rem;
+}
+.button-down-float{
+  font-weight: 600;
+  background-color: #ff52bf;
+  color: white;
+  padding: 1.5rem;
+  margin-left: 2rem;
+  border-radius: 5rem;
+  text-decoration: none;
+ -webkit-box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75); 
+  box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75); 
+}
+@media only screen and(max-width: 375px){
+  .img{max-width: 50%;
+    order:1;
+  }
+}
