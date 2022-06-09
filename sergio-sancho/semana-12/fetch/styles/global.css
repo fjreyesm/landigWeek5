@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  padding: 1.25rem;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 80%;
+}
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+
+.root > * {
+  flex-basis: 15%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+select {
+  width: 200px;
+  margin-right: 20px;
+  padding: 5px;
+}

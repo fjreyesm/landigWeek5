@@ -1,0 +1,138 @@
+* {
+    
+    box-sizing: border-box;
+}
+html{font-size: 100%;}
+img{/*display: block;*/
+    max-width: 100%;
+    height: auto;
+
+}
+picture{
+    display: block;
+}
+body{margin: 0 auto;
+     max-width: 1440px;
+     font-family: 'Bai Jamjuree', sans-serif;
+     line-height: 1.3em;
+}
+header{display: flex;
+       justify-content: center;
+       flex-direction: column;
+       background-image: url(/starter-code/images/bg-header-desktop.png);
+       text-align: center;
+}
+.header__logo{padding-top: 40px;}
+.flex {
+    display: flex;
+    justify-content: center;
+    /*align-items: baseline;*/
+}
+.flex picture {
+    position: relative;
+    right: 300px;
+}
+.texto-centrado {
+    text-align: center;
+    padding-bottom: 60px;
+    margin: 40px;
+}
+.three-column{
+    flex: 1 1 0;
+    width: 0;
+}
+.features {
+    padding-left: 40px;
+}
+.logos{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 40px;
+    }
+.centrado{
+    margin:40 auto;
+    display: block;
+}
+.logos>img {
+    margin:0 30px;
+}
+.header__button--cyan{border-radius: 20px;
+       color: white;
+       cursor:pointer;
+       background-color: hsl(171, 66%, 44%);
+       padding: 8px;
+       box-shadow: 0 0 10px rgba(0,0,0,0.8);
+       border: 1px solid grey;
+       margin-right: 40px;
+}
+.header__button--blue{border-radius: 20px;
+    color: white;
+    cursor:pointer;
+    background-color: hsl(233, 100%, 69%);
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    border: 1px solid grey;
+}
+footer{
+    background-color: hsl(201, 11%, 66%);
+    color:hsl(210, 10%, 33%) ;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+ul{
+    list-style: none;
+}
+footer a {
+    margin:0 10px;
+}
+footer img {width: 70%;
+            padding: 30px;
+            
+
+}
+@media only screen and (max-width: 375px) {
+    
+    
+    
+            header,.logos,footer,{
+            flex-direction:column;
+            justify-content: center;*/  
+        
+        }
+        .header__buttons {
+            display: flex;
+            flex-direction: column;
+        }
+        .flex{
+             flex-direction: column;
+             align-items: center;
+             width: 80%;
+        }
+        .header__button--cyan{
+             margin: 30px auto;
+             width: 50%;
+            
+        }
+        .header__button--blue{
+            margin: 30px auto;
+            width: 50%;
+           
+       }
+       .logos {
+           flex-direction: column;
+           align-items: center;
+           width: 40%;
+           padding:30px
+           
+       }
+       .two-column{
+            text-align: center;
+       }
+    }
