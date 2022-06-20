@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+picture {
+  display: block;
+  max-width: 25%;
+}
+img {
+  display: block;
+  max-width: 75%;
+}
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+.root > * {
+  flex-basis: 25%;
+}
+p {
+  flex-wrap: nowrap;
+}

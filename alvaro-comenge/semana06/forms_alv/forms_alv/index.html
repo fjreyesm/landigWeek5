@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1><code>FORMULARIOS</code></h1>
+  <form action="https://alcomwufo.wufoo.com" method="get">
+    <label for="primer-nombre">Nombre:</label>
+    <input type="text" name="primer-nombre" id="primer-nombre" />
+  <div>
+    <label for="email">Email:</label>
+    <input type="text" name="email" id="email">
+  </div>
+  <div>
+    <label for="numero-de-coches">Numero de cohes <span role="coche" title="coche">🚗</span></label>
+    <input type="number" id="numero-de-coches" name="numero-de-cohes"/>
+  </div>
+  <label for="Tamaño">Tamaño</label>
+  <select name="Tamaño" id="Tamaño">
+  <option value="grande">grande</option>
+  <option value="mediano">mediano</option>
+  <option value="pequeño">pequeño</option> 
+  </select> 
+  <div>
+    <h2>Genero de Pelicula</h2>
+    <label for="comedia">comedia</label>
+    <input type="checkbox" name="comedia" id="comedia"/>
+    <label for="guerra">guerra</label>
+    <input type="checkbox" name="guerra" id="guerra"/>
+    <label for="suspense">suspense</label>
+    <input type="checkbox" name="suspense" id="suspense"/>
+    <label for="amor">amor</label>
+    <input type="checkbox" name="amor" id="amor"/>
+  </div>
+  <div>
+    <h2>Tipo de coche</h2>
+    <label for="coche">Deportivo</label>
+    <input type="radio" name="coche" id="coche"/>
+    <label for="coche">4x4</label>
+    <input type="radio" name="coche" id="coche"/>
+    <label for="coche">Fugoneta</label>
+    <input type="radio" name="coche" id="coche"/>
+    <label for="coche">Offroad</label>
+    <input type="radio" name="coche" id="coche"/>
+  </div>
+  <div class="boton">
+  <button type="reset">Limpiar formulario</button>
+  </div>
+  <button type="submit">Enviar</button>
+</form>
+
+  
+</body>
+</html>

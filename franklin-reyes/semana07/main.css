@@ -1,0 +1,207 @@
+:root {
+  --darkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(201, 11%, 66%);
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(171, 66%, 44%);
+  --bluepurple: hsl(233, 100%, 69%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1440px;
+  text-align: center;
+  font-size: 100%;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+header {
+  background-image: url(./images/bg-header-desktop.png);
+  padding: 20px;
+}
+p {
+  color: var(--GrayishBlue);
+  font-weight: 400;
+}
+img {
+  display: block;
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  margin: auto;
+}
+.top img {
+  width: 60px;
+  height: auto;
+}
+button:first-child {
+  background-color: var(--cyan);
+}
+button:last-child {
+  background-color: var(--bluepurple);
+}
+button {
+  padding: 0.25rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 30px;
+  margin: 0.4rem;
+  width: 11rem;
+  font-style: bold;
+  box-shadow: 0.11rem 0.11rem 0.22rem grey;
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
+}
+section {
+  margin: 5rem;
+}
+.computer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+}
+.computer > image {
+  width: 100px;
+  padding: 1rem;
+}
+.computer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: start;
+  padding: 3rem;
+}
+.clipboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin: 2rem;
+}
+.features {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin: 2rem;
+}
+.logos {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin: 2rem;
+}
+.logos img {
+  width: 100px;
+  height: auto;
+}
+.features img {
+  width: 100px;
+  height: 95px;
+  padding: 1.5rem;
+  object-fit: fill;
+}
+.features picture {
+  width: 20%;
+  height: auto;
+  padding: 1rem;
+}
+footer {
+  display: grid;
+  font-size: 12px;
+  grid-template-columns: 10% 75% 15%;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer img {
+  width: 60px;
+  height: auto;
+}
+footer menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+}
+footer div {
+  display: flex;
+  align-items: top;
+  text-align: left;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+footer div img {
+  width: 20px;
+  height: auto;
+}
+ul {
+  width: 60%;
+}
+ul li {
+  margin: 1rem;
+  width: 110px;
+}
+footer {
+  background-color: var(--GrayishBlue);
+}
+@media only screen and (max-width: 475px) {
+  .top > div {
+    flex-direction: column;
+  }
+  header {
+    background-image: url(./images/bg-header-mobile.png);
+    padding: 20px;
+  }
+  .computer {
+    flex-direction: column;
+  }
+
+  .computer > div {
+    justify-content: center;
+    text-align: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer menu ul {
+    text-align: center;
+    justify-content: center;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin: 2rem;
+  }
+  .logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 2rem;
+  }
+  .logos img {
+    margin: 1.5rem;
+  }
+  ul {
+    margin: 0 auto;
+  }
+}

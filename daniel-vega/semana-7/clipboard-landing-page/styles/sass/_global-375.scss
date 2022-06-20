@@ -1,0 +1,168 @@
+@media only screen and (max-width: 375px) {
+  html body.mediaquery {
+    width: 375px;
+    & * {
+      max-width: 375px;
+      margin: 0;
+    }
+
+    & header {
+      background-image: url(../../images/png/bg-header-mobile.png);
+    }
+
+    & h1 {
+      font-size: 2rem;
+      margin-top: 5rem;
+      margin-bottom: 1.3rem;
+      padding: 0 1rem;
+    }
+    & h2 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    & h3 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    & p {
+      padding: 0 2.1rem;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    & .button {
+      width: 20rem;
+      height: 3.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    & header.mediaquery {
+      padding-top: 8rem;
+
+      & .header-buttons {
+        margin-top: 2.8rem;
+        @include flexing(column, nowrap, center, center);
+      }
+    }
+    & main.mediaquery {
+      margin: 7rem 0;
+
+      & .track {
+        margin-bottom: 5rem;
+        & h2 {
+          margin-bottom: 1.2rem;
+        }
+        & > .bottom {
+          @include flexing(column, nowrap, center, center);
+        }
+        & .left {
+          @include flexing(column, nowrap, center, center);
+          width: 100%;
+          & .image-container {
+            display: block;
+            position: static;
+            right: unset;
+            width: 80%;
+          }
+        }
+        & .right {
+          @include flexing(column, nowrap, center, center);
+          width: 100%;
+          padding: 1rem;
+          & h3,
+          & p {
+            text-align: center;
+          }
+        }
+      }
+      & .access {
+        & .top {
+          width: 110%;
+          padding-top: 2.5rem;
+        }
+        & .bottom {
+          @include flexing(column, wrap, center, flex-start);
+          width: 92%;
+          padding-top: 3.8rem;
+          & .image-container {
+            width: 100%;
+          }
+        }
+      }
+      & .supercharge {
+        margin-top: 2.8rem;
+        & .top h2 {
+          margin-bottom: 0.8rem;
+        }
+        & .bottom {
+          @include flexing(column, nowrap, space-evenly, center);
+          padding: 0.8rem;
+          & .card {
+            margin-top: 3.7rem;
+            width: 100%;
+            & .image-container {
+              width: 3rem;
+            }
+            & h3 {
+              margin: 2.5rem 0 1.3rem 0;
+            }
+            & p {
+              padding: 0;
+            }
+          }
+        }
+      }
+      .partners {
+        @include flexing(column, nowrap, space-evenly, center);
+        & .image-container {
+          max-width: 95%;
+          margin-bottom: 3.8rem;
+          &:first-of-type {
+            margin-top: 6.5rem;
+          }
+          &:nth-of-type(2),
+          &:nth-of-type(4),
+          &:nth-of-type(5) {
+            max-width: 65%;
+          }
+        }
+      }
+      .download {
+        margin-top: 5rem;
+        padding: 1rem;
+        & h2 {
+          width: 90%;
+          font-size: 1.7rem;
+        }
+        & p {
+          width: 90%;
+          padding: 0.1rem;
+          margin: 1rem 0 3rem 0;
+        }
+      }
+    }
+    & footer.mediaquery {
+      @include flexing(column, nowrap, space-evenly, center);
+      margin-top: 8rem;
+      padding: 3.2rem 0;
+      & .footer-logo {
+        @include flexing(column, nowrap, space-evenly, center);
+        margin: 0.1rem 0 0.6rem 0;
+      }
+      & .image-container {
+        width: 45%;
+      }
+      & nav ul {
+        @include flexing(column, wrap, center, center);
+        height: unset;
+        & li {
+          margin: 1rem 0;
+        }
+      }
+      & .social {
+        margin-top: 2rem;
+        width: 10rem;
+      }
+    }
+  }
+}

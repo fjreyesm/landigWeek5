@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Very_Pale_Cyan: hsl(193, 100%, 96%);
+  --Very_Dark_Cyan: hsl(192, 100%, 9%);
+  --Grayish_Blue: hsl(208, 11%, 55%);
+  --Open_Sans: "Open Sans";
+  --Open_weights400: 400;
+  --Open_weights700: 700;
+  --Poppins: "Poppins";
+  --Popp_weights600: 600;
+}
+
+/* The designs were created to the following widths:
+
+- Mobile: `375px`
+- Desktop: `1440px */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--Open_Sans), sans-serif;
+  font-size: 1.2rem;
+  color: var(--Very_Dark_Cyan);
+}
+
+h1,
+h2 {
+  font-family: var(--Poppins), sans-serif;
+}
+
+p {
+  opacity: 0.7;
+}
+
+.container {
+  width: 1440px;
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.box_flex {
+  display: flex;
+  align-items: center;
+}
+
+.box_flex > div {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.box_description {
+  padding-right: 60px;
+}
+
+.btn {
+  background-color: #fff;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: var(--Open_weights700);
+  padding: 15px 50px;
+}
+
+.btn-second {
+  background-color: var(--Pink);
+  color: #fff;
+  margin-top: 25px;
+}
+
+img {
+  margin-left: 20%;
+  max-width: 100%;
+}
+
+header {
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-size: cover;
+  background-position: center center;
+  background-color: var(--Very_Pale_Cyan);
+  padding: 40px 0;
+}
+
+.header-img {
+  max-width: 80%;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 40px 0;
+  padding: 60px;
+}
+
+.box img {
+  width: 80%;
+}
+
+.box_small {
+  display: inline-block;
+  position: relative;
+  margin-bottom: -140px;
+  z-index: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  background-color: var(--Very_Dark_Cyan);
+  color: #fff;
+  padding: 180px 0 60px;
+  position: relative;
+}
+
+footer ul {
+  /* padding: 0; */
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 20px;
+}
+
+footer .circle {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+}
+
+footer p {
+  text-align: right;
+}
+
+.social-links > ul {
+  display: flex;
+}

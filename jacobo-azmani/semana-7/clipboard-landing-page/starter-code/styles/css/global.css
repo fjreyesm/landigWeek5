@@ -1,0 +1,109 @@
+/* @import url(./header.css); */
+/* @import url(./footer.css); */
+@import url(./main.css);
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 100%;
+  }
+  header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .download {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px 10px;
+    margin: 12px;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    /*     justify-content: center;
+    flex-direction: column; */
+  }
+
+  .logos .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .search picture img {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+  }
+
+  .clip {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .clip picture img {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .logos div:nth-last-child(-n + 5) {
+    flex: 1 1 150px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .logos picture {
+    width: 100px;
+  }
+
+  .logos picture img {
+    width: 50%;
+  }
+
+  footer {
+    display: flex;
+    flex: row;
+  }
+
+  .socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

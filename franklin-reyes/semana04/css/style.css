@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open+Sans", sans-serif;
+  width: 960px;
+  margin: 0 auto;
+  font-size: 100%;
+  font-size: 24px;
+  font-weight: var(--light);
+}
+
+:root {
+  /* colours */
+  --almost-black: #121212;
+  --dark-blue: #033048;
+  --light-gray: #606161;
+  --white: #f0efef;
+  --yellow: #f9e42e;
+  --background-color: #f0efef;
+  /* font weights */
+  --extra-bold: 800;
+  --semi-bold: 600;
+  --light: 300;
+}
+
+main {
+  width: 960px;
+  background-color: var(--background-color);
+}
+
+.row {
+  display: flex;
+  border: 1px solid;
+  max-width: 100%;
+  width: 100%;
+}
+
+.column {
+  flex: 1;
+  width: 100%;
+  max-width: 80%;
+  flex-basis: 20%;
+}
+.column:nth-of-type(1) {
+  max-width: 700px;
+}
+
+.column:nth-of-type(2) {
+  max-width: 240px;
+}
+
+.columnhead:nth-of-type(2) {
+  flex-grow: 1;
+}
+
+.columnhead {
+  flex: 0.6;
+  width: 100%;
+  max-width: 80%;
+  flex-basis: 15%;
+}
+
+.cabeza {
+  background-color: var(--dark-blue);
+  color: white;
+
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+nav li {
+  display: inline-block;
+  width: 10%;
+
+  margin-right: 20px;
+  color: var(--yellow);
+  font-size: 24px;
+  font-weight: var(--semi-bold);
+}
+nav li:hover {
+  color: var(--white);
+}
+
+.signup {
+  background-color: var(--yellow);
+  padding: 30px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ftr {
+  color: var(--yellow);
+  background-color: var(--light-gray);
+  height: 200px;
+  text-align: right;
+  font-size: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button {
+  border-radius: 5px;
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0 auto;
+  max-width: 260px;
+  padding: 10px 10px;
+  text-align: center;
+  background-color: var(--dark-blue);
+  color: var(--yellow);
+  margin: 20px;
+}
+
+.blog {
+  margin-left: 30px;
+  margin-bottom: 60px;
+}
+
+.column img {
+  width: 100%;
+}
+/* read more*/
+.column p {
+  text-align: right;
+  font-weight: var(--semi-bold);
+}
+
+.aboutaside p:nth-child(2) {
+  text-align: left;
+  font-weight: var(--light);
+}
+
+/* 1ra letra flotante */
+article::first-letter {
+  font-size: 50px;
+  float: left;
+  margin: 10px;
+}
+
+a {
+  color: var(--almost-black);
+  font-weight: var(--extra-bold);
+  font-size: 24px;
+  font-weight: var(--light);
+}
+
+.lateral ul {
+  list-style: none;
+  padding: 2px;
+  width: 180px;
+}
+/* elimina circulitos de los items*/
+.lateral a {
+  text-decoration: none;
+}
+
+/* elimina subrayado*/
+.lateral {
+  margin: 20px;
+}
+
+aside picture {
+  margin-top: 30px;
+  width: 30px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+aside h2 {
+  font-size: 32px;
+}
+
+/* no funciona el font weight */
+.aboutaside > p {
+  font-size: 22px;
+}
+.aboutaside p:nth-child(3) {
+  font-weight: var(--semi-bold);
+  text-align: left;
+}

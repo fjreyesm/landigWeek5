@@ -1,0 +1,74 @@
+header {
+  margin: 0;
+}
+header > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1.44rem;
+  background-color: var(--startup-black);
+  border-bottom: 3px solid var(--startup-yellow);
+}
+header .title,
+header nav {
+  display: flex;
+  width: 50%;
+  text-align: center;
+}
+header .title {
+  justify-content: center;
+}
+header h1 {
+  margin: 0;
+  color: var(--startup-yellow);
+  font-family: 'Merriweather';
+  font-size: 1.5rem;
+}
+header nav {
+  visibility: visible;
+  display: flex;
+  padding-left: 2rem;
+  justify-content: left;
+  align-items: center;
+  color: var(--startup-white);
+}
+.btn-menu {
+  visibility: collapse;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--startup-black);
+  color: var(--startup-white);
+  border-style: none;
+  height: 2.5rem;
+  font-size: 2rem;
+}
+.menu {
+  font-family: 'oswald';
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: var(--extra-bold);
+}
+nav button {
+  background-color: var(--startup-black);
+  color: var(--startup-white);
+  border-style: none;
+  margin-right: 0.5rem;
+}
+.btn-menu:hover,
+nav button:hover {
+  color: var(--startup-yellow);
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  visibility: collapse;
+  display: none;
+  flex-flow: row nowrap;
+  list-style: none;
+  list-style-position: inside;
+  justify-content: left;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: var(--extra-bold);
+}

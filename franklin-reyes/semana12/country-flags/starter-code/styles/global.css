@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  padding: 1.25rem;
+}
+
+picture {
+  display: block;
+  border: 1px solid black;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+
+.root > * {
+  flex-basis: 15%;
+}

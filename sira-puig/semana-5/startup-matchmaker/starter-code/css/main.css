@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,700&family=Oswald:wght@700&family=PT+Sans&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  background-color: red;
+  font-size: 20px;
+  padding: 20px;
+}
+body {
+  background-color: white;
+
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: black;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+h1 {
+  font-family: Merriweather;
+  font-size: 700;
+  color: yellow;
+}
+nav {
+  font-family: Oswald;
+  font-size: 700;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+il:nth-child(n + 3) {
+  font-family: Source Sans Pro;
+  /* para cambiar la text-family a 3 elementos del nav */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.because {
+  height: 40px;
+  border-top: 2px yellow solid;
+  background-color: #c6c6c6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+main section p {
+  font-family: Merriweather;
+  font-size: 700italic;
+  font-style: italic;
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
+p span:first-child {
+  color: #aaa;
+  text-decoration: line-through;
+}
+p span:last-child {
+  color: yellow;
+  text-decoration: underline;
+}
+.caja {
+  /* tamaño a las 4 cajas de texto con boton */
+  /* border-style: solid; */
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 200px;
+  text-align: center;
+  align-items: left;
+}
+.caja button {
+  font-family: oswald;
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+}
+.second {
+  background-image: url(../images/startup-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -14rem;
+  display: flex; /* para que se coloque la primera caja a la derecha */
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+.oculto {
+  width: 350px;
+  visibility: hidden;
+}
+
+h2 {
+  font-family: Source Sans Pro;
+  color: black;
+  text-align: left;
+}
+.texto {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-size: 400;
+  color: black;
+  text-align: left;
+}
+button {
+  background-color: yellow;
+  width: 300px;
+  height: 40px;
+}
+.third {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* padding: 20px; */
+}
+.third .caja:nth-child(-n + 2) {
+  border-right: 1px #c6c6c6 solid;
+  max-width: fit-content;
+  width: 413px;
+}
+
+footer {
+  background-color: black;
+  height: 60px;
+}
+footer p {
+  color: white;
+  padding: 20px;
+}
+footer span {
+  color: red;
+}

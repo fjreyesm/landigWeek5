@@ -1,103 +1,119 @@
 * {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  margin: auto;
 }
-
-#get-it {
+}
+html {
+  font-size: 100%;
+}
+main {
+  display: block;
+}
+.fila1 {
+  /*Primera seccion_elimino ID y utilizo clase*/
   background-image: url(/relaxr-1-starter-code/relaxr-1/starter-code/images/header-bg.jpg);
-  background-size: 100%;
-  height: 30em;
+  background-size: cover;
+  height: 20em;
   text-align: center;
-  margin: auto;
+}
+.fila1 div {
+  padding-left: 5%;
 }
 h1 {
-  font-size: 24px;
+  font-size: 1.5rem; /*actualizo a relativa*/
   font-weight: 800;
-  color: white;
+  color: #f0efef;
   text-align: left;
-  padding-left: 100px;
-  padding-top: 20px;
+  padding-top: 5%;
 }
 p {
-  font-size: 24px;
+  font-size: 1.5rem; /*actualizo a relativa*/
   font-weight: 600;
-  color: white;
-  padding: 30px;
+  color: #f0efef;
+  padding-bottom: 1.5rem;
 }
-
 button {
   background-color: #f9e42e;
-  font-size: 14px;
+  font-size: 1.14rem; /*relativa*/
   font-weight: 800;
-  border-radius: 5px;
+  border-radius: 5px; /*esta medida es correcta en un modelo responsivo?*/
+  border-color: #f9e42e;
   color: #606161;
   width: 150px;
   height: 35px;
 }
-#benefits {
-  /* bloque benefits */
+
+.benefits {
   height: 20em;
   background-color: #f0efef;
-  margin: auto;
   text-align: left;
 }
+.benefits div {
+  width: 50%;
+  padding: 5% 0% 0% 5%;
+}
+
 h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #606161;
 }
-
-#parrafo2 {
-  font-size: 13px;
+.benefits p {
+  font-size: 0.81rem;
   font-weight: 300;
   color: #606161;
 }
 ul {
-  padding-left: 100px;
+  padding-left: 15%; /*relativa*/
 }
 li {
-  font-size: 13px;
+  font-size: 0.81rem;
   font-weight: 300;
   color: #606161;
+  /* line-height: 1.5rem; */
+  padding-bottom: 2%;
 }
-#quote {
+
+.quote {
   background-image: url(/relaxr-1-starter-code/relaxr-1/starter-code/images/testimonial-bg.jpg);
-  height: 20em;
+  background-size: cover;
+  height: 14em;
+  padding: 5% 0% 5% 0%;
   text-align: center;
-  margin: auto;
+  /* align-items: center; */
 }
 blockquote {
-  width: 400px;
-  margin: auto;
-  padding: auto;
+  /* display: block; */
+  /* text-align: center; */
+  /* align-items: center; */
 }
-#parrafo3 {
-  font-size: 18px;
+blockquote p {
+  font-size: 0.89rem;
   font-weight: 300;
   font-style: italic;
   color: white;
+  /* text-align: center; */
+  /* width: 35%; */
+  padding: 5% 15% 5% 15%;
 }
 figcaption {
   color: white;
   font-size: 18px;
   font-weight: 600;
+  text-align: center;
+  padding: 0 0 5% 0;
 }
-#sign-up {
+.sign-up {
+  display: block;
   background-color: #f9e42e;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 55px;
-  margin: auto;
+  height: 4em;
   text-align: center;
+  padding: 1% 0% 1% 0%;
 }
-footer {
-  background-color: #606161;
-  text-align: center;
-  margin: auto;
-}
-#button2 {
+
+.sign-up button {
   background-color: #033048;
+  border-color: #033048;
   font-size: 14px;
   font-weight: 800;
   border-radius: 5px;
@@ -105,15 +121,31 @@ footer {
   width: 150px;
   height: 35px;
 }
-#icons {
+
+footer {
+  display: block;
+  background-color: #606161;
+  padding: 2em;
+}
+footer ul {
+  display: block;
+  padding: 1em;
+  text-align: center;
+}
+footer li {
+  list-style-type: none;
+  padding: 1em;
   display: inline;
 }
-#parrafo4 {
-  font-size: 9px;
-  font-weight: 600;
-}
-.color-yellow {
+footer h2 {
   color: #f9e42e;
   font-size: 24px;
   font-weight: 800;
+  text-align: center;
+}
+footer p {
+  font-size: 9px;
+  font-weight: 600;
+  color: #f0efef;
+  text-align: center;
 }

@@ -1,0 +1,61 @@
+<<<<<<< HEAD
+* {
+  box-sizing: border-box;
+}
+
+=======
+>>>>>>> main
+body {
+  background-color: #ffe;
+  font-family: sans-serif;
+  border-style: solid;
+  max-width: 800px;
+  margin: auto;
+}
+
+<<<<<<< HEAD
+td {
+=======
+h1 {
+>>>>>>> main
+  font-family: serif;
+  text-align: center;
+}
+
+<<<<<<< HEAD
+p {
+=======
+h3 {
+>>>>>>> main
+  color: #887;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+<<<<<<< HEAD
+img {
+  border-style: solid;
+  display: block;
+  max-width: 80%;
+  margin: auto;
+}
+=======
+a {
+  color: #900;
+}
+
+img {
+  border-style: solid;
+  display: block;
+  max-width: 90%;
+  margin: auto;
+}
+
+h2,
+h3,
+p,
+ul,
+ol {
+  margin-left: 35px;
+}
+>>>>>>> main

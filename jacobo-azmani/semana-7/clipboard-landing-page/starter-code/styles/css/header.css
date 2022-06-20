@@ -1,0 +1,35 @@
+/* COLORS */
+/* #### Primary ####  */
+/* #### Neutral #### */
+/* ### Typography ### */
+/* #### Fonts #### */
+/* - Family: Bai Jamjuree */
+/* -Weights: 400, 600 */
+/* Header */
+header {
+  display: block;
+  justify-content: center;
+  /*   display: flex; */
+  /*   align-items: center; */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255)), url(../../images/bg-header-desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1.25rem;
+}
+
+header div {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=header.css.map */

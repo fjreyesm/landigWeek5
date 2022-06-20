@@ -1,0 +1,137 @@
+
+* {
+    box-sizing: content-box;
+        }
+
+header{
+    display: flex;
+    background-color:black;
+    }
+  
+.logo{
+    color: yellow;
+    font-family: font-family: 'Merriweather', serif;
+    padding:15px;
+     }
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+   }
+a {text-decoration: none;
+    text-align: center;
+   }
+nav{
+    display: flex;
+    font-size: 24px;
+    font-weight:bold;
+    display: flex;
+    list-style: none;
+    margin: auto;
+    justify-content:space-between;
+    font-family: 'Oswald', sans-serif;
+  }
+    
+  
+li a {
+      padding: 10px;
+      color: white;
+      
+  }
+ul :nth-last-child(-n+3){
+      font-weight: 100;
+  }
+.tagline{
+      background-color: rgba(0, 0, 0, 0.2);
+      border-top: 2px solid yellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font:italic bold 20px 'Merriweather', serif;
+
+  }
+.hero{
+      background-image: url(../images/startup-bg.jpg);
+      background-size:cover;
+      display:flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      height:400px;
+  }
+.card{
+      width: 300px;
+      background-color:#c6c6c6;
+      background-origin:content-box;
+      opacity: 0.7;
+      padding: 20px;
+      flex-shrink: 0.7;
+      margin: 10px 30px 10px 150px;
+
+  }
+.oswald{
+      font-family: font-family: 'Oswald', sans-serif;
+  }
+.call_to_action {
+      background-color: yellow;
+      text-align: center;
+      font-size:16px;
+      font-family: 'Oswald', sans-serif;
+      width: 100%;
+      
+  }
+.underscored{ color :yellow;
+    text-decoration: underline;
+
+.line-through {
+    color:grey;
+    text-decoration:line-through;
+    }
+
+}
+.services{
+      width: 700px;
+      display: flex;
+      justify-content:space-between;
+      text-align: left;
+      align-items: center;
+    
+    
+    
+  }
+.services div:nth-child(2) {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  }
+.columns{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      
+  }
+  
+footer{
+    display: flex;
+    align-items: center;
+    background-color:black;
+    color: white;
+    height: 10vh;
+    padding-left: 10%;
+    
+    
+  }
+  .icon-red{color:red}
+
+/*Breakpoints when viewport is up to 740px  */
+  
+  @media only screen and (max-width: 740px) {
+/*hide tagline*/
+    .tagline{visibility: hidden;}
+/*ul {visibility: collapse;}*/
+
+    .services , header , ul{
+        flex-direction: column;
+    }
+  
+  }

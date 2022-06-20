@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size:100%
+}
+picture{
+  display:block;
+}
+img{
+  display:block;
+  height:auto;
+  max-width:100%;
+}
+p{
+  color:blue;
+}
+.caja{
+  border: solid 2px greenyellow;
+  padding: 20px;
+}

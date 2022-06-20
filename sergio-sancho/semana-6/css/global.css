@@ -1,0 +1,135 @@
+
+* {
+    
+    box-sizing: border-box;
+}
+body{width: 1440px;
+    /*color: hsl(193, 100%, 96%); */
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 100%;
+    
+}
+h1,h3{
+  font-family:"Poppins",sans-serif;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+  background-image: url(/images/bg-hero-desktop.svg);
+}
+
+main{
+ display: flex;
+ 
+
+ flex-direction: column;
+ background-color: white;
+ max-width: 75%;
+}
+  }
+  /*defino una clase row y column que ayude con layout*/
+  .row{
+    display:flex;
+    flex-wrap: nowrap;
+    padding: 1%;
+    border: 1px cyan solid;
+    /*height: 50%;*/
+  }
+ 
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /*flex-basis: 100%;*/
+    /*flex: 1;*/
+  }
+  /*imagen encaje en su ancestro*/
+  img {
+    display: block;
+    max-width: 60%;
+  }
+  
+   .target{border: 2px solid rgb(226, 80, 80);
+           margin-bottom: 20px;   
+
+   } 
+   button{
+        background-color: hsl(322, 100%, 66%);
+        font-weight: 600;
+        color:white;
+        padding: 0.5em 2em;
+        border-radius: 50px;
+        text-decoration: none;
+        
+        box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75);
+     }  
+
+    button.classic{
+        background-color:white;
+        font-weight: 600;
+        color:black;
+        padding: 0.5em 2em;
+        border-radius: 50px;
+        text-decoration: none;
+        -webkit-box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75);
+        box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75);
+    } 
+     section{display: flex;
+      box-shadow: 2px 3px 5px 0px rgba(184, 184, 184, 0.75);
+      margin: 20px;
+      /*background-image: url(/images/bg-hero-desktop.svg);*/
+      padding: 20px;
+ 
+    }
+
+   
+
+     footer{
+       background-color:hsl(192, 100%, 9%);
+       color: white;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       line-height: 1.6;
+      
+      }
+      .contact{
+        width: 300px;
+      }
+      .footer-menu{
+        display:flex;
+        justify-content: space-evenly;
+        padding: 20px;
+
+      }
+     ul{
+       list-style: none;
+      
+     }
+    a {text-decoration:none;
+       color: white;
+       padding: 15px;
+       
+    
+    }
+      }
+      img {max-width:100%;
+          display: block;
+      }
+
+      .overlap{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        padding: 30px;
+        box-shadow: 0.33rem 0.33rem 0.66rem grey;
+        width: 30%;
+        border-radius: 10px;
+        align-items: center;
+        position: relative;
+        top:40px;
+        background-color: white;
+              }
+

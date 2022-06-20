@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+@media (min-width: 375px) and (max-width: 1440px) {
+  body {
+    background-color: #de3163;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* organiza en columnas a sus hijos-header y main */
+}
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-color: hsl(193, 100%, 96%);
+  padding: 2px;
+}
+.first {
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-color: hsl(193, 100%, 96%);
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  /* organiza en columnas a sus hijos-section */
+}
+
+img {
+  /* las img son elementos inline por lo que habrá que darles display:block 
+ nota Pedro: Por ejempo, las imagenes SVG no tienen dimensiones intrínsecas. */
+
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  text-align: left;
+  /* text-align: center; */
+  max-width: 50%;
+  /* ocupara la mitad de su padre que ya ocupa la mitad de su abuelo */
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-align: left;
+  max-width: 50%;
+}
+button {
+  font-family: "Open Sans";
+  font-weight: 700;
+  width: 200px;
+  height: 50px;
+  background-color: hsl(193, 100%, 96%);
+  border-radius: 20px;
+}
+.inicio {
+  display: flex;
+  flex-direction: row;
+}
+
+.two {
+  align-self: center;
+  max-width: 75%;
+  max-height: 75%;
+  display: flex;
+  flex-direction: row;
+  border: 3px solid;
+  margin: 10px;
+  border-radius: 10px;
+}
+div {
+  width: 50%;
+  padding: 20px;
+  top: 50%;
+}
+.two img {
+  max-width: 50%;
+  padding: 10%;
+}

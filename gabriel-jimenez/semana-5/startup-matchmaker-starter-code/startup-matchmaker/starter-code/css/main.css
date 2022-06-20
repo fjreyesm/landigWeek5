@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: Source Sans Pro;
+  font-size: 20px;
+}
+
+header {
+  background-color: black;
+  border-bottom: 0.5vh solid yellow;
+}
+
+header div {
+  max-width: 77.5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vh 0;
+}
+
+h1 {
+  margin: 0;
+  color: yellow;
+  font-family: Merriweather;
+  font-size: 1.55em;
+}
+
+ul {
+  color: white;
+  display: flex;
+  list-style: none;
+  font-family: Oswald;
+  font-size: 0.75em;
+}
+
+li:not(:first-child) {
+  padding-left: 10px;
+}
+
+li:not(:last-child) {
+  padding-right: 10px;
+}
+
+li:nth-child(-n + 2) {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.tagline {
+  background-color: #c6c6c6;
+  display: flex;
+  justify-content: center;
+}
+
+.tagline div p {
+  margin: 0;
+  font-family: Merriweather;
+  font-style: italic;
+  padding: 10px 0;
+}
+
+.taste-text {
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.are-text {
+  color: yellow;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 740px) {
+  .tagline {
+    display: none;
+  }
+}
+
+.central {
+  background-image: url(../images/startup-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.central div {
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 25%;
+  max-height: 75%;
+}
+
+@media screen and (max-width: 740px) {
+  .central {
+    justify-content: center;
+  }
+  .central div {
+    max-width: 93.75%;
+    min-height: 87.75%;
+    max-height: 87.75%;
+  }
+}
+
+h3 {
+  margin: 0;
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+.central div p {
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button {
+  background-color: yellow;
+  font-family: Oswald;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-width: 0ch;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 100px;
+}
+
+.options {
+  display: flex;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.options div {
+  padding: 0 10px;
+  /* align-content: flex-start; */
+}
+
+.options div:nth-child(-n + 2) {
+  border-right: 1px solid black;
+}
+
+@media screen and (max-width: 740px) {
+  .options {
+    flex-direction: column;
+  }
+
+  .options div:nth-child(-n + 2) {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+}
+
+footer {
+  background-color: black;
+  margin: 0;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+}

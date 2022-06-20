@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Icons/favicon-32x32.png"
+    />
+    <title>Countries</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/app.js"></script>
+  </head>
+  <body>
+    <div class="bodyContainer">
+      <form action="" method="get" class="filter-form">
+        <select id="region" name="region">
+          <option value="All">All</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+        <input
+          type="search"
+          name="Criteria"
+          placeholder="Search..."
+          id="criteria"
+        />
+      </form>
+      <div id="root" class="root"></div>
+      </div>
+    </div>
+  </body>
+</html>
