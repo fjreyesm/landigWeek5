@@ -1,17 +1,32 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
+  }
 
 body {
-  background-color: #121212;
+  font-family: "Open Sans", sans-serif;
+  /* max-width: max-content; */
+  /* text-align: center; */
+}
+
+.block ¨{
+  border: 2px solid;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 400px;
+  box-sizing: border-box;
+  margin: 10px 20px 10px 20px; 
+  
+}
+
+.inline p {
+  text-align: center;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 24px; 
   color: #f0efef;
 }
 .relaxr {
@@ -47,7 +62,9 @@ blockquote {
 
 .footer-relaxr li {
   display: inline;
-  padding-left: 215px;
+  padding-left: 290px;
+  /* padding-right: 10px;
+  margin-right: 8px; */
 }
 
 .relaxr p {
@@ -70,7 +87,7 @@ blockquote {
   color: #033048;
   background-color: #f9e42e;
   text-decoration: none;
-  margin-left: 200px;
+  margin-left: 280px;
   padding: 10px 50px;
 }
 
@@ -81,7 +98,7 @@ blockquote {
   color: #f0efef;
   background-color: #033048;
   text-decoration: none;
-  margin-left: 200px;
+  margin-left: 280px;
   padding: 10px 50px;
 }
 
@@ -89,17 +106,18 @@ blockquote {
   font-weight: 600;
   color: #f0efef;
   font-size: 18px;
-  margin-left: 70px;
+  text-align: center;
 }
 
 .texto-cite {
   font-size: 18px;
   font-weight: 300;
+  text-align: center;
 }
 
 .footer-relaxr h2 {
   color: #f9e42e;
-  margin-left: 250px;
+  margin-left: 330px;
   font-weight: 700;
   font-size: 24px;
 }
@@ -108,10 +126,11 @@ blockquote {
   font-weight: 600;
   font-size: 9px;
   color: #f0efef;
-  margin-left: 240px;
+  text-align: center;
 }
 
 .relaxr h1 {
+  /* margin-right: 400px; */
   margin-left: 15px;
 }
 
@@ -122,8 +141,4 @@ blockquote {
 
 .benefits p {
   margin-left: 50px;
-}
-
-.cite blockquote {
-  margin-left: 150px;
 }

@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  font-family: Open Sans, Sans-serif;
+}
+
+body {
+  background-color: #606161;
+  width: 600px;
+  margin: auto;
+  color: #121212;
+}
+
+.parte-superior {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/header-bg.jpg);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+.getpiece-text {
+  font-size: 24px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.getitnow:link,
+.getitnow:visited {
+  font-size: 14px;
+  font-weight: 800;
+  color: #033048;
+  text-decoration: none;
+  background-color: #f9e42e;
+  padding: 14px 25px;
+  width: 40%;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+  display: block;
+}
+
+.parte-media {
+  width: 60%;
+  background-color: #f0efef;
+  text-align: left;
+}
+
+.contenedor-parte-media {
+  background-color: #f0efef;
+  padding: 20px;
+}
+
+.benefits-text,
+ul {
+  margin-left: 50px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.parte-inferior {
+  background-image: url(../images/testimonial-bg.jpg);
+  text-align: center;
+  padding: 20px;
+}
+
+.relaxr-text {
+  font-size: 18px;
+  font-weight: italic 300;
+  color: white;
+  padding: 50px;
+  font-style: italic;
+}
+
+strong {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.parte-inferior-boton {
+  background-color: #f9e42e;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.btn_segundo,
+.btn_signup {
+  margin: 20px;
+  background-color: #033048;
+  font-size: 12px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 14px 25px;
+  width: 40%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn_signup {
+  background-color: green;
+}
+
+.btn_segundo:hover,
+.btn_signup:hover {
+  opacity: 70%;
+}
+
+h2 {
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #121212;
+  text-align: center;
+  padding: 20px;
+}
+
+.relaxr {
+  margin: auto;
+  margin-bottom: 10px;
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.copyright {
+  margin: 20px;
+  color: white;
+  font-size: 9px;
+}
+
+img {
+  margin: 10px;
+  height: 25px;
+}
+
+.signup-popup {
+  display: none;
+}
+
+.form-container {
+  padding: 20px;
+  background-color: #f0efef;
+  border-radius: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  background: lightgray;
+}
